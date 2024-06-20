@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chat-GPT | Leonardo Grando</title>
+    <link>https://lgrando1.github.io/tag/chat-gpt/</link>
+      <atom:link href="https://lgrando1.github.io/tag/chat-gpt/index.xml" rel="self" type="application/rss+xml" />
+    <description>Chat-GPT</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 27 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_512x512_fill_lanczos_center_3.png</url>
+      <title>Chat-GPT</title>
+      <link>https://lgrando1.github.io/tag/chat-gpt/</link>
+    </image>
+    
+    <item>
+      <title>Como usar melhor o Chat-GPT e outras ferramentas generativas-Parte 1</title>
+      <link>https://lgrando1.github.io/post/prompt1/</link>
+      <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://lgrando1.github.io/post/prompt1/</guid>
+      <description>&lt;p&gt;Realizei recentemente o curso &lt;a href=&#34;https://www.coursera.org/learn/prompt-engineering&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Prompt Engineering for ChatGPT&lt;/em&gt;&lt;/a&gt; e gostaria de compartilhar algumas anotações que realizei durante o mesmo.&lt;/p&gt;
+&lt;p&gt;Estas ferramentas não podem ser consideradas como &lt;a href=&#34;https://chat.openai.com/share/36071465-b59a-44e1-a494-eaba36edc4cd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fonte de fatos&lt;/a&gt;, mas são excelentes como suporte para ideias e quem sabe para tirar da gaveta aquela ideia de um livro.&lt;/p&gt;
+&lt;p&gt;O objetivo desta série é criar postagens com quatro estratégias por post. Estou utilizando como exemplo o Chat-GPT em sua versão grátis, mas você pode testar em qualquer outra ferramenta.&lt;/p&gt;
+&lt;p&gt;Caso queira conhecer melhor o funcionamento destas ferramentas, recomendo o &lt;a href=&#34;https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;texto do Stephen Wolfram&lt;/a&gt; e o curso &lt;a href=&#34;https://www.coursera.org/learn/prompt-engineering&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Prompt Engineering for ChatGPT&lt;/em&gt;&lt;/a&gt; que pode ser auditado gratuitamente no Coursera.&lt;/p&gt;
+&lt;p&gt;Os links incluem exemplos de cada item.&lt;/p&gt;
+&lt;h2 id=&#34;1---são-ferramentas-estocásticas-por-isto-pode-não-ocorrer-repetitividade-nas-respostas-já-que-a-sua-resposta-depende-de-como-elas-foram-treinadas&#34;&gt;1 - São ferramentas estocásticas, por isto pode não ocorrer &lt;strong&gt;repetitividade&lt;/strong&gt; nas respostas, já que a sua resposta depende de como elas foram treinadas:&lt;/h2&gt;
+&lt;p&gt;Conforme você realiza o prompt, as ferramentas podem responder de formas diferentes, por isto é importante o refino da sua questão e testar várias estratégias.&lt;/p&gt;
+&lt;p&gt;Ainda considerando a pergunta, quantos prêmios Nobéis o Brasil já foi agraciado? O &lt;a href=&#34;https://chat.openai.com/share/36071465-b59a-44e1-a494-eaba36edc4cd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;exemplo 1&lt;/a&gt; e o &lt;a href=&#34;https://chat.openai.com/share/9f91d34d-87ec-49d1-bb8e-b533a0cc0972&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;exemplo 2&lt;/a&gt; apresentam respostas distintas para a mesma questão.&lt;/p&gt;
+&lt;h2 id=&#34;2---você-pode-solicitar-a-esta-ferramenta-para-que-ela-aja-conforme-um-personagem-ex-professor-consultor-etc-e-que-a-resposta-seja-direcionada-para-determinado-público-jovens-da-terceira-idade-adolescente&#34;&gt;2 - Você pode solicitar a esta ferramenta para que ela aja conforme um personagem (ex: professor, consultor, etc.) e que a resposta seja direcionada para determinado público (jovens da terceira idade, adolescente).&lt;/h2&gt;
+&lt;p&gt;A estrutura deste prompt é:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Aja como P e faça A&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Onde &lt;strong&gt;P&lt;/strong&gt; é igual ao personagem que você deseja e &lt;strong&gt;A&lt;/strong&gt; ação que você espera dele.&lt;/p&gt;
+&lt;p&gt;Neste &lt;a href=&#34;https://chat.openai.com/share/21dfd00b-cd05-44eb-9b57-3982f936b991&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;exemplo&lt;/a&gt;, vou pedir para ele agir como um professor de Línguas, depois vou pedir para ele explicar o meu erro usando um exemplo de obra literária e depois para ele contextualizar um assunto atual para um cidadão do ano 1700.&lt;/p&gt;
+&lt;h2 id=&#34;3---você-pode-enviar-novas-informações-para-o-prompt&#34;&gt;3 - Você pode enviar novas informações para o Prompt.&lt;/h2&gt;
+&lt;p&gt;Estas ferramentas possuem uma limitação do processo de treinamento. Você pode fornecer novas informações para que ele possa aprimorar a resposta.&lt;/p&gt;
+&lt;p&gt;Neste &lt;a href=&#34;https://chat.openai.com/share/7adc6484-d5a0-4545-bbf9-9256a82ac82d&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;exemplo&lt;/a&gt; pedi para ele os presidentes que governaram o Brasil entre os anos 2000 a 2024 e solicitei atualização das informações com o novo presidente.&lt;/p&gt;
+&lt;h2 id=&#34;4---refinamento-de-questões&#34;&gt;4 - Refinamento de questões.&lt;/h2&gt;
+&lt;p&gt;Observe que a clareza com que você faz os questionamentos é importante para que você tenha respostas mais próximas do que deseja. Não adianta você pedir: Quais foram os presidentes?, se você quer uma resposta limitada por tempo. Mas você &lt;a href=&#34;https://chat.openai.com/share/34a42de3-e9c8-4d69-8941-643472f973cb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pode pedir&lt;/a&gt; para ele como melhorar sua pergunta.&lt;/p&gt;
+&lt;p&gt;Por enquanto são estas dicas, vimos que podem ocorrer variações nas respostas, que estas ferramentas podem agir como determinado personagem para atingir um público específico, que você pode treinar a ferramenta localmente com novas informações para que sua resposta seja mais atual e que a própria ferramenta pode lhe ajudar a refinar as suas questões.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

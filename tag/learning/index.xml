@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning | Leonardo Grando</title>
+    <link>https://lgrando1.github.io/tag/learning/</link>
+      <atom:link href="https://lgrando1.github.io/tag/learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Learning</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 23 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_512x512_fill_lanczos_center_3.png</url>
+      <title>Learning</title>
+      <link>https://lgrando1.github.io/tag/learning/</link>
+    </image>
+    
+    <item>
+      <title>Learning Resource Links</title>
+      <link>https://lgrando1.github.io/post/learning-resource-links/</link>
+      <pubDate>Sun, 23 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://lgrando1.github.io/post/learning-resource-links/</guid>
+      <description>&lt;h3 id=&#34;language-post-available&#34;&gt;Language post available:&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/links-interessantes-aprendizagem/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PT-BR&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/learning-resource-links/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Follow below a resource list that I use to learn. This post is an organic list.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First, a great thanks to all resources responsible cited in this.&lt;/li&gt;
+&lt;li&gt;Any resource suggestions or corrections, let me know.&lt;/li&gt;
+&lt;li&gt;I wish great learning to you.&lt;/li&gt;
+&lt;li&gt;Total links: 25&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1---get-informed&#34;&gt;1 - Get informed:&lt;/h2&gt;
+&lt;p&gt;Links to inform you.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://news.ycombinator.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hacker News&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  Social news website when users discuss computing and entrepreneurship. The best news is voted&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://slashdot.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Slashdot&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  News source of technology&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://github.com/sindresorhus/awesome&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Awesome Lists&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  Lists of awesome and interesting topics&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2---general-programming-learning&#34;&gt;2 - General Programming Learning:&lt;/h2&gt;
+&lt;p&gt;Links about general programming.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://www.freecodecamp.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FreeCodeCamp&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  Several programming courses and certifications. &lt;a href=&#34;https://www.youtube.com/c/Freecodecamp/videos&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Youtube&lt;/a&gt; channel also&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://osprogramadores.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OsProgramadores&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  Brazilian Group for new programming learners with challenges and &lt;a href=&#34;https://t.me/OsProgramadores&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Telegram&lt;/a&gt; chat&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://www.computacional.com.br/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Computacional&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  Computational Thinking Brazilian portal&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://ct-stem.northwestern.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CT-STEM&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  Northwestern University Computational &lt;a href=&#34;https://en.wikipedia.org/wiki/Science,_technology,_engineering,_and_mathematics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;STEM&lt;/a&gt; tools using Netlogo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://scratch.mit.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT Scratch&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  Block type programming language. Great for starters. Possible to create stories, games, and animations. Several tutorials&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://appinventor.mit.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT App Inventor&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  Block type programming language. Several tutorials. Create iPhone and Android apps in the browser and test them on your phone&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://roadmap.sh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Roadmaps.sh&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  List of guides to support developers learning&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://github.com/Universidade-Livre/ciencia-da-computacao/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Universidade-Livre/Ciencia-da-computacao/&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  Brazilian guide to computational science self-learning&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;3---machine-learning--artificial-intelligence&#34;&gt;3 - Machine Learning / Artificial intelligence:&lt;/h2&gt;
+&lt;p&gt;Links about Artificial intelligence.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://vas3k.com/blog/machine_learning/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Machine Learning for Everyone&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  Great machine learning concepts summary&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Machine learning for humans&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  Great machine learning concepts in plain English&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://www.kaggle.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kaggle&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  Machine learning and Data Science portal. With competition, and Courses&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://www.datahackers.com.br&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data Hackers&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  Brazilian data science community, with a Slack community&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://www.r-bloggers.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R-Bloggers&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  Blog that brings news and tutorials about R language&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://www.kdnuggets.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kdnuggets&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  Data Science portal with great information quantity&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://microsoft.github.io/Data-Science-For-Beginners/#/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data Science for Beginners&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  Microsoft&amp;rsquo;s Data Science guide for beginners&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;4---books-lists&#34;&gt;4 - Books lists:&lt;/h2&gt;
+&lt;p&gt;Links about programming books list.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://www.bigbookofr.com/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Big book of R&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  List of R language books&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://www.onlineprogrammingbooks.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Online Programming Books&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  Books list several computing areas&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://greenteapress.com/wp/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Green Tea Press&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  Allen Downey books. Recommended&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;5---data-viz-resources&#34;&gt;5 - Data Viz Resources:&lt;/h2&gt;
+&lt;p&gt;Links about Data visualization tools.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://datavizproject.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data Viz Project&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  List of Graphs and their characteristics&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://r-graph-gallery.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R Graph Gallery&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  List of charts implemented in R&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;a href=&#34;https://www.python-graph-gallery.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python Graph Gallery&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;👉  List of charts implemented in Python&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-httpsnotbyaifyi&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Not-By-AI&#34;
+           src=&#34;https://lgrando1.github.io/post/learning-resource-links/notai.svg&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      &lt;a href=&#34;https://notbyai.fyi/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://notbyai.fyi/&lt;/a&gt;
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

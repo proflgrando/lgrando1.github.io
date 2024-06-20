@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drones | Leonardo Grando</title>
+    <link>https://lgrando1.github.io/tag/drones/</link>
+      <atom:link href="https://lgrando1.github.io/tag/drones/index.xml" rel="self" type="application/rss+xml" />
+    <description>Drones</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 12 Dec 2023 13:30:00 +0000</lastBuildDate>
+    <image>
+      <url>https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_512x512_fill_lanczos_center_3.png</url>
+      <title>Drones</title>
+      <link>https://lgrando1.github.io/tag/drones/</link>
+    </image>
+    
+    <item>
+      <title>WSC 2023</title>
+      <link>https://lgrando1.github.io/talk/wsc-2023/</link>
+      <pubDate>Tue, 12 Dec 2023 13:30:00 +0000</pubDate>
+      <guid>https://lgrando1.github.io/talk/wsc-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling and Simulation for Farming Drone Battery Recharging</title>
+      <link>https://lgrando1.github.io/publication/grando-2023/</link>
+      <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://lgrando1.github.io/publication/grando-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Drones Swarm Recharging: Modeling Using Agent-Based Simulation</title>
+      <link>https://lgrando1.github.io/publication/grando-2020/</link>
+      <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://lgrando1.github.io/publication/grando-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Procedimento de recarga de baterias de drones utilizando simulação por agentes e equilíbrio de Nash</title>
+      <link>https://lgrando1.github.io/publication/grando2020a/</link>
+      <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://lgrando1.github.io/publication/grando2020a/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
