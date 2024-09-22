@@ -17,8 +17,9 @@
       <link>https://lgrando1.github.io/post/ollama/</link>
       <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://lgrando1.github.io/post/ollama/</guid>
-      <description>&lt;p&gt;Lendo &lt;a href=&#34;https://www.nature.com/articles/d41586-024-02998-y&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;artigo da Nature&lt;/strong&gt;&lt;/a&gt; fiquei preocupado em relação a privacidade e o uso de meus dados quando utilizandos os LLMs, como por exemplo o Chat-GPT, Gemini e o CoPilot. Sem contar que estas ferramentas nescessitam de acesso a internet. Alguns sites como o &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugging Face&lt;/a&gt; permitem testar alguns usos destas ferramentas ferramentas utilizando uma biblioteca para a linguagem Python, como eu já descrevi em &lt;a href=&#34;https://lgrando1.github.io/post/hface/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;uma postagem anterior.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Mas como utilizar estas ferramentas como se fosse abrir um site e conversar com elas? Eu queria algo mais completo e como sou usuário Linux (uso o Pop_OS! 20.04), encontrei este &lt;a href=&#34;https://itsfoss.com/ollama-setup-linux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;post muito bem explicado&lt;/a&gt; de como rodar uma LLM off-line no Linux e resolvi replicar, e conto a experiência aqui neste post.&lt;/p&gt;
+      <description>&lt;p&gt;O recém &lt;a href=&#34;https://www.nature.com/articles/d41586-024-02998-y&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;artigo da Nature&lt;/strong&gt;&lt;/a&gt; trouxe uma discussão sobre o uso de LLMs locais em vez daquelas que utilizamos de forma online como por exemplo o Chat-GPT, Gemini e o CoPilot. A preocupação com aspectos como privacidade e o uso de nossos dados quando utilizandos os LLMs de terceitos, sem contar que estas ferramentas nescessitam de acesso a internet.
+Sites como o &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugging Face&lt;/a&gt; permitem testar alguns usos destas ferramentas utilizando uma biblioteca com a linguagem Python, como eu já descrevi em &lt;a href=&#34;https://lgrando1.github.io/post/hface/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;uma postagem anterior.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Eu queria algo mais completo como um assistente virtual local e como sou usuário Linux (uso o Pop!_OS 20.04), encontrei este &lt;a href=&#34;https://itsfoss.com/ollama-setup-linux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;post muito bem explicado&lt;/a&gt; de como rodar uma LLM de maneira off-line no Linux e então resolvi replicar, e conto esta experiência abaixo.&lt;/p&gt;
 &lt;p&gt;O &lt;a href=&#34;https://ollama.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ollama&lt;/a&gt; é uma ferramenta que facilita o processo de baixar e rodar os modelos LLMs de código aberto. Ele pode ser instalado no Windows, MacOS e o Linux. Apenas seguir o &lt;a href=&#34;https://ollama.com/download&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;procedimento de instalação presente no site deles&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;No meu caso utilizei o comando abaixo, mas recomendo que você siga o procedimento descrito pelo site pois o mesmo pode alterar conforme novas atualizações.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Repetindo: siga o procedimento de instalação conforme descrito no site deles, não este daqui&lt;/strong&gt;.&lt;/p&gt;
@@ -44,10 +45,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;infohw&#34; srcset=&#34;
-               /post/ollama/neofetch_huc57dbd0c962ac1aad17efa80b580855c_61989_e8cff4527c8809eac29d96bc9cf8a763.webp 400w,
+               /post/ollama/neofetch_huc57dbd0c962ac1aad17efa80b580855c_61989_daf0f69daa090140162d0bb870490db6.webp 400w,
                /post/ollama/neofetch_huc57dbd0c962ac1aad17efa80b580855c_61989_e0e7a9606a7a95aaa22244ecc7136c1b.webp 760w,
                /post/ollama/neofetch_huc57dbd0c962ac1aad17efa80b580855c_61989_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://lgrando1.github.io/post/ollama/neofetch_huc57dbd0c962ac1aad17efa80b580855c_61989_e8cff4527c8809eac29d96bc9cf8a763.webp&#34;
+               src=&#34;https://lgrando1.github.io/post/ollama/neofetch_huc57dbd0c962ac1aad17efa80b580855c_61989_daf0f69daa090140162d0bb870490db6.webp&#34;
                width=&#34;626&#34;
                height=&#34;532&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
