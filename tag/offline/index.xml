@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Offline | Leonardo Grando</title>
+    <link>https://lgrando1.github.io/tag/offline/</link>
+      <atom:link href="https://lgrando1.github.io/tag/offline/index.xml" rel="self" type="application/rss+xml" />
+    <description>Offline</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_512x512_fill_lanczos_center_3.png</url>
+      <title>Offline</title>
+      <link>https://lgrando1.github.io/tag/offline/</link>
+    </image>
+    
+    <item>
+      <title>Usando uma Ferramenta LLM no Linux</title>
+      <link>https://lgrando1.github.io/post/ollama/</link>
+      <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://lgrando1.github.io/post/ollama/</guid>
+      <description>&lt;p&gt;Ao ler este &lt;a href=&#34;https://www.nature.com/articles/d41586-024-02998-y&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;artigo da Nature&lt;/strong&gt;&lt;/a&gt; fiquei preocupado, como fica a minha privacidade ao usar LLMs como Chat-GPT, Gemini e o CoPilot. Sem contar que não temos acesso ao códigos destas ferramentas. Sites como &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugging Face&lt;/a&gt; permite testar algumas ferramentas utilizando Python, como eu já descrevi em &lt;a href=&#34;https://lgrando1.github.io/post/hface/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;uma postagem anterior.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Mas queria algo mais completo e como usuário Linux (uso o Pop_OS! 20.04), encontrei este &lt;a href=&#34;https://itsfoss.com/ollama-setup-linux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;post muito bem explicado&lt;/a&gt; de como rodar uma LLM Offiline no Linux e resolvi replicar, e conto a experiência aqui neste post.&lt;/p&gt;
+&lt;p&gt;Escolhi o &lt;a href=&#34;https://ollama.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ollama&lt;/a&gt; como ferramenta para baixar e rodar os modelos LLMs de código aberto. Ele possui um processo de instalação para Windows, MacOS e o Linux. Apenas seguir o &lt;a href=&#34;https://ollama.com/download&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;procedimento de instalação presente no site deles&lt;/a&gt;. Mas vou testar outros modelos (viva ao Open-Source!!!!) como o Phi3.5 da Microsoft.&lt;/p&gt;
+&lt;p&gt;No meu caso foi o comando abaixo, mas recomendo que você siga o procedimento descrito pelo site pois o mesmo pode alterar conforme novas atualizações.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Repetindo: siga o procedimento de instalação conforme descrito no site deles, não este daqui&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -fsSL https://ollama.com/install.sh &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sh 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;O código acima irá baixar o Ollama em sua máquina e rodar o script de instalação. Você pode auditar o script de &lt;a href=&#34;https://github.com/ollama/ollama/blob/main/scripts/install.sh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;instalação aqui&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A minha máquina é um notebook Acer Nitro que adquiri no final de 2020. Ele possui um Core i5 9300H, 16 GB de RAM e uma GPU Nvidia Geforce 1650. O que fica interessante, pois o Ollama reconheceu a GPU.&lt;/p&gt;
+&lt;p&gt;Na &lt;a href=&#34;https://itsfoss.com/ollama-setup-linux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;postagem que usei como referência&lt;/a&gt; para instalar, o autor descreve que o Notebook dele não possui uma GPU discreta, o que influenciou no desempenho. E o modelo escolhido vai também influenciar.&lt;/p&gt;
+&lt;p&gt;Hora de testar se o Ollama está rodando, num browser digite:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Testando o Ollama no Browser&#34; srcset=&#34;
+               /post/ollama/ollamabrowser_hu80b020927a40b57eb1a0e755609e6b5c_5448_ac09abb31baa59c3a17be38cea8a599d.webp 400w,
+               /post/ollama/ollamabrowser_hu80b020927a40b57eb1a0e755609e6b5c_5448_717c5e0842dace38e55630e53f2bd880.webp 760w,
+               /post/ollama/ollamabrowser_hu80b020927a40b57eb1a0e755609e6b5c_5448_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/ollama/ollamabrowser_hu80b020927a40b57eb1a0e755609e6b5c_5448_ac09abb31baa59c3a17be38cea8a599d.webp&#34;
+               width=&#34;306&#34;
+               height=&#34;111&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Aqui mostrou que está funcionando.&lt;/p&gt;
+&lt;p&gt;Agora é hora de baixar o modelo LLM. No &lt;a href=&#34;https://ollama.com/library&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;site&lt;/a&gt; existe vários modelos. Já testei o llama3.1. Este &lt;a href=&#34;https://ollama.com/library/llama3.1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;modelo desenvolvido pela Meta&lt;/a&gt; e que possui três níveis de parâmetros 8, 70 e 405 bilhões de parâmetros. Acabei escolhendo o modelo de 8B. São aproximadamente 4.7 GB utilizado de armazenamento. Mas ai fica o critério de cada um&lt;/p&gt;
+&lt;p&gt;Para dar um &amp;ldquo;pull&amp;rdquo; em um modelo LLM desejado, utiliza-se o comando:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama pull &amp;lt;Nome_da_LLM&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Como teste para esta postagem vou baixar o modelo &lt;a href=&#34;https://ollama.com/library/phi3.5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;phi3.5 da Microsoft&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama pull phi3.5
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;phi instalado&#34; srcset=&#34;
+               /post/ollama/phi3_hu4521b4dd586ea2a9b9782a51cff3b5b0_38614_52705a8b42c9db27ffb2388f5986e5ae.webp 400w,
+               /post/ollama/phi3_hu4521b4dd586ea2a9b9782a51cff3b5b0_38614_d91c693f3425617963bb94a2ecab009c.webp 760w,
+               /post/ollama/phi3_hu4521b4dd586ea2a9b9782a51cff3b5b0_38614_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/ollama/phi3_hu4521b4dd586ea2a9b9782a51cff3b5b0_38614_52705a8b42c9db27ffb2388f5986e5ae.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;213&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Agora vamos &lt;strong&gt;listar&lt;/strong&gt; as imagens que estão presentes no seu computador.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama list
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;LLM instaladas&#34; srcset=&#34;
+               /post/ollama/ollamalist_hu49f033c139ceae7bbbe46f6319b2a075_18154_2a1604f69fde0f35f72685ae79b87aaa.webp 400w,
+               /post/ollama/ollamalist_hu49f033c139ceae7bbbe46f6319b2a075_18154_d6645b5a7868aa6685f360d87c1bfc76.webp 760w,
+               /post/ollama/ollamalist_hu49f033c139ceae7bbbe46f6319b2a075_18154_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/ollama/ollamalist_hu49f033c139ceae7bbbe46f6319b2a075_18154_2a1604f69fde0f35f72685ae79b87aaa.webp&#34;
+               width=&#34;504&#34;
+               height=&#34;182&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Para &lt;strong&gt;rodar&lt;/strong&gt; uma das LLMs com o código:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama run &amp;lt;Nome_da_LLM&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;No caso da Phi3&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama run phi3.5
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Mas antes de tudo para garantir que não ocorre comunicação com a internet, já que é o motivo deste post:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Desligando o WiFi&#34; srcset=&#34;
+               /post/ollama/wifi_hu0518b1696c86dec125af7946952d8ffb_11007_f619ccb51aa24483439161d2913aca46.webp 400w,
+               /post/ollama/wifi_hu0518b1696c86dec125af7946952d8ffb_11007_21da799eb1e940cdb3ae4d8e3e025a8f.webp 760w,
+               /post/ollama/wifi_hu0518b1696c86dec125af7946952d8ffb_11007_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/ollama/wifi_hu0518b1696c86dec125af7946952d8ffb_11007_f619ccb51aa24483439161d2913aca46.webp&#34;
+               width=&#34;736&#34;
+               height=&#34;255&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Aqui vou pedir para que ele me gere um código Python para connectar a uma base do MySQL:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Exemplo de Prompt&#34; srcset=&#34;
+               /post/ollama/exemplophi_hua192235b4453e72befac9f1c824da6f4_121326_8a5d45d3857871cd2450e252e9b3b157.webp 400w,
+               /post/ollama/exemplophi_hua192235b4453e72befac9f1c824da6f4_121326_8caf1b0bbf85d5d4893be3aced9650a2.webp 760w,
+               /post/ollama/exemplophi_hua192235b4453e72befac9f1c824da6f4_121326_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/ollama/exemplophi_hua192235b4453e72befac9f1c824da6f4_121326_8a5d45d3857871cd2450e252e9b3b157.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;708&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Como visto, estou utilizando o terminal para conversar com a LLM, mas existem formas de conversar via interface gráfica, que fica para um próximo post.&lt;/p&gt;
+&lt;p&gt;Utilizando o utilitário Nvidia-smi é possivel ver que ele está utilizando a GPU&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Uso GPU&#34; srcset=&#34;
+               /post/ollama/nvidia_hubc3997401dc88a6996c26f54a459afaf_41310_98f0f646c268241808fa529e6edb22a6.webp 400w,
+               /post/ollama/nvidia_hubc3997401dc88a6996c26f54a459afaf_41310_20e94217650cb76e36823c727e3031ae.webp 760w,
+               /post/ollama/nvidia_hubc3997401dc88a6996c26f54a459afaf_41310_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/ollama/nvidia_hubc3997401dc88a6996c26f54a459afaf_41310_98f0f646c268241808fa529e6edb22a6.webp&#34;
+               width=&#34;584&#34;
+               height=&#34;497&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;E não ficou &amp;ldquo;tão pesado&amp;rdquo; em relação a CPU e ao uso de memória RAM, Lembrando que o Phi3.5 é um modelo particularmente pequeno. Fica um exemplo de uso durante uma inferencia:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Durante Inferencia&#34; srcset=&#34;
+               /post/ollama/inferencia_hu3b6af082a6dbe67da50599503b38f4b2_257880_8d493d241e88bed9925f02aac390d399.webp 400w,
+               /post/ollama/inferencia_hu3b6af082a6dbe67da50599503b38f4b2_257880_70f92590570ac49bb4f09ae10b0d960f.webp 760w,
+               /post/ollama/inferencia_hu3b6af082a6dbe67da50599503b38f4b2_257880_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/ollama/inferencia_hu3b6af082a6dbe67da50599503b38f4b2_257880_8d493d241e88bed9925f02aac390d399.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;426&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Para &lt;em&gt;sair&lt;/em&gt;, basta digitar no prompt:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/bye
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;bye&#34; srcset=&#34;
+               /post/ollama/bye_huea65a25b44a75455c77df55c2e60a2dd_4744_14ba64c8fba48d1dd9817ed23edb5451.webp 400w,
+               /post/ollama/bye_huea65a25b44a75455c77df55c2e60a2dd_4744_aae2e8326aec6bfc92bb95f4ee43eb92.webp 760w,
+               /post/ollama/bye_huea65a25b44a75455c77df55c2e60a2dd_4744_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/ollama/bye_huea65a25b44a75455c77df55c2e60a2dd_4744_14ba64c8fba48d1dd9817ed23edb5451.webp&#34;
+               width=&#34;229&#34;
+               height=&#34;62&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Para &lt;em&gt;deletar uma das LLMs&lt;/em&gt;, peço desculpas na imagem abaixo por que eu digitei um comando errado, por isto ocultei o mesmo, para evitar confusão.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama rm &amp;lt;nome_da_LLM&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Deletando um LLM&#34; srcset=&#34;
+               /post/ollama/delete_hubafa5203375a5bde6d5718029e372e93_32239_597180a4a0827ea1566da51c787c39a1.webp 400w,
+               /post/ollama/delete_hubafa5203375a5bde6d5718029e372e93_32239_0055384a32f8b9e835b6229d359262d6.webp 760w,
+               /post/ollama/delete_hubafa5203375a5bde6d5718029e372e93_32239_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/ollama/delete_hubafa5203375a5bde6d5718029e372e93_32239_597180a4a0827ea1566da51c787c39a1.webp&#34;
+               width=&#34;477&#34;
+               height=&#34;333&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;No &lt;a href=&#34;https://itsfoss.com/ollama-setup-linux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tutorial que utilizei como base&lt;/a&gt; para este experimento é mais completo, pois ensina como usar a interface gráfica com Docker e como desinstalar o Ollama. E também preciso testar como cada modelo se comporta para cada uso, mas fica para um próximo post.&lt;/p&gt;
+&lt;p&gt;Sucesso a todos!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

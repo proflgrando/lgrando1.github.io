@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: September 22, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.ee81bf7a110c56bd976b7e46cebf897e.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Leonardo Grando" />
+
+
+
+
+
+  
+
+<meta name="description" content="Como rodar uma Ferramenta LLM Off-line no Linux" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://lgrando1.github.io/post/ollama/" />
+<link rel="canonical" href="https://lgrando1.github.io/post/ollama/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#707070" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_512x512_fill_lanczos_center_3.png" />
+<meta property="og:site_name" content="Leonardo Grando" />
+<meta property="og:url" content="https://lgrando1.github.io/post/ollama/" />
+<meta property="og:title" content="Usando uma Ferramenta LLM no Linux | Leonardo Grando" />
+<meta property="og:description" content="Como rodar uma Ferramenta LLM Off-line no Linux" /><meta property="og:image" content="https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2024-09-22T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2024-09-22T12:09:20-03:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lgrando1.github.io/post/ollama/"
+  },
+  "headline": "Usando uma Ferramenta LLM no Linux",
+  
+  "datePublished": "2024-09-22T00:00:00Z",
+  "dateModified": "2024-09-22T12:09:20-03:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Leonardo Grando"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Leonardo Grando",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Como rodar uma Ferramenta LLM Off-line no Linux"
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Usando uma Ferramenta LLM no Linux | Leonardo Grando</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="ddea2163018f2b9dbff519740e00976c" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.253edc45b3a8a047e59a8677cf8e2715.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Leonardo Grando</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Leonardo Grando</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/event"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication/"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/uploads/resumeEN.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://www.linkedin.com/in/lgrando123" data-toggle="tooltip" data-placement="bottom" title="Follow me on LinkedIn" target="_blank" rel="noopener" aria-label="Follow me on LinkedIn">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Usando uma Ferramenta LLM no Linux</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Sep 22, 2024
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>Ao ler este <a href="https://www.nature.com/articles/d41586-024-02998-y" target="_blank" rel="noopener"><strong>artigo da Nature</strong></a> fiquei preocupado, como fica a minha privacidade ao usar LLMs como Chat-GPT, Gemini e o CoPilot. Sem contar que não temos acesso ao códigos destas ferramentas. Sites como <a href="https://huggingface.co/" target="_blank" rel="noopener">Hugging Face</a> permite testar algumas ferramentas utilizando Python, como eu já descrevi em <a href="https://lgrando1.github.io/post/hface/" target="_blank" rel="noopener">uma postagem anterior.</a></p>
+<p>Mas queria algo mais completo e como usuário Linux (uso o Pop_OS! 20.04), encontrei este <a href="https://itsfoss.com/ollama-setup-linux/" target="_blank" rel="noopener">post muito bem explicado</a> de como rodar uma LLM Offiline no Linux e resolvi replicar, e conto a experiência aqui neste post.</p>
+<p>Escolhi o <a href="https://ollama.com/" target="_blank" rel="noopener">Ollama</a> como ferramenta para baixar e rodar os modelos LLMs de código aberto. Ele possui um processo de instalação para Windows, MacOS e o Linux. Apenas seguir o <a href="https://ollama.com/download" target="_blank" rel="noopener">procedimento de instalação presente no site deles</a>. Mas vou testar outros modelos (viva ao Open-Source!!!!) como o Phi3.5 da Microsoft.</p>
+<p>No meu caso foi o comando abaixo, mas recomendo que você siga o procedimento descrito pelo site pois o mesmo pode alterar conforme novas atualizações.</p>
+<p><strong>Repetindo: siga o procedimento de instalação conforme descrito no site deles, não este daqui</strong>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -fsSL https://ollama.com/install.sh <span class="p">|</span> sh 
+</span></span></code></pre></div><p>O código acima irá baixar o Ollama em sua máquina e rodar o script de instalação. Você pode auditar o script de <a href="https://github.com/ollama/ollama/blob/main/scripts/install.sh" target="_blank" rel="noopener">instalação aqui</a></p>
+<p>A minha máquina é um notebook Acer Nitro que adquiri no final de 2020. Ele possui um Core i5 9300H, 16 GB de RAM e uma GPU Nvidia Geforce 1650. O que fica interessante, pois o Ollama reconheceu a GPU.</p>
+<p>Na <a href="https://itsfoss.com/ollama-setup-linux/" target="_blank" rel="noopener">postagem que usei como referência</a> para instalar, o autor descreve que o Notebook dele não possui uma GPU discreta, o que influenciou no desempenho. E o modelo escolhido vai também influenciar.</p>
+<p>Hora de testar se o Ollama está rodando, num browser digite:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Testando o Ollama no Browser" srcset="
+               /post/ollama/ollamabrowser_hu80b020927a40b57eb1a0e755609e6b5c_5448_ac09abb31baa59c3a17be38cea8a599d.webp 400w,
+               /post/ollama/ollamabrowser_hu80b020927a40b57eb1a0e755609e6b5c_5448_717c5e0842dace38e55630e53f2bd880.webp 760w,
+               /post/ollama/ollamabrowser_hu80b020927a40b57eb1a0e755609e6b5c_5448_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/ollama/ollamabrowser_hu80b020927a40b57eb1a0e755609e6b5c_5448_ac09abb31baa59c3a17be38cea8a599d.webp"
+               width="306"
+               height="111"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Aqui mostrou que está funcionando.</p>
+<p>Agora é hora de baixar o modelo LLM. No <a href="https://ollama.com/library" target="_blank" rel="noopener">site</a> existe vários modelos. Já testei o llama3.1. Este <a href="https://ollama.com/library/llama3.1" target="_blank" rel="noopener">modelo desenvolvido pela Meta</a> e que possui três níveis de parâmetros 8, 70 e 405 bilhões de parâmetros. Acabei escolhendo o modelo de 8B. São aproximadamente 4.7 GB utilizado de armazenamento. Mas ai fica o critério de cada um</p>
+<p>Para dar um &ldquo;pull&rdquo; em um modelo LLM desejado, utiliza-se o comando:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama pull &lt;Nome_da_LLM&gt;
+</span></span></code></pre></div><p>Como teste para esta postagem vou baixar o modelo <a href="https://ollama.com/library/phi3.5" target="_blank" rel="noopener">phi3.5 da Microsoft</a>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama pull phi3.5
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="phi instalado" srcset="
+               /post/ollama/phi3_hu4521b4dd586ea2a9b9782a51cff3b5b0_38614_52705a8b42c9db27ffb2388f5986e5ae.webp 400w,
+               /post/ollama/phi3_hu4521b4dd586ea2a9b9782a51cff3b5b0_38614_d91c693f3425617963bb94a2ecab009c.webp 760w,
+               /post/ollama/phi3_hu4521b4dd586ea2a9b9782a51cff3b5b0_38614_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/ollama/phi3_hu4521b4dd586ea2a9b9782a51cff3b5b0_38614_52705a8b42c9db27ffb2388f5986e5ae.webp"
+               width="760"
+               height="213"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Agora vamos <strong>listar</strong> as imagens que estão presentes no seu computador.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama list
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="LLM instaladas" srcset="
+               /post/ollama/ollamalist_hu49f033c139ceae7bbbe46f6319b2a075_18154_2a1604f69fde0f35f72685ae79b87aaa.webp 400w,
+               /post/ollama/ollamalist_hu49f033c139ceae7bbbe46f6319b2a075_18154_d6645b5a7868aa6685f360d87c1bfc76.webp 760w,
+               /post/ollama/ollamalist_hu49f033c139ceae7bbbe46f6319b2a075_18154_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/ollama/ollamalist_hu49f033c139ceae7bbbe46f6319b2a075_18154_2a1604f69fde0f35f72685ae79b87aaa.webp"
+               width="504"
+               height="182"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Para <strong>rodar</strong> uma das LLMs com o código:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama run &lt;Nome_da_LLM&gt;
+</span></span></code></pre></div><p>No caso da Phi3</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama run phi3.5
+</span></span></code></pre></div><p>Mas antes de tudo para garantir que não ocorre comunicação com a internet, já que é o motivo deste post:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Desligando o WiFi" srcset="
+               /post/ollama/wifi_hu0518b1696c86dec125af7946952d8ffb_11007_f619ccb51aa24483439161d2913aca46.webp 400w,
+               /post/ollama/wifi_hu0518b1696c86dec125af7946952d8ffb_11007_21da799eb1e940cdb3ae4d8e3e025a8f.webp 760w,
+               /post/ollama/wifi_hu0518b1696c86dec125af7946952d8ffb_11007_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/ollama/wifi_hu0518b1696c86dec125af7946952d8ffb_11007_f619ccb51aa24483439161d2913aca46.webp"
+               width="736"
+               height="255"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Aqui vou pedir para que ele me gere um código Python para connectar a uma base do MySQL:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Exemplo de Prompt" srcset="
+               /post/ollama/exemplophi_hua192235b4453e72befac9f1c824da6f4_121326_8a5d45d3857871cd2450e252e9b3b157.webp 400w,
+               /post/ollama/exemplophi_hua192235b4453e72befac9f1c824da6f4_121326_8caf1b0bbf85d5d4893be3aced9650a2.webp 760w,
+               /post/ollama/exemplophi_hua192235b4453e72befac9f1c824da6f4_121326_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/ollama/exemplophi_hua192235b4453e72befac9f1c824da6f4_121326_8a5d45d3857871cd2450e252e9b3b157.webp"
+               width="760"
+               height="708"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Como visto, estou utilizando o terminal para conversar com a LLM, mas existem formas de conversar via interface gráfica, que fica para um próximo post.</p>
+<p>Utilizando o utilitário Nvidia-smi é possivel ver que ele está utilizando a GPU</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Uso GPU" srcset="
+               /post/ollama/nvidia_hubc3997401dc88a6996c26f54a459afaf_41310_98f0f646c268241808fa529e6edb22a6.webp 400w,
+               /post/ollama/nvidia_hubc3997401dc88a6996c26f54a459afaf_41310_20e94217650cb76e36823c727e3031ae.webp 760w,
+               /post/ollama/nvidia_hubc3997401dc88a6996c26f54a459afaf_41310_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/ollama/nvidia_hubc3997401dc88a6996c26f54a459afaf_41310_98f0f646c268241808fa529e6edb22a6.webp"
+               width="584"
+               height="497"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>E não ficou &ldquo;tão pesado&rdquo; em relação a CPU e ao uso de memória RAM, Lembrando que o Phi3.5 é um modelo particularmente pequeno. Fica um exemplo de uso durante uma inferencia:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Durante Inferencia" srcset="
+               /post/ollama/inferencia_hu3b6af082a6dbe67da50599503b38f4b2_257880_8d493d241e88bed9925f02aac390d399.webp 400w,
+               /post/ollama/inferencia_hu3b6af082a6dbe67da50599503b38f4b2_257880_70f92590570ac49bb4f09ae10b0d960f.webp 760w,
+               /post/ollama/inferencia_hu3b6af082a6dbe67da50599503b38f4b2_257880_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/ollama/inferencia_hu3b6af082a6dbe67da50599503b38f4b2_257880_8d493d241e88bed9925f02aac390d399.webp"
+               width="760"
+               height="426"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Para <em>sair</em>, basta digitar no prompt:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/bye
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="bye" srcset="
+               /post/ollama/bye_huea65a25b44a75455c77df55c2e60a2dd_4744_14ba64c8fba48d1dd9817ed23edb5451.webp 400w,
+               /post/ollama/bye_huea65a25b44a75455c77df55c2e60a2dd_4744_aae2e8326aec6bfc92bb95f4ee43eb92.webp 760w,
+               /post/ollama/bye_huea65a25b44a75455c77df55c2e60a2dd_4744_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/ollama/bye_huea65a25b44a75455c77df55c2e60a2dd_4744_14ba64c8fba48d1dd9817ed23edb5451.webp"
+               width="229"
+               height="62"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Para <em>deletar uma das LLMs</em>, peço desculpas na imagem abaixo por que eu digitei um comando errado, por isto ocultei o mesmo, para evitar confusão.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama rm &lt;nome_da_LLM&gt;
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Deletando um LLM" srcset="
+               /post/ollama/delete_hubafa5203375a5bde6d5718029e372e93_32239_597180a4a0827ea1566da51c787c39a1.webp 400w,
+               /post/ollama/delete_hubafa5203375a5bde6d5718029e372e93_32239_0055384a32f8b9e835b6229d359262d6.webp 760w,
+               /post/ollama/delete_hubafa5203375a5bde6d5718029e372e93_32239_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/ollama/delete_hubafa5203375a5bde6d5718029e372e93_32239_597180a4a0827ea1566da51c787c39a1.webp"
+               width="477"
+               height="333"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>No <a href="https://itsfoss.com/ollama-setup-linux/" target="_blank" rel="noopener">tutorial que utilizei como base</a> para este experimento é mais completo, pois ensina como usar a interface gráfica com Docker e como desinstalar o Ollama. E também preciso testar como cada modelo se comporta para cada uso, mas fica para um próximo post.</p>
+<p>Sucesso a todos!</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/gpt/">GPT</a>
+  
+  <a class="badge badge-light" href="/tag/ollama/">Ollama</a>
+  
+  <a class="badge badge-light" href="/tag/prompt/">prompt</a>
+  
+  <a class="badge badge-light" href="/tag/enginnering/">enginnering</a>
+  
+  <a class="badge badge-light" href="/tag/ia/">IA</a>
+  
+  <a class="badge badge-light" href="/tag/ai/">AI</a>
+  
+  <a class="badge badge-light" href="/tag/offline/">Offline</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flgrando1.github.io%2Fpost%2Follama%2F&amp;text=Usando&#43;uma&#43;Ferramenta&#43;LLM&#43;no&#43;Linux" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Flgrando1.github.io%2Fpost%2Follama%2F&amp;t=Usando&#43;uma&#43;Ferramenta&#43;LLM&#43;no&#43;Linux" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Usando%20uma%20Ferramenta%20LLM%20no%20Linux&amp;body=https%3A%2F%2Flgrando1.github.io%2Fpost%2Follama%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Flgrando1.github.io%2Fpost%2Follama%2F&amp;title=Usando&#43;uma&#43;Ferramenta&#43;LLM&#43;no&#43;Linux" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Usando&#43;uma&#43;Ferramenta&#43;LLM&#43;no&#43;Linux%20https%3A%2F%2Flgrando1.github.io%2Fpost%2Follama%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Flgrando1.github.io%2Fpost%2Follama%2F&amp;title=Usando&#43;uma&#43;Ferramenta&#43;LLM&#43;no&#43;Linux" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://lgrando1.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu2eff65d577e70f5774d3fc177b8295d0_20417_270x270_fill_q75_lanczos_center.jpg" alt="Leonardo Grando"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://lgrando1.github.io/">Leonardo Grando</a></h5>
+      <h6 class="card-subtitle">Technology Ph.D. Candidate</h6>
+      <p class="card-text">My research interests include Agent-Based Simulation, Artificial Intelligence, Machine Learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/lgrando1" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/lgrando123" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=cXC9OsoAAAAJ&amp;hl" target="_blank" rel="noopener">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Leonardo-Grando" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0002-0448-209X" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://lgrando1.github.io/index.xml" target="_blank" rel="noopener">
+        <i class="fas fa-rss"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2024 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.e8ee06ba8371980ffde659871dd593b0.js"></script>
+
+
+
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
