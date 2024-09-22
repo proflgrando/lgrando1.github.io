@@ -314,7 +314,7 @@
 <meta property="twitter:image" content="https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_512x512_fill_lanczos_center_3.png" />
 <meta property="og:site_name" content="Leonardo Grando" />
 <meta property="og:url" content="https://lgrando1.github.io/post/ollama/" />
-<meta property="og:title" content="Usando uma Ferramenta LLM no Linux de forma offline | Leonardo Grando" />
+<meta property="og:title" content="Usando uma Ferramenta LLM no Linux de Forma Offline | Leonardo Grando" />
 <meta property="og:description" content="Como rodar uma Ferramenta LLM Off-line no Linux" /><meta property="og:image" content="https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
 
   
@@ -352,7 +352,7 @@
     "@type": "WebPage",
     "@id": "https://lgrando1.github.io/post/ollama/"
   },
-  "headline": "Usando uma Ferramenta LLM no Linux de forma offline",
+  "headline": "Usando uma Ferramenta LLM no Linux de Forma Offline",
   
   "datePublished": "2024-09-22T00:00:00Z",
   "dateModified": "2024-09-22T12:09:20-03:00",
@@ -392,7 +392,7 @@
 
 
   
-  <title>Usando uma Ferramenta LLM no Linux de forma offline | Leonardo Grando</title>
+  <title>Usando uma Ferramenta LLM no Linux de Forma Offline | Leonardo Grando</title>
 
   
   
@@ -801,7 +801,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Usando uma Ferramenta LLM no Linux de forma offline</h1>
+  <h1>Usando uma Ferramenta LLM no Linux de Forma Offline</h1>
 
   
 
@@ -831,7 +831,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    4 min read
   </span>
   
 
@@ -859,10 +859,10 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>Ao ler este <a href="https://www.nature.com/articles/d41586-024-02998-y" target="_blank" rel="noopener"><strong>artigo da Nature</strong></a> fiquei preocupado, como fica a minha privacidade ao usar LLMs como Chat-GPT, Gemini e o CoPilot. Sem contar que não temos acesso ao códigos destas ferramentas. Sites como <a href="https://huggingface.co/" target="_blank" rel="noopener">Hugging Face</a> permite testar algumas ferramentas utilizando Python, como eu já descrevi em <a href="https://lgrando1.github.io/post/hface/" target="_blank" rel="noopener">uma postagem anterior.</a></p>
-<p>Mas queria algo mais completo e como usuário Linux (uso o Pop_OS! 20.04), encontrei este <a href="https://itsfoss.com/ollama-setup-linux/" target="_blank" rel="noopener">post muito bem explicado</a> de como rodar uma LLM Offiline no Linux e resolvi replicar, e conto a experiência aqui neste post.</p>
-<p>Escolhi o <a href="https://ollama.com/" target="_blank" rel="noopener">Ollama</a> como ferramenta para baixar e rodar os modelos LLMs de código aberto. Ele possui um processo de instalação para Windows, MacOS e o Linux. Apenas seguir o <a href="https://ollama.com/download" target="_blank" rel="noopener">procedimento de instalação presente no site deles</a>. Mas vou testar outros modelos (viva ao Open-Source!!!!) como o Phi3.5 da Microsoft.</p>
-<p>No meu caso foi o comando abaixo, mas recomendo que você siga o procedimento descrito pelo site pois o mesmo pode alterar conforme novas atualizações.</p>
+      <p>Lendo <a href="https://www.nature.com/articles/d41586-024-02998-y" target="_blank" rel="noopener"><strong>artigo da Nature</strong></a> fiquei preocupado em relação a privacidade e o uso de meus dados quando utilizandos os LLMs, como por exemplo o Chat-GPT, Gemini e o CoPilot. Sem contar que estas ferramentas nescessitam de acesso a internet. Alguns sites como o <a href="https://huggingface.co/" target="_blank" rel="noopener">Hugging Face</a> permitem testar alguns usos destas ferramentas ferramentas utilizando uma biblioteca para a linguagem Python, como eu já descrevi em <a href="https://lgrando1.github.io/post/hface/" target="_blank" rel="noopener">uma postagem anterior.</a></p>
+<p>Mas como utilizar estas ferramentas como se fosse abrir um site e conversar com elas? Eu queria algo mais completo e como sou usuário Linux (uso o Pop_OS! 20.04), encontrei este <a href="https://itsfoss.com/ollama-setup-linux/" target="_blank" rel="noopener">post muito bem explicado</a> de como rodar uma LLM off-line no Linux e resolvi replicar, e conto a experiência aqui neste post.</p>
+<p>O <a href="https://ollama.com/" target="_blank" rel="noopener">Ollama</a> é uma ferramenta que facilita o processo de baixar e rodar os modelos LLMs de código aberto. Ele pode ser instalado no Windows, MacOS e o Linux. Apenas seguir o <a href="https://ollama.com/download" target="_blank" rel="noopener">procedimento de instalação presente no site deles</a>.</p>
+<p>No meu caso utilizei o comando abaixo, mas recomendo que você siga o procedimento descrito pelo site pois o mesmo pode alterar conforme novas atualizações.</p>
 <p><strong>Repetindo: siga o procedimento de instalação conforme descrito no site deles, não este daqui</strong>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -fsSL https://ollama.com/install.sh <span class="p">|</span> sh 
 </span></span></code></pre></div><p>O código acima irá baixar o Ollama em sua máquina e rodar o script de instalação. Você pode auditar o script de <a href="https://github.com/ollama/ollama/blob/main/scripts/install.sh" target="_blank" rel="noopener">instalação aqui</a></p>
@@ -898,10 +898,10 @@
   </div></figure>
 </p>
 <p>Aqui mostrou que está funcionando.</p>
-<p>Agora é hora de baixar o modelo LLM. No <a href="https://ollama.com/library" target="_blank" rel="noopener">site</a> existe vários modelos. Já testei o llama3.1. Este <a href="https://ollama.com/library/llama3.1" target="_blank" rel="noopener">modelo desenvolvido pela Meta</a> e que possui três níveis de parâmetros 8, 70 e 405 bilhões de parâmetros. Acabei escolhendo o modelo de 8B. São aproximadamente 4.7 GB utilizado de armazenamento. Mas ai fica o critério de cada um</p>
+<p>Agora é hora de baixar o modelo LLM. No <a href="https://ollama.com/library" target="_blank" rel="noopener">site</a> existe vários modelos. Já testei o llama3.1. Este <a href="https://ollama.com/library/llama3.1" target="_blank" rel="noopener">modelo desenvolvido pela Meta</a> e que possui três níveis de parâmetros 8, 70 e 405 bilhões de parâmetros. Acabei escolhendo o modelo de 8B. São aproximadamente 4.7 GB utilizado de armazenamento. Mas ai fica o critério de cada um. Para este post vou apresentar o processo de instalação do modelo <a href="https://ollama.com/library/phi3.5" target="_blank" rel="noopener">phi3.5 da Microsoft</a>.</p>
 <p>Para dar um &ldquo;pull&rdquo; em um modelo LLM desejado, utiliza-se o comando:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama pull &lt;Nome_da_LLM&gt;
-</span></span></code></pre></div><p>Como teste para esta postagem vou baixar o modelo <a href="https://ollama.com/library/phi3.5" target="_blank" rel="noopener">phi3.5 da Microsoft</a>.</p>
+</span></span></code></pre></div><p>Então para baixar e instalar o modelo <a href="https://ollama.com/library/phi3.5" target="_blank" rel="noopener">phi3.5 da Microsoft</a>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama pull phi3.5
 </span></span></code></pre></div><p>
 
@@ -965,7 +965,7 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama run &lt;Nome_da_LLM&gt;
 </span></span></code></pre></div><p>No caso da Phi3</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama run phi3.5
-</span></span></code></pre></div><p>Mas antes de tudo para garantir que não ocorre comunicação com a internet, já que é o motivo deste post:</p>
+</span></span></code></pre></div><p>Mas antes de tudo, para fins de demostração, vou garantir que não está ocorrendo comunicação com a internet:</p>
 <p>
 
 
@@ -1023,8 +1023,8 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Como visto, estou utilizando o terminal para conversar com a LLM, mas existem formas de conversar via interface gráfica, que fica para um próximo post.</p>
-<p>Utilizando o utilitário Nvidia-smi é possivel ver que ele está utilizando a GPU</p>
+<p>Não vou me extender na utilização dele ou de outro modelo, mas é possível utilizar o próprio terminal para conversar com a LLM, e existem formas de conversar via interface gráfica, o que fica para um próximo post.</p>
+<p>Agora para avaliar o uso computacional da minha máquina, vou utilizando o utilitário Nvidia-smi em que é possivel ver o quanto ele está utilizando os recursos da GPU</p>
 <p>
 
 
@@ -1053,7 +1053,7 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>E não ficou &ldquo;tão pesado&rdquo; em relação a CPU e ao uso de memória RAM, Lembrando que o Phi3.5 é um modelo particularmente pequeno. Fica um exemplo de uso durante uma inferencia:</p>
+<p>E em relação ao uso computacional da CPU e do consumo de memória RAM ele não ficou &ldquo;tão pesado&rdquo;, ,as lembrando que o Phi3.5 é um modelo particularmente pequeno. O print abaixo apresenta o consumo computacional durante uma inferencia:</p>
 <p>
 
 
@@ -1082,7 +1082,7 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Para <em>sair</em>, basta digitar no prompt:</p>
+<p>Agora para <em>sair</em> do Ollama, basta digitar no prompt:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/bye
 </span></span></code></pre></div><p>
 
@@ -1112,7 +1112,8 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Para <em>deletar uma das LLMs</em>, peço desculpas na imagem abaixo por que eu digitei um comando errado, por isto ocultei o mesmo, para evitar confusão.</p>
+<p>E para gerenciar e <em>deletar os modelos LLMs</em>, é possivel listar e solicitar a remoção da imagem.
+PS: peço desculpas na imagem abaixo por que eu digitei um comando errado, por isto ocultei o mesmo, para evitar confusão.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama rm &lt;nome_da_LLM&gt;
 </span></span></code></pre></div><p>
 
@@ -1142,7 +1143,7 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>No <a href="https://itsfoss.com/ollama-setup-linux/" target="_blank" rel="noopener">tutorial que utilizei como base</a> para este experimento é mais completo, pois ensina como usar a interface gráfica com Docker e como desinstalar o Ollama. E também preciso testar como cada modelo se comporta para cada uso, mas fica para um próximo post.</p>
+<p>Este tutorial aborda apenas alguns aspectos do uso do Ollama, o <a href="https://itsfoss.com/ollama-setup-linux/" target="_blank" rel="noopener">tutorial que serviu como base</a> para este experimento possui mais informações, como utilizar a interface gráfica com Docker e também como desinstalar o Ollama. Assim você tem um assistente local para lhe ajudar em tarefas simples. Ontem eu testei o uso do Llamma 3.1 para criar um banco de dados no MySQL e para implementar um código Python para interagir com este banco de dados e o código proposto funcionou. Mas é preciso testar mais.</p>
 <p>Sucesso a todos!</p>
 
     </div>
@@ -1192,7 +1193,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flgrando1.github.io%2Fpost%2Follama%2F&amp;text=Usando&#43;uma&#43;Ferramenta&#43;LLM&#43;no&#43;Linux&#43;de&#43;forma&#43;offline" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flgrando1.github.io%2Fpost%2Follama%2F&amp;text=Usando&#43;uma&#43;Ferramenta&#43;LLM&#43;no&#43;Linux&#43;de&#43;Forma&#43;Offline" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -1209,7 +1210,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Flgrando1.github.io%2Fpost%2Follama%2F&amp;t=Usando&#43;uma&#43;Ferramenta&#43;LLM&#43;no&#43;Linux&#43;de&#43;forma&#43;offline" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Flgrando1.github.io%2Fpost%2Follama%2F&amp;t=Usando&#43;uma&#43;Ferramenta&#43;LLM&#43;no&#43;Linux&#43;de&#43;Forma&#43;Offline" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -1228,7 +1229,7 @@
         
       
       <li>
-        <a href="mailto:?subject=Usando%20uma%20Ferramenta%20LLM%20no%20Linux%20de%20forma%20offline&amp;body=https%3A%2F%2Flgrando1.github.io%2Fpost%2Follama%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=Usando%20uma%20Ferramenta%20LLM%20no%20Linux%20de%20Forma%20Offline&amp;body=https%3A%2F%2Flgrando1.github.io%2Fpost%2Follama%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1245,7 +1246,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Flgrando1.github.io%2Fpost%2Follama%2F&amp;title=Usando&#43;uma&#43;Ferramenta&#43;LLM&#43;no&#43;Linux&#43;de&#43;forma&#43;offline" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Flgrando1.github.io%2Fpost%2Follama%2F&amp;title=Usando&#43;uma&#43;Ferramenta&#43;LLM&#43;no&#43;Linux&#43;de&#43;Forma&#43;Offline" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1262,7 +1263,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Usando&#43;uma&#43;Ferramenta&#43;LLM&#43;no&#43;Linux&#43;de&#43;forma&#43;offline%20https%3A%2F%2Flgrando1.github.io%2Fpost%2Follama%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=Usando&#43;uma&#43;Ferramenta&#43;LLM&#43;no&#43;Linux&#43;de&#43;Forma&#43;Offline%20https%3A%2F%2Flgrando1.github.io%2Fpost%2Follama%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1279,7 +1280,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Flgrando1.github.io%2Fpost%2Follama%2F&amp;title=Usando&#43;uma&#43;Ferramenta&#43;LLM&#43;no&#43;Linux&#43;de&#43;forma&#43;offline" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Flgrando1.github.io%2Fpost%2Follama%2F&amp;title=Usando&#43;uma&#43;Ferramenta&#43;LLM&#43;no&#43;Linux&#43;de&#43;Forma&#43;Offline" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
