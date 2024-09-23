@@ -859,7 +859,9 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>Após o <a href="https://lgrando1.github.io/post/ollama/" target="_blank" rel="noopener">último post</a> onde relato a experiencia de usar o Ollama num computador com Linux, resolvi testar em uma máquina com Windows 10. Fiquei interessado em saber como o Ollama iria se comportar em um computador de 2013, um Samsung NP500P4C-AD2BR, que possui um processador Core i7 de terceira geração e não possui uma GPU discreta. As únicas modificações que realizei neste computador é a inclusão de mais 2 GB de RAM (agora com 6 gigas) e de um SSD no lugar do HD original.</p>
+      <p>Após o <a href="https://lgrando1.github.io/post/ollama/" target="_blank" rel="noopener">último post</a> onde relatei a experiencia de usar o Ollama em num computador com Linux, resolvi extender o teste em uma máquina com Windows 10.
+Fiquei interessado em saber como o Ollama iria se comportar em um computador de 2013, um Samsung NP500P4C-AD2BR, provido de um processador Core i7 de terceira geração e sem uma GPU discreta.
+As únicas modificações que realizei neste computador foi a inclusão de mais 2 GB de RAM (agora com 6 gigas) e a instalação de um SSD no lugar do HD original.</p>
 <p>
 
 
@@ -889,7 +891,7 @@
   </div></figure>
 </p>
 <p>Lembrando que o <a href="https://ollama.com/" target="_blank" rel="noopener">Ollama</a> é uma ferramenta que facilita o processo de baixar e rodar os modelos LLMs de código aberto. Ele pode ser instalado no Windows, MacOS e o Linux.</p>
-<p>O processo de instalação foi bem tranquilo, baixei o instalador (são quase 700 megas)</p>
+<p>O processo de instalação foi bem tranquilo, baixei o instalador (são quase 700 megas) e segui o processo de instalação padrão do Windows.</p>
 <p>
 
 
@@ -908,7 +910,14 @@
 
 <figure  >
   <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="windown.png" alt="paginaollama" loading="lazy" data-zoomable /></div>
+    <div class="w-100" ><img alt="paginaollama" srcset="
+               /post/ollamawin/windonw_hudf41d5a215322309e276d45b7edc5ac3_48414_206cd234781c85d3080e9573a11daa2c.webp 400w,
+               /post/ollamawin/windonw_hudf41d5a215322309e276d45b7edc5ac3_48414_e965494d8c6400752c36c582f5dede80.webp 760w,
+               /post/ollamawin/windonw_hudf41d5a215322309e276d45b7edc5ac3_48414_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/ollamawin/windonw_hudf41d5a215322309e276d45b7edc5ac3_48414_206cd234781c85d3080e9573a11daa2c.webp"
+               width="760"
+               height="448"
+               loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
 <p>
@@ -939,7 +948,6 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Após baixado, é só clicar no instalador e seguir o processo normal de instalação.</p>
 <p>
 
 
@@ -958,10 +966,17 @@
 
 <figure  >
   <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="windowsinstaller.png" alt="paginaollama" loading="lazy" data-zoomable /></div>
+    <div class="w-100" ><img alt="paginaollama" srcset="
+               /post/ollamawin/windowsinstaler_hudd20e2c191b20dc6ad9bdb2ec974c889_24609_041dc2428515075ae60c0d0df5766fe8.webp 400w,
+               /post/ollamawin/windowsinstaler_hudd20e2c191b20dc6ad9bdb2ec974c889_24609_d1908c4a007e758e81cbbcbdfabfb5e9.webp 760w,
+               /post/ollamawin/windowsinstaler_hudd20e2c191b20dc6ad9bdb2ec974c889_24609_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/ollamawin/windowsinstaler_hudd20e2c191b20dc6ad9bdb2ec974c889_24609_041dc2428515075ae60c0d0df5766fe8.webp"
+               width="760"
+               height="562"
+               loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Após o processo de instalação terminar, vai aparecer o icone do Ollama na sua barra de notificação. Dai é só abrir o PowerShell (no meu caso) e repetir os mesmos comandos do Linux.</p>
+<p>Após o processo de instalação terminar, vai aparecer o icone do Ollama na sua barra de notificação. Então é só abrir o PowerShell e repetir os mesmos comandos do Linux.</p>
 <p>
 
 
@@ -990,16 +1005,44 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Aqui mostrou que está funcionando e já pedi para baixar e instalar o modelo <a href="https://ollama.com/library/phi3.5" target="_blank" rel="noopener">phi3.5 da Microsoft</a> utilizando o comando</p>
-<p>Agora é hora de baixar o modelo LLM. No <a href="https://ollama.com/library" target="_blank" rel="noopener">site</a> existe vários modelos. Já testei o llama3.1. Este <a href="https://ollama.com/library/llama3.1" target="_blank" rel="noopener">modelo desenvolvido pela Meta</a> e que possui três níveis de parâmetros 8, 70 e 405 bilhões de parâmetros. Acabei escolhendo o modelo de 8B. São aproximadamente 4.7 GB utilizado de armazenamento. Mas ai fica o critério de cada um. Para este post vou apresentar o processo de instalação do modelo <a href="https://ollama.com/library/phi3.5" target="_blank" rel="noopener">phi3.5 da Microsoft</a>.</p>
-<p>O processo de instalação da LLM é bem mais demorado, pois a placa wifi deste computador é 2.4 Ghz e o download ocorre mais lento.</p>
-<p>Para iniciar o modelo LLM desejado, utiliza-se o comando:</p>
+<p>Então solicitei para baixar e instalar o modelo <a href="https://ollama.com/library/phi3.5" target="_blank" rel="noopener">phi3.5 da Microsoft</a> utilizando o comando</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama run &lt;Nome_da_LLM&gt;
 </span></span></code></pre></div><p>No caso da Phi3</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama run phi3.5
-</span></span></code></pre></div><p>Para testar a diferença de desempenho, solicitei a ele:</p>
+</span></span></code></pre></div><p>O processo de instalação da LLM foi mais demorado devido a limitação da placa wifi deste computador, e aqui ele rodando, onde realizei a minha pergunta clássica para verificar os modelos LLMs:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Quantos premios Nobéis o Brasil já ganhou?
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="nobel" srcset="
+               /post/ollamawin/windowsnobel_hu2517b82405507f4283767acef5ab506f_42455_cd618055e49329342ad582e605aeefea.webp 400w,
+               /post/ollamawin/windowsnobel_hu2517b82405507f4283767acef5ab506f_42455_644445c5d8c6091cce26bda5a34344ed.webp 760w,
+               /post/ollamawin/windowsnobel_hu2517b82405507f4283767acef5ab506f_42455_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/ollamawin/windowsnobel_hu2517b82405507f4283767acef5ab506f_42455_cd618055e49329342ad582e605aeefea.webp"
+               width="628"
+               height="440"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Para testar a diferença de desempenho, solicitei a ele:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Você poderia gerar um código python para ler um arquivo excel em um dataframe pandas?
-</span></span></code></pre></div><p>Nesta máquina Windows demorou: 284 segundos e na máquina com Linux 138 segundos, observando que ele respondeu de forma diferente:</p>
+</span></span></code></pre></div><p>ps: Lembrando que estes modelos possuem uma grande aleatoriedade nas respostas, como poderemos ver abaixo:</p>
+<p>No Notebook com Windows, sem GPU demorou: 284 segundos e na máquina com Linux e GPU demorou 138 segundos. É vísivel a diferença na formação das frases, mas é importante observar que o mesmo modelo respondeu de forma diferente em ambas as máquinas:</p>
 <p>
 
 
@@ -1018,7 +1061,7 @@
 
 <figure  >
   <div class="d-flex justify-content-center">
-    <div class="w-100" ><img alt="Exemplo de Prompt Windows" srcset="
+    <div class="w-100" ><img alt="Exemplo da resposta do prompt no Windows" srcset="
                /post/ollamawin/windprompt_huc6ab9f2eb5c69a8238a6f22c9e88e901_59584_46f72eaeb992f5681aabda5ec9c3af71.webp 400w,
                /post/ollamawin/windprompt_huc6ab9f2eb5c69a8238a6f22c9e88e901_59584_e9451f2fe1f82a32d3238607f5ac5390.webp 760w,
                /post/ollamawin/windprompt_huc6ab9f2eb5c69a8238a6f22c9e88e901_59584_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
@@ -1028,7 +1071,9 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Certamente! Abaixo está uma pequena função Python que usa <span class="sb">`</span>pandas<span class="sb">`</span> e <span class="sb">`</span>openpyxl<span class="sb">`</span>, ou
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">&gt;&gt;&gt; Você poderia gerar um código python para ler um arquivo excel em um dataframe pandas?
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Certamente! Abaixo está uma pequena função Python que usa <span class="sb">`</span>pandas<span class="sb">`</span> e <span class="sb">`</span>openpyxl<span class="sb">`</span>, ou
 </span></span><span class="line"><span class="cl">seja, a biblioteca de manipulação <span class="k">do</span> Excel padrão no Python. Certifique-se primeiro
 </span></span><span class="line"><span class="cl">de ter essas bibliotecas instaladas:
 </span></span><span class="line"><span class="cl">
