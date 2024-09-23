@@ -13,11 +13,12 @@
     </image>
     
     <item>
-      <title>Usando uma Ferramenta LLM no Windows de Forma Offline (Parte 2)</title>
+      <title>Como instalar/usar uma ferramenta LLM no Windows de forma offline (Parte 2)</title>
       <link>https://lgrando1.github.io/post/ollamawin/</link>
       <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://lgrando1.github.io/post/ollamawin/</guid>
-      <description>&lt;p&gt;Após o &lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;último post&lt;/a&gt; onde relatei a experiencia de usar o Ollama em num computador com Linux, resolvi extender o teste em uma máquina com Windows 10.
+      <description>&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 1 - Instalando o Ollama no Linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Após o &lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;último post&lt;/a&gt; onde relatei a experiencia de usar o Ollama em num computador com Linux, resolvi extender o teste em uma máquina com Windows 10.
 Fiquei interessado em saber como o Ollama iria se comportar em um computador de 2013, um Samsung NP500P4C-AD2BR, provido de um processador Core i7 de terceira geração e sem uma GPU discreta.
 As únicas modificações que realizei neste computador foi a inclusão de mais 2 GB de RAM (agora com 6 gigas) e a instalação de um SSD no lugar do HD original.&lt;/p&gt;
 &lt;p&gt;
@@ -188,10 +189,10 @@ As únicas modificações que realizei neste computador foi a inclusão de mais 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;nobel&#34; srcset=&#34;
-               /post/ollamawin/windowsnobel_hu2517b82405507f4283767acef5ab506f_42455_cd618055e49329342ad582e605aeefea.webp 400w,
+               /post/ollamawin/windowsnobel_hu2517b82405507f4283767acef5ab506f_42455_f32a3625dd7ec7812d65afda87abe535.webp 400w,
                /post/ollamawin/windowsnobel_hu2517b82405507f4283767acef5ab506f_42455_644445c5d8c6091cce26bda5a34344ed.webp 760w,
                /post/ollamawin/windowsnobel_hu2517b82405507f4283767acef5ab506f_42455_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://lgrando1.github.io/post/ollamawin/windowsnobel_hu2517b82405507f4283767acef5ab506f_42455_cd618055e49329342ad582e605aeefea.webp&#34;
+               src=&#34;https://lgrando1.github.io/post/ollamawin/windowsnobel_hu2517b82405507f4283767acef5ab506f_42455_f32a3625dd7ec7812d65afda87abe535.webp&#34;
                width=&#34;628&#34;
                height=&#34;440&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -365,11 +366,12 @@ As únicas modificações que realizei neste computador foi a inclusão de mais 
     </item>
     
     <item>
-      <title>Usando uma Ferramenta LLM no Linux de Forma Offline (Parte 1)</title>
+      <title>Como instalar/usar uma ferramenta LLM no Linux de forma offline (Parte 1)</title>
       <link>https://lgrando1.github.io/post/ollama/</link>
       <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://lgrando1.github.io/post/ollama/</guid>
-      <description>&lt;p&gt;O recém &lt;a href=&#34;https://www.nature.com/articles/d41586-024-02998-y&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;artigo da Nature&lt;/strong&gt;&lt;/a&gt; trouxe uma discussão sobre o uso de LLMs locais em vez daquelas que utilizamos de forma online como por exemplo o Chat-GPT, Gemini e o CoPilot. A preocupação com aspectos como privacidade e o uso de nossos dados quando utilizandos os LLMs de terceitos, sem contar que estas ferramentas nescessitam de acesso a internet.
+      <description>&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollamawin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 2 - Instalando o Ollama no Windows&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;O recém &lt;a href=&#34;https://www.nature.com/articles/d41586-024-02998-y&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;artigo da Nature&lt;/strong&gt;&lt;/a&gt; trouxe uma discussão sobre o uso de LLMs locais em vez daquelas que utilizamos de forma online como por exemplo o Chat-GPT, Gemini e o CoPilot. A preocupação com aspectos como privacidade e o uso de nossos dados quando utilizandos os LLMs de terceitos, sem contar que estas ferramentas nescessitam de acesso a internet.
 Sites como o &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugging Face&lt;/a&gt; permitem testar alguns usos destas ferramentas utilizando uma biblioteca com a linguagem Python, como eu já descrevi em &lt;a href=&#34;https://lgrando1.github.io/post/hface/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;uma postagem anterior.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Eu queria algo mais completo como um assistente virtual local e como sou usuário Linux (uso o Pop!_OS 20.04), encontrei este &lt;a href=&#34;https://itsfoss.com/ollama-setup-linux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;post muito bem explicado&lt;/a&gt; de como rodar uma LLM de maneira off-line no Linux e então resolvi replicar, e conto esta experiência abaixo.&lt;/p&gt;
 &lt;p&gt;O &lt;a href=&#34;https://ollama.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ollama&lt;/a&gt; é uma ferramenta que facilita o processo de baixar e rodar os modelos LLMs de código aberto. Ele pode ser instalado no Windows, MacOS e o Linux. Apenas seguir o &lt;a href=&#34;https://ollama.com/download&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;procedimento de instalação presente no site deles&lt;/a&gt;.&lt;/p&gt;
