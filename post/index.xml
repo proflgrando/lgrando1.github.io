@@ -13,9 +13,316 @@
     </image>
     
     <item>
-      <title>Usando uma Ferramenta LLM no Linux de Forma Offline</title>
-      <link>https://lgrando1.github.io/post/ollama/</link>
+      <title>Usando uma Ferramenta LLM no Windows de Forma Offline (Parte 2)</title>
+      <link>https://lgrando1.github.io/post/ollamawin/</link>
       <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://lgrando1.github.io/post/ollamawin/</guid>
+      <description>&lt;p&gt;Após o &lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;último post&lt;/a&gt; onde relato a experiencia de usar o Ollama num computador com Linux, resolvi testar em uma máquina com Windows 10. Fiquei interessado em saber como o Ollama iria se comportar em um computador de 2013, um Samsung NP500P4C-AD2BR, que possui um processador Core i7 de terceira geração e não possui uma GPU discreta. As únicas modificações que realizei neste computador é a inclusão de mais 2 GB de RAM (agora com 6 gigas) e de um SSD no lugar do HD original.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;infohw&#34; srcset=&#34;
+               /post/ollamawin/windownsammy_hubab50e7867f3387d1603636a64fbb609_9611_750d7388bb3053bb6d389cbb94ce95b3.webp 400w,
+               /post/ollamawin/windownsammy_hubab50e7867f3387d1603636a64fbb609_9611_f7093f5662e642a4720a78f039210a7e.webp 760w,
+               /post/ollamawin/windownsammy_hubab50e7867f3387d1603636a64fbb609_9611_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/ollamawin/windownsammy_hubab50e7867f3387d1603636a64fbb609_9611_750d7388bb3053bb6d389cbb94ce95b3.webp&#34;
+               width=&#34;403&#34;
+               height=&#34;149&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Lembrando que o &lt;a href=&#34;https://ollama.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ollama&lt;/a&gt; é uma ferramenta que facilita o processo de baixar e rodar os modelos LLMs de código aberto. Ele pode ser instalado no Windows, MacOS e o Linux.&lt;/p&gt;
+&lt;p&gt;O processo de instalação foi bem tranquilo, baixei o instalador (são quase 700 megas)&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;windown.png&#34; alt=&#34;paginaollama&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;download&#34; srcset=&#34;
+               /post/ollamawin/windown2_hu6dd2f5dc0f8f2994d004fe0c403ba0f4_60647_0c6ed8d8e881e93e5ff66d3723ac0e50.webp 400w,
+               /post/ollamawin/windown2_hu6dd2f5dc0f8f2994d004fe0c403ba0f4_60647_cbe5b7794cae7c3f46cf5bd44847af12.webp 760w,
+               /post/ollamawin/windown2_hu6dd2f5dc0f8f2994d004fe0c403ba0f4_60647_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/ollamawin/windown2_hu6dd2f5dc0f8f2994d004fe0c403ba0f4_60647_0c6ed8d8e881e93e5ff66d3723ac0e50.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;448&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Após baixado, é só clicar no instalador e seguir o processo normal de instalação.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;windowsinstaller.png&#34; alt=&#34;paginaollama&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Após o processo de instalação terminar, vai aparecer o icone do Ollama na sua barra de notificação. Dai é só abrir o PowerShell (no meu caso) e repetir os mesmos comandos do Linux.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;download&#34; srcset=&#34;
+               /post/ollamawin/windowsserver_hu85511738daec8878c3a5e9bf464feb0b_710294_ed632c1a480e14662dcfddf21ada31ef.webp 400w,
+               /post/ollamawin/windowsserver_hu85511738daec8878c3a5e9bf464feb0b_710294_631c7f64115207de0a720926c613d707.webp 760w,
+               /post/ollamawin/windowsserver_hu85511738daec8878c3a5e9bf464feb0b_710294_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/ollamawin/windowsserver_hu85511738daec8878c3a5e9bf464feb0b_710294_ed632c1a480e14662dcfddf21ada31ef.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Aqui mostrou que está funcionando e já pedi para baixar e instalar o modelo &lt;a href=&#34;https://ollama.com/library/phi3.5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;phi3.5 da Microsoft&lt;/a&gt; utilizando o comando&lt;/p&gt;
+&lt;p&gt;Agora é hora de baixar o modelo LLM. No &lt;a href=&#34;https://ollama.com/library&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;site&lt;/a&gt; existe vários modelos. Já testei o llama3.1. Este &lt;a href=&#34;https://ollama.com/library/llama3.1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;modelo desenvolvido pela Meta&lt;/a&gt; e que possui três níveis de parâmetros 8, 70 e 405 bilhões de parâmetros. Acabei escolhendo o modelo de 8B. São aproximadamente 4.7 GB utilizado de armazenamento. Mas ai fica o critério de cada um. Para este post vou apresentar o processo de instalação do modelo &lt;a href=&#34;https://ollama.com/library/phi3.5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;phi3.5 da Microsoft&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;O processo de instalação da LLM é bem mais demorado, pois a placa wifi deste computador é 2.4 Ghz e o download ocorre mais lento.&lt;/p&gt;
+&lt;p&gt;Para iniciar o modelo LLM desejado, utiliza-se o comando:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama run &amp;lt;Nome_da_LLM&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;No caso da Phi3&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama run phi3.5
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Para testar a diferença de desempenho, solicitei a ele:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Você poderia gerar um código python para ler um arquivo excel em um dataframe pandas?
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Nesta máquina Windows demorou: 284 segundos e na máquina com Linux 138 segundos, observando que ele respondeu de forma diferente:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Exemplo de Prompt Windows&#34; srcset=&#34;
+               /post/ollamawin/windprompt_huc6ab9f2eb5c69a8238a6f22c9e88e901_59584_46f72eaeb992f5681aabda5ec9c3af71.webp 400w,
+               /post/ollamawin/windprompt_huc6ab9f2eb5c69a8238a6f22c9e88e901_59584_e9451f2fe1f82a32d3238607f5ac5390.webp 760w,
+               /post/ollamawin/windprompt_huc6ab9f2eb5c69a8238a6f22c9e88e901_59584_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/ollamawin/windprompt_huc6ab9f2eb5c69a8238a6f22c9e88e901_59584_46f72eaeb992f5681aabda5ec9c3af71.webp&#34;
+               width=&#34;645&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Certamente! Abaixo está uma pequena função Python que usa &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;pandas&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; e &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;openpyxl&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;, ou
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;seja, a biblioteca de manipulação &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; Excel padrão no Python. Certifique-se primeiro
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;de ter essas bibliotecas instaladas:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;bash
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install pandas openpyxl
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Aqui está um código que lê um arquivo Excel em um DataFrame Pandas:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;A resposta completa dele:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;python
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;import pandas as pd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;def read_excel_to_dataframe&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;file_path&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Lendo o arquivo excel usando a função read_excel de pandas com engine&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;openpyxl&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nv&#34;&gt;df&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; pddict.read_excel&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;file_path, &lt;span class=&#34;nv&#34;&gt;engine&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;openpyxl&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; df
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Exemplo de uso:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;arquivo_do_campo&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;caminho/para/seu/arq_de_celulares.xlsx&amp;#39;&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# Substitua pela sua&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;localização &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; arquivo real
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;dataframe_pandas&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; readdon_excel_to_datafrane&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;fileiio_dave&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;print&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;dataframe_pandas&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Certifique-se de substituir &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;caminho/para/seu/arq_de_celulares.xlsx&amp;#39;&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; pela
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;localização real &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; seu arquivo Excel, ou seja, caminho e nome completo para o seu
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;arquivo no disco rígido.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Essa função lê diretamente um arquivo de planilha compartilhada &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;com extensão
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;.xlsx&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; usando a engine &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;openpyxl&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;, que é necessária para leituras em Python &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Excel moderno &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;.xlsx&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;. O DataFrame resultante pode então ser manipulado ou analisado
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;conforme desejado.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Se você tiver apenas arquivos simples com planilhas &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;com extensão &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;.xls&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; e precisar
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;de uma versão mais antiga, poderá usar a engine &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;xlrd&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; em vez disso:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;python
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;import pandas as pd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;def read_excel_to_dataframe&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;file_path&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Lendo o arquivo excel usando a função read_excel sem especificar um engine (o&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;pandas&amp;#39;&lt;/span&gt; padrão lê com xlrd por padrão para &lt;span class=&#34;s1&#34;&gt;&amp;#39;.xls&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nv&#34;&gt;df&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; pd.read_excel&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;file_path&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; df
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Exemplo de uso:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;arquivo_do_campo&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;caminho/para/seu/arq_de_celulares.xls&amp;#39;&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# Apenas caminho se for&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;um arquivo .xls simples
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;dataframe_pandas&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; readdon_excel_to_datafrane&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;fileiio_dave&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;print&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;dataframe_pandas&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Lembre-se de que, para ficheiros &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;.xlsx&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;, &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;openpyxl&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; é necessário e tanto o pandas
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;quanto openpyxl devem estar instalados em seu ambiente Python.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Resposta do Prompt no computador com Linux&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Exemplo de Prompt Linux&#34; srcset=&#34;
+               /post/ollamawin/linprompt_hua1dba9888fe69aa87182346e3e718f0f_92928_f4fa6e246ed9c99a704cfa45bfa6f84f.webp 400w,
+               /post/ollamawin/linprompt_hua1dba9888fe69aa87182346e3e718f0f_92928_d9b2de36c2be8018757ba04788d0681c.webp 760w,
+               /post/ollamawin/linprompt_hua1dba9888fe69aa87182346e3e718f0f_92928_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/ollamawin/linprompt_hua1dba9888fe69aa87182346e3e718f0f_92928_f4fa6e246ed9c99a704cfa45bfa6f84f.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;632&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt; Você poderia gerar um código python para ler um arquivo excel em um dataframe pandas?
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Certamente! Abaixo está um exemplo de como você pode usar &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;pandas&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; juntamente com &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;openpyxl&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;, que é uma biblioteca Python para leitura e escrita &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Excel, especialmente adequada para arquivos &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;.xlsx&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;. Certifique-se primeiro de ter essas bibliotecas instaladas&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; se não estiverem instaladas, você 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pode adicioná-las usando &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;pip&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;bash
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install pandas openpyxl
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Aqui está um script Python simples para ler um arquivo Excel e convertê-lo em um DataFrame Pandas:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;python
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;import pandas as pd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Substitua &amp;#39;seu_arquivo.xlsx&amp;#39; pelo nome do seu arquivo de excel reais ou o caminho até ele se estiver no disco rígido.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;nome_do_arq&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;seu_arquivo.xlsx&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Lendo um arquivo Excel usando pandas, que reconhece automaticamente a engine como openpyxl para formato .xlsx&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;df&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; pd.read extrado de excel&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;nome_do_arq&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;print&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;df.head&lt;span class=&#34;o&#34;&gt;())&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# Imprime as primeiras linhas do DataFrame no console; use df fora-de-caso também&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Substitua &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;seu_arquivo.xlsx&amp;#39;&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; pelo caminho absoluto ou nome relativo para seu arquivo Excel, e a variável &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;df&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; contém o conteúdo 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;de sua tabela em um objeto DataFrame Pandas com qualquer forma que você precisar realizar cálculos adicionais ou manipulações.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Se estiver lidando com muitas linhas/colunas grandes, considere usar &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;chunksize&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; para ler o arquivo por partes:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;python
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;chunk_size&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; chunk_df in pd.read_excel&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;nome_do_arq, &lt;span class=&#34;nv&#34;&gt;chunksize&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;chunk_size&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Realiza alguma operação com cada parte do dataframe &amp;#39;chunk&amp;#39; aqui...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    print&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;chunk_df.head&lt;span class=&#34;o&#34;&gt;())&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# Se precisar verificá-lo dentro de seu loop&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Lembre-se que esta abordagem requer um arquivo Excel sem cabeçalho dinâmico, pois por padrão &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;pd.read_excel&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; usará a primeira 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;linha como nomes das colunas&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; se sua tabela &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; excel &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; estruturada de outra forma &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;por exemplo, cada uma dessas primeiras nove 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;células é um cabeçalho&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;, você precisará lidar com isso manualmente ou especificando explicitamente os rótulos nas linhas.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Preciso validar/verificar ambos os códigos gerados, atualizarei o post com a verificação dos códigos, mas não deixa de ser interessante que é possivel rodar um LLM em uma computador com 11 anos.&lt;/p&gt;
+&lt;p&gt;Sucesso a todos!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Usando uma Ferramenta LLM no Linux de Forma Offline (Parte 1)</title>
+      <link>https://lgrando1.github.io/post/ollama/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://lgrando1.github.io/post/ollama/</guid>
       <description>&lt;p&gt;O recém &lt;a href=&#34;https://www.nature.com/articles/d41586-024-02998-y&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;artigo da Nature&lt;/strong&gt;&lt;/a&gt; trouxe uma discussão sobre o uso de LLMs locais em vez daquelas que utilizamos de forma online como por exemplo o Chat-GPT, Gemini e o CoPilot. A preocupação com aspectos como privacidade e o uso de nossos dados quando utilizandos os LLMs de terceitos, sem contar que estas ferramentas nescessitam de acesso a internet.
 Sites como o &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugging Face&lt;/a&gt; permitem testar alguns usos destas ferramentas utilizando uma biblioteca com a linguagem Python, como eu já descrevi em &lt;a href=&#34;https://lgrando1.github.io/post/hface/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;uma postagem anterior.&lt;/a&gt;&lt;/p&gt;
@@ -331,278 +638,6 @@ PS: peço desculpas na imagem abaixo por que eu digitei um comando errado, por i
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Este tutorial aborda apenas alguns aspectos do uso do Ollama, o &lt;a href=&#34;https://itsfoss.com/ollama-setup-linux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tutorial que serviu como base&lt;/a&gt; para este experimento possui mais informações, como utilizar a interface gráfica com Docker e também como desinstalar o Ollama. Assim você tem um assistente local para lhe ajudar em tarefas simples. Ontem eu testei o uso do Llamma 3.1 para criar um banco de dados no MySQL e para implementar um código Python para interagir com este banco de dados e o código proposto funcionou. Mas é preciso testar mais.&lt;/p&gt;
-&lt;p&gt;Sucesso a todos!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Usando uma Ferramenta LLM no Windows de Forma Offline</title>
-      <link>https://lgrando1.github.io/post/ollamawin/</link>
-      <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://lgrando1.github.io/post/ollamawin/</guid>
-      <description>&lt;p&gt;Após o &lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;último post&lt;/a&gt; onde relato a experiencia de usar o Ollama num computador com Linux, resolvi testar em uma máquina com Windows 10. Fiquei interessado em saber como o Ollama iria se comportar em um computador de 2013, um Samsung NP500P4C-AD2BR, que possui um processador Core i7 de terceira geração e não possui uma GPU discreta. As únicas modificações que realizei neste computador é a inclusão de mais 2 GB de RAM (agora com 6 gigas) e de um SSD no lugar do HD original.&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;windownsammy.png&#34; alt=&#34;infohw&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;Lembrando que o &lt;a href=&#34;https://ollama.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ollama&lt;/a&gt; é uma ferramenta que facilita o processo de baixar e rodar os modelos LLMs de código aberto. Ele pode ser instalado no Windows, MacOS e o Linux.&lt;/p&gt;
-&lt;p&gt;O processo de instalação foi bem tranquilo, baixei o instalador (são quase 700 megas)&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;windown.png&#34; alt=&#34;paginaollama&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;windown2.png&#34; alt=&#34;download&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;Após baixado, é só clicar no instalador e seguir o processo normal de instalação.&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;windowsinstaller.png&#34; alt=&#34;paginaollama&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;Após o processo de instalação terminar, vai aparecer o icone do Ollama na sua barra de notificação. Dai é só abrir o PowerShell (no meu caso) e repetir os mesmos comandos do Linux.&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;windowsserver.png&#34; alt=&#34;download&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;Aqui mostrou que está funcionando e já pedi para baixar e instalar o modelo &lt;a href=&#34;https://ollama.com/library/phi3.5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;phi3.5 da Microsoft&lt;/a&gt; utilizando o comando&lt;/p&gt;
-&lt;p&gt;Agora é hora de baixar o modelo LLM. No &lt;a href=&#34;https://ollama.com/library&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;site&lt;/a&gt; existe vários modelos. Já testei o llama3.1. Este &lt;a href=&#34;https://ollama.com/library/llama3.1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;modelo desenvolvido pela Meta&lt;/a&gt; e que possui três níveis de parâmetros 8, 70 e 405 bilhões de parâmetros. Acabei escolhendo o modelo de 8B. São aproximadamente 4.7 GB utilizado de armazenamento. Mas ai fica o critério de cada um. Para este post vou apresentar o processo de instalação do modelo &lt;a href=&#34;https://ollama.com/library/phi3.5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;phi3.5 da Microsoft&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;O processo de instalação da LLM é bem mais demorado, pois a placa wifi deste computador é 2.4 Ghz e o download ocorre mais lento.&lt;/p&gt;
-&lt;p&gt;Para iniciar o modelo LLM desejado, utiliza-se o comando:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama run &amp;lt;Nome_da_LLM&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;No caso da Phi3&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama run phi3.5
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Para testar a diferença de desempenho, solicitei a ele:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Você poderia gerar um código python para ler um arquivo excel em um dataframe pandas?
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Nesta máquina Windows demorou: 284 segundos e na máquina com Linux 138 segundos, observando que ele respondeu de forma diferente:&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;windprompt.png&#34; alt=&#34;Exemplo de Prompt Windows&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Certamente! Abaixo está uma pequena função Python que usa &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;pandas&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; e &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;openpyxl&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;, ou
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;seja, a biblioteca de manipulação &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; Excel padrão no Python. Certifique-se primeiro
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;de ter essas bibliotecas instaladas:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;bash
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install pandas openpyxl
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Aqui está um código que lê um arquivo Excel em um DataFrame Pandas:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;A resposta completa dele:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;python
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;import pandas as pd
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;def read_excel_to_dataframe&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;file_path&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Lendo o arquivo excel usando a função read_excel de pandas com engine&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;openpyxl&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nv&#34;&gt;df&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; pddict.read_excel&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;file_path, &lt;span class=&#34;nv&#34;&gt;engine&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;openpyxl&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; df
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Exemplo de uso:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;arquivo_do_campo&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;caminho/para/seu/arq_de_celulares.xlsx&amp;#39;&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# Substitua pela sua&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;localização &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; arquivo real
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;dataframe_pandas&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; readdon_excel_to_datafrane&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;fileiio_dave&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;print&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;dataframe_pandas&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Certifique-se de substituir &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;caminho/para/seu/arq_de_celulares.xlsx&amp;#39;&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; pela
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;localização real &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; seu arquivo Excel, ou seja, caminho e nome completo para o seu
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;arquivo no disco rígido.
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Essa função lê diretamente um arquivo de planilha compartilhada &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;com extensão
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;.xlsx&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; usando a engine &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;openpyxl&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;, que é necessária para leituras em Python &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Excel moderno &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;.xlsx&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;. O DataFrame resultante pode então ser manipulado ou analisado
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;conforme desejado.
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Se você tiver apenas arquivos simples com planilhas &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;com extensão &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;.xls&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; e precisar
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;de uma versão mais antiga, poderá usar a engine &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;xlrd&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; em vez disso:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;python
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;import pandas as pd
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;def read_excel_to_dataframe&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;file_path&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Lendo o arquivo excel usando a função read_excel sem especificar um engine (o&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;pandas&amp;#39;&lt;/span&gt; padrão lê com xlrd por padrão para &lt;span class=&#34;s1&#34;&gt;&amp;#39;.xls&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nv&#34;&gt;df&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; pd.read_excel&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;file_path&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; df
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Exemplo de uso:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;arquivo_do_campo&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;caminho/para/seu/arq_de_celulares.xls&amp;#39;&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# Apenas caminho se for&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;um arquivo .xls simples
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;dataframe_pandas&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; readdon_excel_to_datafrane&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;fileiio_dave&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;print&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;dataframe_pandas&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Lembre-se de que, para ficheiros &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;.xlsx&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;, &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;openpyxl&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; é necessário e tanto o pandas
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;quanto openpyxl devem estar instalados em seu ambiente Python.
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Resposta do Prompt no computador com Linux&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;linprompt.png&#34; alt=&#34;Exemplo de Prompt Linux&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt; Você poderia gerar um código python para ler um arquivo excel em um dataframe pandas?
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Certamente! Abaixo está um exemplo de como você pode usar &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;pandas&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; juntamente com &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;openpyxl&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;, que é uma biblioteca Python para leitura e escrita &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Excel, especialmente adequada para arquivos &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;.xlsx&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;. Certifique-se primeiro de ter essas bibliotecas instaladas&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; se não estiverem instaladas, você 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pode adicioná-las usando &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;pip&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;bash
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install pandas openpyxl
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Aqui está um script Python simples para ler um arquivo Excel e convertê-lo em um DataFrame Pandas:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;python
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;import pandas as pd
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Substitua &amp;#39;seu_arquivo.xlsx&amp;#39; pelo nome do seu arquivo de excel reais ou o caminho até ele se estiver no disco rígido.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;nome_do_arq&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;seu_arquivo.xlsx&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Lendo um arquivo Excel usando pandas, que reconhece automaticamente a engine como openpyxl para formato .xlsx&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;df&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; pd.read extrado de excel&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;nome_do_arq&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;print&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;df.head&lt;span class=&#34;o&#34;&gt;())&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# Imprime as primeiras linhas do DataFrame no console; use df fora-de-caso também&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Substitua &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;seu_arquivo.xlsx&amp;#39;&lt;/span&gt;&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; pelo caminho absoluto ou nome relativo para seu arquivo Excel, e a variável &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;df&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; contém o conteúdo 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;de sua tabela em um objeto DataFrame Pandas com qualquer forma que você precisar realizar cálculos adicionais ou manipulações.
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Se estiver lidando com muitas linhas/colunas grandes, considere usar &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;chunksize&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; para ler o arquivo por partes:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;python
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;chunk_size&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1000&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; chunk_df in pd.read_excel&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;nome_do_arq, &lt;span class=&#34;nv&#34;&gt;chunksize&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;chunk_size&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Realiza alguma operação com cada parte do dataframe &amp;#39;chunk&amp;#39; aqui...&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    print&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;chunk_df.head&lt;span class=&#34;o&#34;&gt;())&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# Se precisar verificá-lo dentro de seu loop&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;```&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Lembre-se que esta abordagem requer um arquivo Excel sem cabeçalho dinâmico, pois por padrão &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;pd.read_excel&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; usará a primeira 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;linha como nomes das colunas&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; se sua tabela &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; excel &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; estruturada de outra forma &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;por exemplo, cada uma dessas primeiras nove 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;células é um cabeçalho&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;, você precisará lidar com isso manualmente ou especificando explicitamente os rótulos nas linhas.
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Preciso validar/verificar ambos os códigos gerados, atualizarei o post com a verificação dos códigos, mas não deixa de ser interessante que é possivel rodar um LLM em uma maquina com 11 anos.&lt;/p&gt;
 &lt;p&gt;Sucesso a todos!&lt;/p&gt;
 </description>
     </item>
