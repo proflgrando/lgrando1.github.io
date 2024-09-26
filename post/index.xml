@@ -2434,7 +2434,7 @@ $f(z) = cos(z)$&lt;/p&gt;
       <link>https://lgrando1.github.io/post/complex1/</link>
       <pubDate>Mon, 07 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://lgrando1.github.io/post/complex1/</guid>
-      <description>&lt;h2 id=&#34;pt-1---introdução&#34;&gt;Pt 1 - Introdução&lt;/h2&gt;
+      <description>&lt;h3 id=&#34;pt-1---introdução&#34;&gt;Pt 1 - Introdução&lt;/h3&gt;
 &lt;p&gt;Nesta série de postagens, trataremos dos números complexos.&lt;/p&gt;
 &lt;p&gt;Utilizaremos o Python como linguagem de programação.&lt;/p&gt;
 &lt;p&gt;A Parte 1 deste série considera as operações com as coordenadas cartesianas;&lt;/p&gt;
@@ -2453,9 +2453,9 @@ $f(z) = cos(z)$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Código disponível aqui: &lt;a href=&#34;https://github.com/lgrando1/Notas_Numeros_Complexos/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/lgrando1/Notas_Numeros_Complexos/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;1-números-complexos&#34;&gt;1. Números complexos&lt;/h2&gt;
+&lt;h3 id=&#34;1-números-complexos&#34;&gt;1. Números complexos&lt;/h3&gt;
 &lt;p&gt;Elemento de um sistema numérico que contém os números reais e um elemento especifico denominado $i$, chamado de unidade imaginária, e satisfaz a equação $i^2 = -1$.&lt;/p&gt;
-&lt;h3 id=&#34;plano-complexo&#34;&gt;Plano Complexo&lt;/h3&gt;
+&lt;h4 id=&#34;plano-complexo&#34;&gt;Plano Complexo&lt;/h4&gt;
 &lt;p&gt;Números complexos são expressões da forma $z = x + iy$ ou $z = x + jy$, onde:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;$x$ é a parte real de $z$ ou $x = Re$ z;&lt;/li&gt;
@@ -2494,7 +2494,7 @@ $f(z) = cos(z)$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Parte complexa de z
 3.0
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;11---o-módulo-de-um-número-complexo&#34;&gt;1.1 - O módulo de um número complexo&lt;/h3&gt;
+&lt;h4 id=&#34;11---o-módulo-de-um-número-complexo&#34;&gt;1.1 - O módulo de um número complexo&lt;/h4&gt;
 &lt;p&gt;O módulo de um número complexo $z = x + iy$ é a distância entre o ponto $z$ e a origem, utilizando o Teorema de Pitágoras:&lt;/p&gt;
 &lt;p&gt;$|z| = \sqrt{x^2 + y^2}$&lt;/p&gt;
 &lt;img src=&#34;fig13.png&#34;&gt;
@@ -2510,7 +2510,7 @@ $f(z) = cos(z)$&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sa&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;O módulo de w é: &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;abs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;w&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;O módulo de w é: 4.47213595499958
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;12---o-conjugado-de-um-número-complexo&#34;&gt;1.2 - O Conjugado de um Número Complexo&lt;/h3&gt;
+&lt;h4 id=&#34;12---o-conjugado-de-um-número-complexo&#34;&gt;1.2 - O Conjugado de um Número Complexo&lt;/h4&gt;
 &lt;p&gt;O conjugado do número complexo $z = x + iy$ é $\overline{z} = x - iy$&lt;/p&gt;
 &lt;img src=&#34;fig113.png&#34;&gt;
 &lt;p&gt;Propriedades do conjugado:&lt;/p&gt;
@@ -2540,8 +2540,8 @@ $|z+w| \leq |z| + |w|$&lt;/p&gt;
 &lt;p&gt;$|z_1+z_2 + &amp;hellip; z_n| \leq |z_1| + |z_2|+ &amp;hellip; + |z_n|$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Desigualdade triangular inversa&lt;/strong&gt;
 $|z-w| \geq |z| - |w|$&lt;/p&gt;
-&lt;h2 id=&#34;2-operações-básicas&#34;&gt;2. Operações Básicas&lt;/h2&gt;
-&lt;h3 id=&#34;21---adição&#34;&gt;2.1 - Adição&lt;/h3&gt;
+&lt;h3 id=&#34;2-operações-básicas&#34;&gt;2. Operações Básicas&lt;/h3&gt;
+&lt;h4 id=&#34;21---adição&#34;&gt;2.1 - Adição&lt;/h4&gt;
 &lt;p&gt;Se $z = x + iy$ e $w = u + iv$, podemos representar z + w como:&lt;/p&gt;
 &lt;p&gt;$(x + iy) + (u + iv) = (x+u) + i(y+v)$, onde:&lt;/p&gt;
 &lt;ul&gt;
@@ -2549,7 +2549,7 @@ $|z-w| \geq |z| - |w|$&lt;/p&gt;
 &lt;li&gt;Im$(z+w)$ = Im $z$ + Im $w$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;img src=&#34;fig112.png&#34;&gt;
-&lt;h3 id=&#34;22---subtração&#34;&gt;2.2 - Subtração&lt;/h3&gt;
+&lt;h4 id=&#34;22---subtração&#34;&gt;2.2 - Subtração&lt;/h4&gt;
 &lt;p&gt;Se $z = x + iy$ e $w = u + iv$, podemos representar z - w como:&lt;/p&gt;
 &lt;p&gt;$(x + iy) - (u + iv) = (x-u) + i(y-v)$, onde:&lt;/p&gt;
 &lt;ul&gt;
@@ -2566,7 +2566,7 @@ $|z-w| \geq |z| - |w|$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;O valor de z+w é, (5+6j)
 O valor de z-w é, (-3+2j)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;23---multiplicação-de-números-complexos&#34;&gt;2.3 - Multiplicação de números complexos&lt;/h3&gt;
+&lt;h4 id=&#34;23---multiplicação-de-números-complexos&#34;&gt;2.3 - Multiplicação de números complexos&lt;/h4&gt;
 &lt;p&gt;$(x+iy) \cdot (u-iv) = (xu-yv)+i(xv+yu) \in \mathbb{C}$&lt;/p&gt;
 &lt;p&gt;Propriedades:&lt;/p&gt;
 &lt;ul&gt;
@@ -2615,7 +2615,7 @@ True
 &lt;p&gt;$i^4 = i^2 \cdot i^2 = -1\cdot -1 = 1 $&lt;/p&gt;
 &lt;p&gt;$i^5 = i^4 \cdot i = i $&lt;/p&gt;
 &lt;p&gt;$i^{100} = (i^4)^{25} = (1)^{25} = 1 $&lt;/p&gt;
-&lt;h3 id=&#34;24---divisão-de-números-complexos&#34;&gt;2.4 - Divisão de números Complexos&lt;/h3&gt;
+&lt;h4 id=&#34;24---divisão-de-números-complexos&#34;&gt;2.4 - Divisão de números Complexos&lt;/h4&gt;
 &lt;p&gt;Considere os números complexos $z = x + iy$ e $w = u + iv$,&lt;/p&gt;
 &lt;p&gt;Para efetuar a divisão $ \frac{z}{w} $, para $w \neq 0$,&lt;/p&gt;
 &lt;p&gt;multiplica o numerador e o denominador pelo conjugado complexo do denominador.&lt;/p&gt;
@@ -2635,7 +2635,7 @@ True
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;a / b =  (0.08108108108108109-0.5135135135135136j)
 a / c =  (1.0769230769230769+0.6153846153846155j)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;referências-bibliográficas&#34;&gt;Referências Bibliográficas&lt;/h2&gt;
+&lt;h3 id=&#34;referências-bibliográficas&#34;&gt;Referências Bibliográficas&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;CMATH — MATHEMATICAL FUNCTIONS FOR COMPLEX NUMBERS.&lt;/strong&gt; 2023. Python documentation. Disponível em: &lt;a href=&#34;https://docs.python.org/3/library/cmath.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://docs.python.org/3/library/cmath.html&lt;/a&gt;. Acesso em: 19 ago. 2023.&lt;/p&gt;
 &lt;p&gt;MEURER, Aaron; SMITH, Christopher P.; PAPROCKI, Mateusz; ČERTÍK, Ondřej; KIRPICHEV, Sergey B.; ROCKLIN, Matthew; KUMAR, AMiT; IVANOV, Sergiu; MOORE, Jason K.; SINGH, Sartaj; RATHNAYAKE, Thilina; VIG, Sean; GRANGER, Brian E.; MULLER, Richard P.; BONAZZI, Francesco; GUPTA, Harsh; VATS, Shivam; JOHANSSON, Fredrik; PEDREGOSA, Fabian; … SCOPATZ, Anthony. &lt;strong&gt;SymPy: symbolic computing in Python&lt;/strong&gt;. PeerJ Computer Science, v. 3, p. e103, 2 jan. 2017. &lt;a href=&#34;https://doi.org/10.7717/peerj-cs.103&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.7717/peerj-cs.103&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;GEOGEBRA. 2023. &lt;strong&gt;GeoGebra&lt;/strong&gt;. Disponível em: &lt;a href=&#34;https://www.geogebra.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.geogebra.org/&lt;/a&gt;. Acesso em: 19 ago. 2023.&lt;/p&gt;
@@ -2671,7 +2671,7 @@ a / c =  (1.0769230769230769+0.6153846153846155j)
     </item>
     
     <item>
-      <title>Apenas um pedido</title>
+      <title>Tecnologia Consciente: Como Usar a Tecnologia de Forma Responsável</title>
       <link>https://lgrando1.github.io/post/pedido/</link>
       <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://lgrando1.github.io/post/pedido/</guid>
@@ -2684,7 +2684,7 @@ a / c =  (1.0769230769230769+0.6153846153846155j)
 &lt;li&gt;Uma nova I.A possui a capacidade de elaborar relatórios ou realizar atendimentos de forma automatizada -&amp;gt; Como treinar as pessoas que efetuavam este trabalho para novas atividades.&lt;/li&gt;
 &lt;li&gt;Um sistema de veículos autônomo irá substituir os motoristas -&amp;gt;  Como treinar as pessoas que efetuavam este trabalho para novas atividades.&lt;/li&gt;
 &lt;li&gt;Você está se aprimorando para entender esta nova tecnologia funciona/trabalha?, você esta atuando como um &lt;strong&gt;&amp;ldquo;motor de inovação&amp;rdquo;&lt;/strong&gt; para sua comunidade?, você está mostrando como utilizar está nova tecnologia e suas armadilhas?.&lt;/li&gt;
-&lt;li&gt;etc, etc.&lt;/li&gt;
+&lt;li&gt;etc&amp;hellip;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Temos que fazer nossa parte, para que todos sejam respeitados no futuro.&lt;/p&gt;
 &lt;p&gt;
