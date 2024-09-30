@@ -865,7 +865,8 @@
 <p><a href="https://lgrando1.github.io/post/ollama/" target="_blank" rel="noopener">Parte 1 - Instalando o Ollama no Linux</a></p>
 <p><a href="https://lgrando1.github.io/post/ollamawin/" target="_blank" rel="noopener">Parte 2 - Instalando o Ollama no Windows</a></p>
 <p>Importante: Nunca utilizar LLMs como oráculos ou como fonte de informações, já encontrei vários erros tanto em modelos online ou offline. Usar apenas como suporte para suas atividades.</p>
-<p>Depois de testar LLMs offlines no computador, resolvi procurar uma solução para meu celular. O dispositivo em questão é um celular Android da Marca Samsung <a href="https://www.samsung.com/br/smartphones/galaxy-a/galaxy-a15-blue-black-256gb-sm-a155mzkizto/" target="_blank" rel="noopener">modelo A15 (SM-A155M/DSN)</a>. O mesmo é um dispositivo que me custou um pouco menos de 1000 reais e o possui 8 gigas de RAM, em meus testes a quantidade de RAM influenciou no desempenho, com 8 GB tive sucesso em modelos de no máximo 4B de paramêtros, testei um de 7B e ele ficou muito lerdo para gerar a inferência. Existem <a href="https://www.reddit.com/r/LocalLLaMA/search/?q=smartphone&amp;type=link&amp;cId=cf9557fb-9775-4a60-8095-c8c0c62a65fa&amp;iId=cc07fcca-916b-44b7-9e36-ddad34b28746" target="_blank" rel="noopener">bastante discussões sobre este tema, como por exemplo em</a> onde conheci este aplicativo, o <a href="https://play.google.com/store/apps/details?id=com.druk.lmplayground" target="_blank" rel="noopener">LM Playground</a>.</p>
+<p>Depois de testar LLMs offlines no computador, resolvi procurar uma solução para meu celular. O dispositivo em questão é um celular Android da Marca Samsung <a href="https://www.samsung.com/br/smartphones/galaxy-a/galaxy-a15-blue-black-256gb-sm-a155mzkizto/" target="_blank" rel="noopener">modelo A15 (SM-A155M/DSN)</a>. O mesmo é um dispositivo que me custou um pouco menos de 1000 reais e o possui 8 gigas de RAM, em meus testes a quantidade de RAM influenciou no desempenho, com 8 GB tive sucesso em modelos de no máximo 4B de paramêtros, testei um de 7B e ele ficou muito lerdo para gerar a inferência. Sobre dispositivos com 4 gigas de RAM fiz um teste e descrevo no item 15.</p>
+<p>Existem <a href="https://www.reddit.com/r/LocalLLaMA/search/?q=smartphone&amp;type=link&amp;cId=cf9557fb-9775-4a60-8095-c8c0c62a65fa&amp;iId=cc07fcca-916b-44b7-9e36-ddad34b28746" target="_blank" rel="noopener">bastante discussões sobre este tema, como por exemplo em</a> onde conheci este aplicativo, o <a href="https://play.google.com/store/apps/details?id=com.druk.lmplayground" target="_blank" rel="noopener">LM Playground</a>.</p>
 <p>Lembrando que é uma solução experimental e encontrei vários problemas como demora de respostas e muitas vezes ele alucinava ou não finalizava a inferência. Dependendo o poder computacional do dispositivo onde está sendo realizado o teste, ele pode não conseguir inferir dependendo o modelo LLM. Testei um Modelo de 7B no meu celular e ele ficou muito lento.</p>
 <p>Caso queira ver o aplicativo em ação, segue um <a href="https://youtu.be/ibQVCXG6Ixk" target="_blank" rel="noopener">vídeo que gravei testando o aplicativo</a>.</p>
 <p>Para instalar:</p>
@@ -1415,7 +1416,9 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>ps.: testei em um tablet da Samsung (Modelo X200 com 4 GB de RAM) e não tive sucesso com este modelo de Llama3.2 3B, mas aparentemente o Llama3.2 1B funcionou bem, o que reforça a questão empírica destes testes:</p>
+<ol start="15">
+<li>testei em um tablet da Samsung (Modelo X200 com 4 GB de RAM) e não tive sucesso com este modelo de Llama3.2 3B, mas aparentemente o Llama3.2 1B funcionou bem, o que reforça a questão empírica destes testes:</li>
+</ol>
 <p>
 
 
