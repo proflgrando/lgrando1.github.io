@@ -5,7 +5,7 @@
     <link>https://lgrando1.github.io/tag/gpt/</link>
       <atom:link href="https://lgrando1.github.io/tag/gpt/index.xml" rel="self" type="application/rss+xml" />
     <description>GPT</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 30 Sep 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_512x512_fill_lanczos_center_3.png</url>
       <title>GPT</title>
@@ -13,11 +13,609 @@
     </image>
     
     <item>
-      <title>Como Instalar e Usar a Ferramenta Ollama Offline no Windows</title>
+      <title>Como Instalar e Usar um modelo LLMs Offline no Android</title>
+      <link>https://lgrando1.github.io/post/llmandroid/</link>
+      <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://lgrando1.github.io/post/llmandroid/</guid>
+      <description>&lt;p&gt;Outros posts sobre o tema em:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/hface/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Como Criar um Pipeline em Python para Testar Modelos no Hugging Face&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/prompt1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dicas de Engenharia de Prompt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 1 - Instalando o Ollama no Linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollamawin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 2 - Instalando o Ollama no Windows&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Importante: Nunca utilizar LLMs como oráculos ou como fonte de informações, já encontrei vários erros tanto em modelos online ou offline. Usar apenas como suporte para suas atividades.&lt;/p&gt;
+&lt;p&gt;Depois de testar LLMs offlines no computador, resolvi procurar uma solução para meu celular. O dispositivo em questão é um celular Android da Marca Samsung modelo A15 (SM-A155M/DSN). O mesmo é um dispositivo que no final de setembro custa menos de 1000 reais e o mais interessante possui 8 gigas de RAM. Existem &lt;a href=&#34;https://www.reddit.com/r/LocalLLaMA/search/?q=smartphone&amp;amp;type=link&amp;amp;cId=cf9557fb-9775-4a60-8095-c8c0c62a65fa&amp;amp;iId=cc07fcca-916b-44b7-9e36-ddad34b28746&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bastante discussões sobre este tema, como por exemplo em&lt;/a&gt; onde conheci este aplicativo, o &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.druk.lmplayground&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LM Playground&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Lembrando que é uma solução experimental e encontrei vários problemas como demora de respostas e muitas vezes ele alucinava ou não finalizava a inferência. Dependendo o poder computacional do dispositivo onde está sendo realizado o teste, ele pode não conseguir inferir dependendo o modelo LLM. Testei um Modelo de 7B no meu celular e ele ficou muito lento.&lt;/p&gt;
+&lt;p&gt;Caso queira ver o aplicativo em ação, segue um &lt;a href=&#34;https://youtu.be/ibQVCXG6Ixk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;vídeo que gravei testando o aplicativo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Para instalar:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Entrar na PlayStore:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Playstore&#34; srcset=&#34;
+               /post/llmandroid/01_hub527ee1d1d6e54a235fa7f35611ff2f2_376361_7ab24a318c01590d3f9027b32243a7d6.webp 400w,
+               /post/llmandroid/01_hub527ee1d1d6e54a235fa7f35611ff2f2_376361_cc0737c7cde99e51f2c18390e6a3bdab.webp 760w,
+               /post/llmandroid/01_hub527ee1d1d6e54a235fa7f35611ff2f2_376361_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/llmandroid/01_hub527ee1d1d6e54a235fa7f35611ff2f2_376361_7ab24a318c01590d3f9027b32243a7d6.webp&#34;
+               width=&#34;347&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Procurar o Aplicativo &amp;ldquo;LM Playgroung&amp;rdquo;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;busca&#34; srcset=&#34;
+               /post/llmandroid/02_huaeb09686932f799d57f1144d67af95cd_78512_470f70c604f5da566b6a59da09f05d28.webp 400w,
+               /post/llmandroid/02_huaeb09686932f799d57f1144d67af95cd_78512_04f69119b56277c447ae3c38b3fa01dd.webp 760w,
+               /post/llmandroid/02_huaeb09686932f799d57f1144d67af95cd_78512_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/llmandroid/02_huaeb09686932f799d57f1144d67af95cd_78512_470f70c604f5da566b6a59da09f05d28.webp&#34;
+               width=&#34;344&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Instalar o App, ver abaixo sobre a versão Beta.:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;instalar&#34; srcset=&#34;
+               /post/llmandroid/03_hu28007a23171c8859327775c15de95929_186321_b73036923e961e151eb5c8d8206f9d70.webp 400w,
+               /post/llmandroid/03_hu28007a23171c8859327775c15de95929_186321_4695137c65c6d60f9e37430969f303b3.webp 760w,
+               /post/llmandroid/03_hu28007a23171c8859327775c15de95929_186321_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/llmandroid/03_hu28007a23171c8859327775c15de95929_186321_b73036923e961e151eb5c8d8206f9d70.webp&#34;
+               width=&#34;345&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Abrir o App e clicar em &amp;ldquo;Select Model&amp;rdquo;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;selecionar&#34; srcset=&#34;
+               /post/llmandroid/04_hue58ef2008f65ad1adc7d7db7adf6b956_30621_0811220416f0a2d44ec20ebe04b60ff6.webp 400w,
+               /post/llmandroid/04_hue58ef2008f65ad1adc7d7db7adf6b956_30621_36acd4b481bd51027bea3d10d692d0c0.webp 760w,
+               /post/llmandroid/04_hue58ef2008f65ad1adc7d7db7adf6b956_30621_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/llmandroid/04_hue58ef2008f65ad1adc7d7db7adf6b956_30621_0811220416f0a2d44ec20ebe04b60ff6.webp&#34;
+               width=&#34;349&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Abrira os modelos disponíveis no APP (OBS: a versão Beta do APlicativo possui mais modelos):&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;modelos&#34; srcset=&#34;
+               /post/llmandroid/05_hu2050179f93f3abe8cf29dd84a87370e8_96705_1f4f3811ff57af0853e1ee1d5da82ae6.webp 400w,
+               /post/llmandroid/05_hu2050179f93f3abe8cf29dd84a87370e8_96705_e5cad5455761db352d57379ad2425a6e.webp 760w,
+               /post/llmandroid/05_hu2050179f93f3abe8cf29dd84a87370e8_96705_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/llmandroid/05_hu2050179f93f3abe8cf29dd84a87370e8_96705_1f4f3811ff57af0853e1ee1d5da82ae6.webp&#34;
+               width=&#34;339&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Clicar em baixar um modelo e esperar baixar:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;modelos&#34; srcset=&#34;
+               /post/llmandroid/06_hu54ef596dcf83e5a8ac55ad590e802d42_27492_a4c178947b9bf98b0ff70aafe95d8cdf.webp 400w,
+               /post/llmandroid/06_hu54ef596dcf83e5a8ac55ad590e802d42_27492_22bf8bc1bc1200f878cd1107218e36a1.webp 760w,
+               /post/llmandroid/06_hu54ef596dcf83e5a8ac55ad590e802d42_27492_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/llmandroid/06_hu54ef596dcf83e5a8ac55ad590e802d42_27492_a4c178947b9bf98b0ff70aafe95d8cdf.webp&#34;
+               width=&#34;342&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;Aparecerá que o modelo foi baixado:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;modelos&#34; srcset=&#34;
+               /post/llmandroid/07_hu8e1c6eaafe3ec871a622bf630cff0ca3_91285_265654a13b54783461e043f55e4a3a20.webp 400w,
+               /post/llmandroid/07_hu8e1c6eaafe3ec871a622bf630cff0ca3_91285_83ed6c86942a4ab18875d42f9f536112.webp 760w,
+               /post/llmandroid/07_hu8e1c6eaafe3ec871a622bf630cff0ca3_91285_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/llmandroid/07_hu8e1c6eaafe3ec871a622bf630cff0ca3_91285_265654a13b54783461e043f55e4a3a20.webp&#34;
+               width=&#34;335&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;O Aplicativo baixa o modelo na sua pasta de Download, se você quiser apagar um modelo baixado, precisa deletar no seu gerenciador de dispositivos:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;modelos&#34; srcset=&#34;
+               /post/llmandroid/08_hu1fccb15cac86a6568ae60e668702655f_46528_2ac8cb5347c2e2765bb59a72b7c69898.webp 400w,
+               /post/llmandroid/08_hu1fccb15cac86a6568ae60e668702655f_46528_a656fe4cf25edb4b6a7f645d32e9dbc6.webp 760w,
+               /post/llmandroid/08_hu1fccb15cac86a6568ae60e668702655f_46528_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/llmandroid/08_hu1fccb15cac86a6568ae60e668702655f_46528_2ac8cb5347c2e2765bb59a72b7c69898.webp&#34;
+               width=&#34;343&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;9&#34;&gt;
+&lt;li&gt;Para garantir que não ocorra conexão, para fins de teste:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;modelos&#34; srcset=&#34;
+               /post/llmandroid/09_huaef1c77c92899c40f01235798a74b320_59255_f0fd2f492012baedbd5f235692dd4844.webp 400w,
+               /post/llmandroid/09_huaef1c77c92899c40f01235798a74b320_59255_dfd5e6a0a4a3f69e1d8cc76599c15605.webp 760w,
+               /post/llmandroid/09_huaef1c77c92899c40f01235798a74b320_59255_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/llmandroid/09_huaef1c77c92899c40f01235798a74b320_59255_f0fd2f492012baedbd5f235692dd4844.webp&#34;
+               width=&#34;339&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;10&#34;&gt;
+&lt;li&gt;Abrir novamente o aplicativo e escolher o modelo:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;modelos&#34; srcset=&#34;
+               /post/llmandroid/10_hu26c0839d237045b963d276023d088c3c_80454_0a6ca357c432bc46d32fea8b3950eea5.webp 400w,
+               /post/llmandroid/10_hu26c0839d237045b963d276023d088c3c_80454_9c2767ce7e8fee63d6f7965cc8d17388.webp 760w,
+               /post/llmandroid/10_hu26c0839d237045b963d276023d088c3c_80454_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/llmandroid/10_hu26c0839d237045b963d276023d088c3c_80454_0a6ca357c432bc46d32fea8b3950eea5.webp&#34;
+               width=&#34;344&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;11&#34;&gt;
+&lt;li&gt;Agora você pode começar a utilizar o modelo como se fosse um chat.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;modelos&#34; srcset=&#34;
+               /post/llmandroid/11_hufc6a095ce55180404d2c491b3825924d_109988_047f9960c313a6543d1dee6ff53b684d.webp 400w,
+               /post/llmandroid/11_hufc6a095ce55180404d2c491b3825924d_109988_b6f5bf1918ec671d3b50bbdcf9b014f3.webp 760w,
+               /post/llmandroid/11_hufc6a095ce55180404d2c491b3825924d_109988_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/llmandroid/11_hufc6a095ce55180404d2c491b3825924d_109988_047f9960c313a6543d1dee6ff53b684d.webp&#34;
+               width=&#34;340&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;12&#34;&gt;
+&lt;li&gt;Ao clicar no simbolo do aplicativo ou no sinal de exclamação, você pode avaliar a métrica de performance do modelo:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;modelos&#34; srcset=&#34;
+               /post/llmandroid/11_hufc6a095ce55180404d2c491b3825924d_109988_047f9960c313a6543d1dee6ff53b684d.webp 400w,
+               /post/llmandroid/11_hufc6a095ce55180404d2c491b3825924d_109988_b6f5bf1918ec671d3b50bbdcf9b014f3.webp 760w,
+               /post/llmandroid/11_hufc6a095ce55180404d2c491b3825924d_109988_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/llmandroid/11_hufc6a095ce55180404d2c491b3825924d_109988_047f9960c313a6543d1dee6ff53b684d.webp&#34;
+               width=&#34;340&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;modelos&#34; srcset=&#34;
+               /post/llmandroid/14_hue3140880317ad18eac1379d4af16d94b_121874_d93d2340e3104cbb2f491aa53c274e0f.webp 400w,
+               /post/llmandroid/14_hue3140880317ad18eac1379d4af16d94b_121874_fc3281f9ed673e503aeedf72af5e5998.webp 760w,
+               /post/llmandroid/14_hue3140880317ad18eac1379d4af16d94b_121874_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/llmandroid/14_hue3140880317ad18eac1379d4af16d94b_121874_d93d2340e3104cbb2f491aa53c274e0f.webp&#34;
+               width=&#34;346&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;13&#34;&gt;
+&lt;li&gt;Entrei como testador beta do LM Playground e após a atualização do aplicativo apareceu novos modelos:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;modelos&#34; srcset=&#34;
+               /post/llmandroid/16_huf73849f28aa801e7cd7fe580f12c24b6_147867_4530ee6cbf090a8bdd78b61989d6bcd2.webp 400w,
+               /post/llmandroid/16_huf73849f28aa801e7cd7fe580f12c24b6_147867_993f4ac209920cab35d8222647bcb3ec.webp 760w,
+               /post/llmandroid/16_huf73849f28aa801e7cd7fe580f12c24b6_147867_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/llmandroid/16_huf73849f28aa801e7cd7fe580f12c24b6_147867_4530ee6cbf090a8bdd78b61989d6bcd2.webp&#34;
+               width=&#34;341&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;modelos&#34; srcset=&#34;
+               /post/llmandroid/17_hu5c6b2fc8526325b06204ca39671be2f6_115804_665480f98e89c28b8c36336718e78a66.webp 400w,
+               /post/llmandroid/17_hu5c6b2fc8526325b06204ca39671be2f6_115804_4a69736d68886bdea7c95fa4c2d9b611.webp 760w,
+               /post/llmandroid/17_hu5c6b2fc8526325b06204ca39671be2f6_115804_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/llmandroid/17_hu5c6b2fc8526325b06204ca39671be2f6_115804_665480f98e89c28b8c36336718e78a66.webp&#34;
+               width=&#34;334&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;14&#34;&gt;
+&lt;li&gt;Testei a Llama 3B e gostei do desempenho no meu celular:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;modelos&#34; srcset=&#34;
+               /post/llmandroid/18_hu8361c130e74de38ce150e8063f2dde55_126250_8f37edde62259e342f24abb6229cdef3.webp 400w,
+               /post/llmandroid/18_hu8361c130e74de38ce150e8063f2dde55_126250_455dfb31e96ed32ae2ffc2847004fc15.webp 760w,
+               /post/llmandroid/18_hu8361c130e74de38ce150e8063f2dde55_126250_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/llmandroid/18_hu8361c130e74de38ce150e8063f2dde55_126250_8f37edde62259e342f24abb6229cdef3.webp&#34;
+               width=&#34;339&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;modelos&#34; srcset=&#34;
+               /post/llmandroid/19_huf50abbce892824360682e9b752b8e359_157538_dac40b7fb360f8f95ea859aa4c2d83ba.webp 400w,
+               /post/llmandroid/19_huf50abbce892824360682e9b752b8e359_157538_54136c5ce3bab4b7526c98fba14f96f6.webp 760w,
+               /post/llmandroid/19_huf50abbce892824360682e9b752b8e359_157538_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/llmandroid/19_huf50abbce892824360682e9b752b8e359_157538_dac40b7fb360f8f95ea859aa4c2d83ba.webp&#34;
+               width=&#34;343&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;modelos&#34; srcset=&#34;
+               /post/llmandroid/20_hu5af747e17d07409d7d42c9bd52c56dd1_98919_4f9c0f9c135caf756d21fd89f3c9f09c.webp 400w,
+               /post/llmandroid/20_hu5af747e17d07409d7d42c9bd52c56dd1_98919_dc7b47e99d86cf1053c95932f030bd87.webp 760w,
+               /post/llmandroid/20_hu5af747e17d07409d7d42c9bd52c56dd1_98919_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/llmandroid/20_hu5af747e17d07409d7d42c9bd52c56dd1_98919_4f9c0f9c135caf756d21fd89f3c9f09c.webp&#34;
+               width=&#34;339&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;ps.: testei em um tablet da Samsung (Modelo X200 com 4 GB de RAM) e não tive sucesso com este modelo de Llama3.2 3B, mas aparentemente o Llama3.2 1B funcionou bem, o que reforça a questão experimental destes testes:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;modelos&#34; srcset=&#34;
+               /post/llmandroid/30_hu28a7d012a8b0b20ef1b34a03314ddd2d_245850_d3bdf0e8d85ec21083c01c9dcdb2e3b1.webp 400w,
+               /post/llmandroid/30_hu28a7d012a8b0b20ef1b34a03314ddd2d_245850_c61151b858cee99fcf7c4d5f2ac14120.webp 760w,
+               /post/llmandroid/30_hu28a7d012a8b0b20ef1b34a03314ddd2d_245850_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/llmandroid/30_hu28a7d012a8b0b20ef1b34a03314ddd2d_245850_d3bdf0e8d85ec21083c01c9dcdb2e3b1.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;475&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Sucesso a todos!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Como Instalar e Usar um modelo LLMs Offline no Windows</title>
       <link>https://lgrando1.github.io/post/ollamawin/</link>
       <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://lgrando1.github.io/post/ollamawin/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 1 - Instalando o Ollama no Linux&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Outros posts sobre o tema em:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/hface/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Como Criar um Pipeline em Python para Testar Modelos no Hugging Face&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/prompt1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dicas de Engenharia de Prompt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 1 - Instalando o Ollama no Linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmandroid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 3 - Instalando LLMs Off-line no Android&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Após o &lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;último post&lt;/a&gt; onde relatei a experiencia de usar o Ollama em num computador com Linux, resolvi extender o teste em uma máquina com Windows 10.
 Fiquei interessado em saber como o Ollama iria se comportar em um computador de 2013, um Samsung NP500P4C-AD2BR, provido de um processador Core i7 de terceira geração e sem uma GPU discreta.
 As únicas modificações que realizei neste computador foi a inclusão de mais 2 GB de RAM (agora com 6 gigas) e a instalação de um SSD no lugar do HD original.&lt;/p&gt;
@@ -366,11 +964,15 @@ As únicas modificações que realizei neste computador foi a inclusão de mais 
     </item>
     
     <item>
-      <title>Como Usar Ollama para Instalar LLM Offline no Linux</title>
+      <title>Como Instalar e Usar um modelo LLMs Offline no Linux</title>
       <link>https://lgrando1.github.io/post/ollama/</link>
       <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://lgrando1.github.io/post/ollama/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollamawin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 2 - Instalando o Ollama no Windows&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Outros posts sobre o tema em:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/hface/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Como Criar um Pipeline em Python para Testar Modelos no Hugging Face&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/prompt1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dicas de Engenharia de Prompt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollamawin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 2 - Instalando o Ollama no Windows&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmandroid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 3 - Instalando LLMs Off-line no Android&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;O recém &lt;a href=&#34;https://www.nature.com/articles/d41586-024-02998-y&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;artigo da Nature&lt;/strong&gt;&lt;/a&gt; trouxe uma discussão sobre o uso de LLMs locais em vez daquelas que utilizamos de forma online como por exemplo o Chat-GPT, Gemini e o CoPilot. A preocupação com aspectos como privacidade e o uso de nossos dados quando utilizandos os LLMs de terceitos, sem contar que estas ferramentas nescessitam de acesso a internet.
 Sites como o &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugging Face&lt;/a&gt; permitem testar alguns usos destas ferramentas utilizando uma biblioteca com a linguagem Python, como eu já descrevi em &lt;a href=&#34;https://lgrando1.github.io/post/hface/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;uma postagem anterior.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Eu queria algo mais completo como um assistente virtual local e como sou usuário Linux (uso o Pop!_OS 20.04), encontrei este &lt;a href=&#34;https://itsfoss.com/ollama-setup-linux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;post muito bem explicado&lt;/a&gt; de como rodar uma LLM de maneira off-line no Linux e então resolvi replicar, e conto esta experiência abaixo.&lt;/p&gt;
@@ -694,7 +1296,12 @@ PS: peço desculpas na imagem abaixo por que eu digitei um comando errado, por i
       <link>https://lgrando1.github.io/post/prompt1/</link>
       <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://lgrando1.github.io/post/prompt1/</guid>
-      <description>&lt;p&gt;Realizei recentemente o curso &lt;a href=&#34;https://www.coursera.org/learn/prompt-engineering&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Prompt Engineering for ChatGPT&lt;/em&gt;&lt;/a&gt; e gostaria de compartilhar algumas anotações que realizei durante o mesmo.&lt;/p&gt;
+      <description>&lt;p&gt;Outros posts sobre o tema em:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/hface/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Como Criar um Pipeline em Python para Testar Modelos no Hugging Face&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 1 - Instalando o Ollama no Linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollamawin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 2 - Instalando o Ollama no Windows&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmandroid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 3 - Instalando LLMs Off-line no Android&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Realizei recentemente o curso &lt;a href=&#34;https://www.coursera.org/learn/prompt-engineering&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Prompt Engineering for ChatGPT&lt;/em&gt;&lt;/a&gt; e gostaria de compartilhar algumas anotações que realizei durante o mesmo.&lt;/p&gt;
 &lt;p&gt;Estas ferramentas não podem ser consideradas como &lt;a href=&#34;https://chat.openai.com/share/36071465-b59a-44e1-a494-eaba36edc4cd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fonte de fatos&lt;/a&gt;, mas são excelentes como suporte para ideias e quem sabe para tirar da gaveta aquela ideia de um livro.&lt;/p&gt;
 &lt;p&gt;O objetivo desta série é criar postagens com quatro estratégias por post. Estou utilizando como exemplo o Chat-GPT em sua versão grátis, mas você pode testar em qualquer outra ferramenta.&lt;/p&gt;
 &lt;p&gt;Caso queira conhecer melhor o funcionamento destas ferramentas, recomendo o &lt;a href=&#34;https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;texto do Stephen Wolfram&lt;/a&gt; e o curso &lt;a href=&#34;https://www.coursera.org/learn/prompt-engineering&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Prompt Engineering for ChatGPT&lt;/em&gt;&lt;/a&gt; que pode ser auditado gratuitamente no Coursera.&lt;/p&gt;

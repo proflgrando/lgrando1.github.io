@@ -17,7 +17,12 @@
       <link>https://lgrando1.github.io/post/hface/</link>
       <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://lgrando1.github.io/post/hface/</guid>
-      <description>&lt;p&gt;A plataforma &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Hugging Face&lt;/strong&gt;&lt;/a&gt; é uma portal onde a comunidade de aprendizado de máquina colabora com modelos, conjunto de dados e aplicações.&lt;/p&gt;
+      <description>&lt;p&gt;Outros posts sobre o tema em:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/prompt1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dicas de Engenharia de Prompt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 1 - Instalando o Ollama no Linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollamawin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 2 - Instalando o Ollama no Windows&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmandroid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 3 - Instalando LLMs Off-line no Android&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A plataforma &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Hugging Face&lt;/strong&gt;&lt;/a&gt; é uma portal onde a comunidade de aprendizado de máquina colabora com modelos, conjunto de dados e aplicações.&lt;/p&gt;
 &lt;p&gt;Ao acessar o site e clicar no link &lt;a href=&#34;https://huggingface.co/models&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Models&lt;/a&gt; é possível buscar por variados modelos voltados para várias tarefas de aprendizado de máquina visão computacional, processamento natural de linguagem, áudio, dados tabulares, aprendizado por reforço e outros tipos.&lt;/p&gt;
 &lt;p&gt;Neste post apresentaremos uma introdução de como utilizar estas bibliotecas em sua máquina (ou no Google Colab). Como exemplo é demostrado a realização de duas tarefas: o preenchimento de mascaras de texto (completar um espaço de um texto) e o resumo de um texto.&lt;/p&gt;
 &lt;p&gt;São dois modelos/exemplos simples, mas o objetivo é realmente despertar a curiosidade em conhecer mais sobre esta plataforma.&lt;/p&gt;
