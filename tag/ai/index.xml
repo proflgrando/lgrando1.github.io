@@ -1050,6 +1050,9 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
+&lt;p&gt;Importante, após fechar o aplicativo, pode ser necessario reiniciar o servidor ollama e ai sim poder aplicar os comandos para utilizar o LLM novamente.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./ollama serve &lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;No &lt;a href=&#34;https://youtu.be/FCpg9tCwtAI&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;vídeo&lt;/a&gt; eu mostro este caso e o funcionamento dele no meu dispositivo para dois modelos LLMs.&lt;/p&gt;
 &lt;p&gt;Desta forma você pode realizar seus testes com o Ollama no seu Android e instalar outros modelos LLMs que não estão disponíveis no LM Playground.&lt;/p&gt;
 &lt;p&gt;Referências:&lt;/p&gt;
 &lt;p&gt;[&lt;a href=&#34;https://gitlab.com/-/snippets/3682973&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;1&lt;/a&gt;] “Ollama on Termux ($3682973) · Snippets · GitLab”. GitLab, 17 de junho de 2024, &lt;a href=&#34;https://gitlab.com/-/snippets/3682973&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://gitlab.com/-/snippets/3682973&lt;/a&gt;.&lt;/p&gt;
