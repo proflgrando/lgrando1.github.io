@@ -387,6 +387,12 @@ Sites como o &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34
 &lt;p&gt;O &lt;a href=&#34;https://ollama.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ollama&lt;/a&gt; é uma ferramenta que facilita o processo de baixar e rodar os modelos LLMs de código aberto. Ele pode ser instalado no Windows, MacOS e o Linux. Apenas seguir o &lt;a href=&#34;https://ollama.com/download&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;procedimento de instalação presente no site deles&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;No meu caso utilizei o comando abaixo, mas recomendo que você siga o procedimento descrito pelo site pois o mesmo pode alterar conforme novas atualizações.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Repetindo: siga o procedimento de instalação conforme descrito no site deles, não este daqui&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;O vídeo abaixo mostra o desempenho destes modelos em meu computador para duas tarefas de geração de códigos em duas linguagens de programação.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bcDNx7GaXSU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -fsSL https://ollama.com/install.sh &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sh 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;O código acima irá baixar o Ollama em sua máquina e rodar o script de instalação. Você pode auditar o script de &lt;a href=&#34;https://github.com/ollama/ollama/blob/main/scripts/install.sh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;instalação aqui&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;A minha máquina é um notebook Acer Nitro que adquiri no final de 2020. Ele possui um Core i5 9300H, 16 GB de RAM e uma GPU Nvidia GeForce GTX 1650. O que fica interessante, pois o Ollama reconheceu a GPU.&lt;/p&gt;
