@@ -1,0 +1,2452 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: October 6, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.ee81bf7a110c56bd976b7e46cebf897e.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Leonardo Grando" />
+
+
+
+
+
+  
+
+<meta name="description" content="Executando Ferramentas LLM Offline no Android com o Termux" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://lgrando1.github.io/post/llmtermux/" />
+<link rel="canonical" href="https://lgrando1.github.io/post/llmtermux/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#707070" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_512x512_fill_lanczos_center_3.png" />
+<meta property="og:site_name" content="Leonardo Grando" />
+<meta property="og:url" content="https://lgrando1.github.io/post/llmtermux/" />
+<meta property="og:title" content="Instalação e Uso de LLMs Offline no Android pt.2 | Leonardo Grando" />
+<meta property="og:description" content="Executando Ferramentas LLM Offline no Android com o Termux" /><meta property="og:image" content="https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2024-10-06T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2024-10-06T14:11:20-03:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lgrando1.github.io/post/llmtermux/"
+  },
+  "headline": "Instalação e Uso de LLMs Offline no Android pt.2",
+  
+  "datePublished": "2024-10-06T00:00:00Z",
+  "dateModified": "2024-10-06T14:11:20-03:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Leonardo Grando"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Leonardo Grando",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Executando Ferramentas LLM Offline no Android com o Termux"
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Instalação e Uso de LLMs Offline no Android pt.2 | Leonardo Grando</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="9f3ac8dc907b97626f7a9600bd40bd18" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.253edc45b3a8a047e59a8677cf8e2715.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Leonardo Grando</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Leonardo Grando</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/event"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication/"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/uploads/resumeEN.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://www.linkedin.com/in/lgrando123" data-toggle="tooltip" data-placement="bottom" title="Follow me on LinkedIn" target="_blank" rel="noopener" aria-label="Follow me on LinkedIn">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Instalação e Uso de LLMs Offline no Android pt.2</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Oct 6, 2024
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    4 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>Outros posts sobre o tema em:</p>
+<p><a href="https://lgrando1.github.io/post/hface/" target="_blank" rel="noopener">Como Criar um Pipeline em Python para Testar Modelos no Hugging Face</a></p>
+<p><a href="https://lgrando1.github.io/post/prompt1/" target="_blank" rel="noopener">Dicas de Engenharia de Prompt</a></p>
+<p><a href="https://lgrando1.github.io/post/ollama/" target="_blank" rel="noopener">Parte 1 - Instalando o Ollama no Linux</a></p>
+<p><a href="https://lgrando1.github.io/post/ollamawin/" target="_blank" rel="noopener">Parte 2 - Instalando o Ollama no Windows</a></p>
+<p><a href="https://lgrando1.github.io/post/llmandroid/" target="_blank" rel="noopener">Parte 3 - Instalando o Ollama no Android pt.1</a></p>
+<p>Importante: Nunca utilizar LLMs como oráculos ou como fonte de informações, já encontrei vários erros tanto em modelos online ou offline. Usar apenas como suporte para suas atividades.</p>
+<p>Após o <a href="https://lgrando1.github.io/post/llmandroid/" target="_blank" rel="noopener">teste com o aplicativo</a> <a href="https://play.google.com/store/apps/details?id=com.druk.lmplayground" target="_blank" rel="noopener">LM Playground</a> descobri que é possivel rodar LLMs locais como descrito em <a href="https://medium.com/@researchgraph/how-to-run-llama-3-2-on-android-phone-64be7783c89f" target="_blank" rel="noopener">1</a> e <a href="https://gitlab.com/-/snippets/3682973" target="_blank" rel="noopener">2</a> no Android utilizando o <a href="https://termux.dev/en/" target="_blank" rel="noopener">Termux</a> que é um emulador de terminal Android e aplicativo de ambiente Linux que funciona diretamente sem necessidade de root ou configuração. Ao instalar ele vem com um sistema base mínimo, mas você pode instalar adicionais pelo gerenciador de pacotes APT. De forma resumida, você tem uma instalação Linux em seu celular.</p>
+<p>O Termux voltou a estar disponivel na <a href="https://wiki.termux.com/wiki/Termux_Google_Play" target="_blank" rel="noopener">PlayStore</a>, mas eu não tive sucesso ao tentar executar o Ollama na versão instalada por lá, como é uma versão experimental pode ser que futuramente funcione.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Playstore" srcset="
+               /post/llmtermux/00_hu3d4d7361fe054250abc6b767c0d51da2_201768_c9071ccbfdfb6b5a13178897233aca81.webp 400w,
+               /post/llmtermux/00_hu3d4d7361fe054250abc6b767c0d51da2_201768_f94ec2bbe9cd72515b226d22eb480d43.webp 760w,
+               /post/llmtermux/00_hu3d4d7361fe054250abc6b767c0d51da2_201768_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/00_hu3d4d7361fe054250abc6b767c0d51da2_201768_c9071ccbfdfb6b5a13178897233aca81.webp"
+               width="345"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Também é possível instalar o Termux via <a href="https://github.com/termux/termux-app#f-droid" target="_blank" rel="noopener">F-Droid</a> ou pelo próprio repositório deles no <a href="https://github.com/termux/termux-app#github" target="_blank" rel="noopener">GitHub</a>. Acabei escolhendo a instalar via GitHub. Não vou detalhar o processo de instalação, pois depende da execução de <a href="https://en.wikipedia.org/wiki/Sideloading" target="_blank" rel="noopener">sideloading</a> e cada marca/aparelho/versão tem seu procedimento. Lembrando que instalar aplicativos fora da Google Play não é um procedimento oficial, então faça por sua conta e risco e sugiro apenas fazer se souber o que você está fazendo.</p>
+<p>Para o meu caso, onde estou utilizando um dispositivo Samsung A15:</p>
+<ol>
+<li>Baixei a <a href="https://github.com/termux/termux-app/releases/tag/v0.118.1" target="_blank" rel="noopener">ultíma versão estável</a> e fiz a instalação via sideload no meu dispositivo:</li>
+</ol>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="GitHub" srcset="
+               /post/llmtermux/01_hu261e2b4ba228d1b921ca5a2fa040675a_101857_42f005258a785f5b3e64460503b4a83e.webp 400w,
+               /post/llmtermux/01_hu261e2b4ba228d1b921ca5a2fa040675a_101857_4810e9cb93aad2c39e7d255fb0745e3e.webp 760w,
+               /post/llmtermux/01_hu261e2b4ba228d1b921ca5a2fa040675a_101857_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/01_hu261e2b4ba228d1b921ca5a2fa040675a_101857_42f005258a785f5b3e64460503b4a83e.webp"
+               width="345"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="GitHub" srcset="
+               /post/llmtermux/02_hu08bc0c2e0b8fd8a516e34026ce636a33_87892_41c4f2cc99ae92e177ce67d43bf70941.webp 400w,
+               /post/llmtermux/02_hu08bc0c2e0b8fd8a516e34026ce636a33_87892_d7be2ad1eb666f37b866b5a31ffad23b.webp 760w,
+               /post/llmtermux/02_hu08bc0c2e0b8fd8a516e34026ce636a33_87892_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/02_hu08bc0c2e0b8fd8a516e34026ce636a33_87892_41c4f2cc99ae92e177ce67d43bf70941.webp"
+               width="346"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<ol start="2">
+<li>Executei a aplicação e apareceu a tela inicial do &ldquo;Termux&rdquo;:</li>
+</ol>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Termux" srcset="
+               /post/llmtermux/03_huf8f0c8876dd063b6af727d0a7db22ed0_124800_eaba03c4b92086d61ccef9cd08eadda5.webp 400w,
+               /post/llmtermux/03_huf8f0c8876dd063b6af727d0a7db22ed0_124800_8ffae05824a92d9d0469524dfbbadb37.webp 760w,
+               /post/llmtermux/03_huf8f0c8876dd063b6af727d0a7db22ed0_124800_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/03_huf8f0c8876dd063b6af727d0a7db22ed0_124800_eaba03c4b92086d61ccef9cd08eadda5.webp"
+               width="349"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<ol start="3">
+<li>Para permitir que o termux tenha acesso ao armazenamento do dispositivo, utilizei o comando abaixo:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">termux-setup-storage
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="armazenamento" srcset="
+               /post/llmtermux/04_hu3824dda9616d93cf074a4417de944d55_81533_7e999f011938edf682a00947b882627f.webp 400w,
+               /post/llmtermux/04_hu3824dda9616d93cf074a4417de944d55_81533_b1dc6eb670ea8e0a2489f83f8abf41a2.webp 760w,
+               /post/llmtermux/04_hu3824dda9616d93cf074a4417de944d55_81533_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/04_hu3824dda9616d93cf074a4417de944d55_81533_7e999f011938edf682a00947b882627f.webp"
+               width="340"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="armazenamento" srcset="
+               /post/llmtermux/05_hua2e873b56091fe46893fd81cc6bd5d6e_48922_0f8759f2142ca5094fc831261ff5381c.webp 400w,
+               /post/llmtermux/05_hua2e873b56091fe46893fd81cc6bd5d6e_48922_e72738695dd5e33e0f1e74c596a7552d.webp 760w,
+               /post/llmtermux/05_hua2e873b56091fe46893fd81cc6bd5d6e_48922_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/05_hua2e873b56091fe46893fd81cc6bd5d6e_48922_0f8759f2142ca5094fc831261ff5381c.webp"
+               width="342"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="armazenamento" srcset="
+               /post/llmtermux/06_hu50f3cd214b7e4a1df2814ec6140f2ff8_99869_1064205f576ce8dadc23a3bf1957e7ca.webp 400w,
+               /post/llmtermux/06_hu50f3cd214b7e4a1df2814ec6140f2ff8_99869_942a747bac5a2798cb27add9d0857222.webp 760w,
+               /post/llmtermux/06_hu50f3cd214b7e4a1df2814ec6140f2ff8_99869_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/06_hu50f3cd214b7e4a1df2814ec6140f2ff8_99869_1064205f576ce8dadc23a3bf1957e7ca.webp"
+               width="345"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<ol start="4">
+<li>Agora vou atualizar os repositórios de aplicativos e atualizar os aplicativos atuais:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">termux-setup-storage
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="atualizar" srcset="
+               /post/llmtermux/07_hu05c783495ea3559e16515aef8e6e885a_85388_d2e392024f2a717fd08aac6e731954fa.webp 400w,
+               /post/llmtermux/07_hu05c783495ea3559e16515aef8e6e885a_85388_9e0752484c097ae4e00a81340f93bb82.webp 760w,
+               /post/llmtermux/07_hu05c783495ea3559e16515aef8e6e885a_85388_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/07_hu05c783495ea3559e16515aef8e6e885a_85388_d2e392024f2a717fd08aac6e731954fa.webp"
+               width="347"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Aqui mostra o que será atualizado e o que sera instalado e pede se você deseja continuar (y-sim ou n-não), eu digitei y.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="atualizar" srcset="
+               /post/llmtermux/09_huce5c0d8b84c14363ba2da4d31cb75620_197483_563c088e72efcafd27240b958f133ff8.webp 400w,
+               /post/llmtermux/09_huce5c0d8b84c14363ba2da4d31cb75620_197483_84b25c4749ca82ee2a6133715eebd07f.webp 760w,
+               /post/llmtermux/09_huce5c0d8b84c14363ba2da4d31cb75620_197483_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/09_huce5c0d8b84c14363ba2da4d31cb75620_197483_563c088e72efcafd27240b958f133ff8.webp"
+               width="348"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Durante o processo ele pode pedir o que fazer sobre as source-list (fica a seu critério), eu mantive o default.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="atualizar" srcset="
+               /post/llmtermux/10_hu894fe634c157cde6ae42a2ebef36ee25_187665_89eaa610c62ad3a38266b9bfed68c264.webp 400w,
+               /post/llmtermux/10_hu894fe634c157cde6ae42a2ebef36ee25_187665_2be95c25b6b46379d9694a861e1b0865.webp 760w,
+               /post/llmtermux/10_hu894fe634c157cde6ae42a2ebef36ee25_187665_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/10_hu894fe634c157cde6ae42a2ebef36ee25_187665_89eaa610c62ad3a38266b9bfed68c264.webp"
+               width="341"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Lembrando que é possível instalar vários aplicativos para o terminal, utilizando o pkg, como por exemplo o Neofetch:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pkg install neofetch
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="atualizar" srcset="
+               /post/llmtermux/34_hu05ceeb6a1a0a809531b1823a3aee1e15_170531_4feb8768032c3542b96adb4e36ec2383.webp 400w,
+               /post/llmtermux/34_hu05ceeb6a1a0a809531b1823a3aee1e15_170531_a97740c0c890f0000a4df10df5a014e0.webp 760w,
+               /post/llmtermux/34_hu05ceeb6a1a0a809531b1823a3aee1e15_170531_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/34_hu05ceeb6a1a0a809531b1823a3aee1e15_170531_4feb8768032c3542b96adb4e36ec2383.webp"
+               width="344"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="atualizar" srcset="
+               /post/llmtermux/35_hu999b35c73e9e1070b391423c093beaf3_200849_c36b4857f48921c59cb96545477f7e6f.webp 400w,
+               /post/llmtermux/35_hu999b35c73e9e1070b391423c093beaf3_200849_e68cac31ae6909eff510f2ba7c306931.webp 760w,
+               /post/llmtermux/35_hu999b35c73e9e1070b391423c093beaf3_200849_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/35_hu999b35c73e9e1070b391423c093beaf3_200849_c36b4857f48921c59cb96545477f7e6f.webp"
+               width="339"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Feito isto podemos seguir em frente e seguir o procedimento descrito em <a href="https://gitlab.com/-/snippets/3682973" target="_blank" rel="noopener">2</a>.</p>
+<ol start="5">
+<li>Iremos instalar o git, cmake e a linguagem go para poder instalar o ollama em nosso dispositivo:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pkg install git cmake golang
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/11_hu475d074c4de349598c31b26b5e0ae03d_185102_b12a60bb4550a0cbecf08aa7a307a6b2.webp 400w,
+               /post/llmtermux/11_hu475d074c4de349598c31b26b5e0ae03d_185102_152f0ae4824b17025c0e0be5c1cc5065.webp 760w,
+               /post/llmtermux/11_hu475d074c4de349598c31b26b5e0ae03d_185102_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/11_hu475d074c4de349598c31b26b5e0ae03d_185102_b12a60bb4550a0cbecf08aa7a307a6b2.webp"
+               width="344"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Lembrando que é uma instalação grande (aqui foram 801 megas):</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/12_hu26e1c093342762295b102b6808c73700_194719_ca48811dbc2770f9b85b10bc5a3a1483.webp 400w,
+               /post/llmtermux/12_hu26e1c093342762295b102b6808c73700_194719_d304fe230d958bbd73fc9438c6314d0c.webp 760w,
+               /post/llmtermux/12_hu26e1c093342762295b102b6808c73700_194719_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/12_hu26e1c093342762295b102b6808c73700_194719_ca48811dbc2770f9b85b10bc5a3a1483.webp"
+               width="345"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Após efetuar a instalação ele responde as versões instaladas dos aplicativos:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/13_hu1d602a8a41566da26f18bb660114f3cb_20920_d20e515106ca7d04a1617c928f7c317d.webp 400w,
+               /post/llmtermux/13_hu1d602a8a41566da26f18bb660114f3cb_20920_ba5c593ea2887c318ad27a05bfa78321.webp 760w,
+               /post/llmtermux/13_hu1d602a8a41566da26f18bb660114f3cb_20920_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/13_hu1d602a8a41566da26f18bb660114f3cb_20920_d20e515106ca7d04a1617c928f7c317d.webp"
+               width="450"
+               height="158"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<ol start="6">
+<li>Agora podemos clonar o repositório e será criada a pasta ollama:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone --depth <span class="m">1</span> https://github.com/ollama/ollama.git
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/14_hu8a662a6d1eaed1e382736e9a3d7a4c2e_86673_6b6da65fb1656113d207d85fc0e88464.webp 400w,
+               /post/llmtermux/14_hu8a662a6d1eaed1e382736e9a3d7a4c2e_86673_f46a1a74c1bd0464d6b279edbc81cfb9.webp 760w,
+               /post/llmtermux/14_hu8a662a6d1eaed1e382736e9a3d7a4c2e_86673_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/14_hu8a662a6d1eaed1e382736e9a3d7a4c2e_86673_6b6da65fb1656113d207d85fc0e88464.webp"
+               width="345"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/15_hu243ec3f60e72e6eabc00243f57374a4a_157171_ba1031c500155f1c62c88074ba9337fe.webp 400w,
+               /post/llmtermux/15_hu243ec3f60e72e6eabc00243f57374a4a_157171_99b9c2f92f78e5c61ad58f0e2751a13c.webp 760w,
+               /post/llmtermux/15_hu243ec3f60e72e6eabc00243f57374a4a_157171_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/15_hu243ec3f60e72e6eabc00243f57374a4a_157171_ba1031c500155f1c62c88074ba9337fe.webp"
+               width="349"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Devemos entrar nesta pasta para poder construir o Ollama</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ollama
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/16_hu61596f67653388b679b09bc94b5e50ba_192178_e5dd1c22f3481aadd889165dafdb4b8c.webp 400w,
+               /post/llmtermux/16_hu61596f67653388b679b09bc94b5e50ba_192178_0aac5daa627e95d94a8f9744e9ac8b6c.webp 760w,
+               /post/llmtermux/16_hu61596f67653388b679b09bc94b5e50ba_192178_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/16_hu61596f67653388b679b09bc94b5e50ba_192178_e5dd1c22f3481aadd889165dafdb4b8c.webp"
+               width="345"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<ol start="7">
+<li>Agora iremos construir o Ollama da fonte, lembrando que este processo será demorado.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">go generate ./...
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/17_hu763fff4ebab26d5f0046f2c329473d4d_197695_97350e536f84bd67a2a4efe512f5c4c2.webp 400w,
+               /post/llmtermux/17_hu763fff4ebab26d5f0046f2c329473d4d_197695_7c8a2b2319013eb33c02e8001c71e134.webp 760w,
+               /post/llmtermux/17_hu763fff4ebab26d5f0046f2c329473d4d_197695_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/17_hu763fff4ebab26d5f0046f2c329473d4d_197695_97350e536f84bd67a2a4efe512f5c4c2.webp"
+               width="342"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">go build .
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/18_huadb9da10b3c69e3c2a9baf7afc764b4d_159486_c71536097cc52da754bd990e3a148c63.webp 400w,
+               /post/llmtermux/18_huadb9da10b3c69e3c2a9baf7afc764b4d_159486_b5b9ab1c61c88207c191cf028706d8b5.webp 760w,
+               /post/llmtermux/18_huadb9da10b3c69e3c2a9baf7afc764b4d_159486_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/18_huadb9da10b3c69e3c2a9baf7afc764b4d_159486_c71536097cc52da754bd990e3a148c63.webp"
+               width="348"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Após a instalação do ollama, agora podemos instanciar o seu servidor</p>
+<ol start="7">
+<li>Instanciando o servidor do ollama:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./ollama serve <span class="p">&amp;</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/19_hu6f82e6bbcf2e839d448e2807b98517d4_170630_474bc11fc214035d0a4d4360e64d0a61.webp 400w,
+               /post/llmtermux/19_hu6f82e6bbcf2e839d448e2807b98517d4_170630_949ae093037f7567ddbe7badfea5d5e0.webp 760w,
+               /post/llmtermux/19_hu6f82e6bbcf2e839d448e2807b98517d4_170630_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/19_hu6f82e6bbcf2e839d448e2807b98517d4_170630_474bc11fc214035d0a4d4360e64d0a61.webp"
+               width="345"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Observe que agora tem um novo aplicativo chamado Ollama na pasta ollama</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/20_hu6e8d95e86076e3584fdb47871c089bd8_207154_5cfb37aa25e849ec8d4acfeb07b20024.webp 400w,
+               /post/llmtermux/20_hu6e8d95e86076e3584fdb47871c089bd8_207154_cc29d8f09a6a90c93e836d4439894850.webp 760w,
+               /post/llmtermux/20_hu6e8d95e86076e3584fdb47871c089bd8_207154_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/20_hu6e8d95e86076e3584fdb47871c089bd8_207154_5cfb37aa25e849ec8d4acfeb07b20024.webp"
+               width="348"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Agora você pode utilizar os comandos do ollama para rodar e gerenciar seus modelos de LLMs locais, como por exemplo listar os modelos instalados com o</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./ollama ls
+</span></span></code></pre></div><ol start="8">
+<li>Agora vamos instalar o llama3.2:1b</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./ollama run llama3.2:1b
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/22_hudad7aa546d050619147087f8f9ee40cf_205084_2ecc10f8e77b245d96468572541243bd.webp 400w,
+               /post/llmtermux/22_hudad7aa546d050619147087f8f9ee40cf_205084_9895171845f48fe7e0597343946b6945.webp 760w,
+               /post/llmtermux/22_hudad7aa546d050619147087f8f9ee40cf_205084_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/22_hudad7aa546d050619147087f8f9ee40cf_205084_2ecc10f8e77b245d96468572541243bd.webp"
+               width="345"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Após instalação (vai baixar localmente o modelo, neste caso foram mais de 1 GB), o prompt vai estar disponível:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/23_hub2e4a03b0853445d1890777412056dfb_208147_9e8faab89333e110200c8a386fa18ea3.webp 400w,
+               /post/llmtermux/23_hub2e4a03b0853445d1890777412056dfb_208147_da0df5e25035376b3cba2a0c76afc140.webp 760w,
+               /post/llmtermux/23_hub2e4a03b0853445d1890777412056dfb_208147_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/23_hub2e4a03b0853445d1890777412056dfb_208147_9e8faab89333e110200c8a386fa18ea3.webp"
+               width="349"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Você pode começar a fazer seus testes:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/24_hu8249bbda67e29100b779ba04cc6c10b5_203404_77d3d548d582c6e97b63f5d25ba9074d.webp 400w,
+               /post/llmtermux/24_hu8249bbda67e29100b779ba04cc6c10b5_203404_5d4661793924de94e334193a04841fa3.webp 760w,
+               /post/llmtermux/24_hu8249bbda67e29100b779ba04cc6c10b5_203404_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/24_hu8249bbda67e29100b779ba04cc6c10b5_203404_77d3d548d582c6e97b63f5d25ba9074d.webp"
+               width="347"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/25_huc0ca74a267ce3dc0a01b76eeaee7eb21_182658_3307ee96298ed19da0be32187ca87d1e.webp 400w,
+               /post/llmtermux/25_huc0ca74a267ce3dc0a01b76eeaee7eb21_182658_4d70a24a0ca79665f249019c82062691.webp 760w,
+               /post/llmtermux/25_huc0ca74a267ce3dc0a01b76eeaee7eb21_182658_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/25_huc0ca74a267ce3dc0a01b76eeaee7eb21_182658_3307ee96298ed19da0be32187ca87d1e.webp"
+               width="343"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Caso você queira parar o prompt ou sair do mesmo, você pode utilizar o comando CTRL+d</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/26_hu1cf248baa0bcbdbc51b5959f34b82f80_136800_d9b277d1c12a897013d386066e0affca.webp 400w,
+               /post/llmtermux/26_hu1cf248baa0bcbdbc51b5959f34b82f80_136800_822d47b6598b83f223a779882e952f1b.webp 760w,
+               /post/llmtermux/26_hu1cf248baa0bcbdbc51b5959f34b82f80_136800_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/26_hu1cf248baa0bcbdbc51b5959f34b82f80_136800_d9b277d1c12a897013d386066e0affca.webp"
+               width="344"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<ol start="9">
+<li>Fora do Ollama, agora vou testar a instalação de outros modelos como o qwen2.5:0.5b, mais leve que o anterior.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./ollama run qwen2.5:0.5b
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/27_hub773b8619096482b4ce361d7c93adcb2_118680_125ea08f1c8f2a61f0b2d6d2d7f7b5cd.webp 400w,
+               /post/llmtermux/27_hub773b8619096482b4ce361d7c93adcb2_118680_0b1d952dd6098d284dcd7d645a046d2c.webp 760w,
+               /post/llmtermux/27_hub773b8619096482b4ce361d7c93adcb2_118680_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/27_hub773b8619096482b4ce361d7c93adcb2_118680_125ea08f1c8f2a61f0b2d6d2d7f7b5cd.webp"
+               width="347"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Já instalado, é possivel ver que agora temos 2 modelos LLM baixados:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/28_hu2dbbe6581c38aabb282284d9f771c3df_173928_ecc472303fda0cb8e323fa2fdf58bbf8.webp 400w,
+               /post/llmtermux/28_hu2dbbe6581c38aabb282284d9f771c3df_173928_a40e01f2dd7cb3504a973479ebad6d9f.webp 760w,
+               /post/llmtermux/28_hu2dbbe6581c38aabb282284d9f771c3df_173928_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/28_hu2dbbe6581c38aabb282284d9f771c3df_173928_ecc472303fda0cb8e323fa2fdf58bbf8.webp"
+               width="343"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<ol start="9">
+<li>Agora vamos continuar o script, para remover a pasta de instalação do go e ganhar espaço:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod -R <span class="m">700</span> ~go
+</span></span><span class="line"><span class="cl">rm -r ~/go
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/29_hu457dd90bb91f19174d716bc3246b862a_171861_4c1cdb5fec0802cfb636d690a3f43ff8.webp 400w,
+               /post/llmtermux/29_hu457dd90bb91f19174d716bc3246b862a_171861_1cf319e94fb35d53372302f3c692949a.webp 760w,
+               /post/llmtermux/29_hu457dd90bb91f19174d716bc3246b862a_171861_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/29_hu457dd90bb91f19174d716bc3246b862a_171861_4c1cdb5fec0802cfb636d690a3f43ff8.webp"
+               width="342"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>E como o termux não possui o .local/bin em seu PATH (embora você possa adicioná-lo se preferir). Se você quiser mover o binário ollama para a pasta bin, você pode fazer o seguinte.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp ollama/ollama /data/data/com.termux/files/usr/bin/
+</span></span></code></pre></div><p>E agora posso rodar o ollama em qualquer local do termux:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/30_hu2f597cf3ed7b8f26064f4e80ef72abcc_153292_9d3e28df06d4194b0b984bf8beed4d40.webp 400w,
+               /post/llmtermux/30_hu2f597cf3ed7b8f26064f4e80ef72abcc_153292_f663194458ea8796e02aa3f40bdbd883.webp 760w,
+               /post/llmtermux/30_hu2f597cf3ed7b8f26064f4e80ef72abcc_153292_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/30_hu2f597cf3ed7b8f26064f4e80ef72abcc_153292_9d3e28df06d4194b0b984bf8beed4d40.webp"
+               width="342"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Para sair do termux você pode digitar exit.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">exit</span>
+</span></span></code></pre></div><p>Para executar novamente após sair, você pode entrar novamente no aplicativo</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/31_hu195de52381cccfda85a3f2fbc0121bf0_298074_45b03c664844f9c25bef828406c87938.webp 400w,
+               /post/llmtermux/31_hu195de52381cccfda85a3f2fbc0121bf0_298074_326793d9fdb0cee0930fa0569ed587c9.webp 760w,
+               /post/llmtermux/31_hu195de52381cccfda85a3f2fbc0121bf0_298074_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/31_hu195de52381cccfda85a3f2fbc0121bf0_298074_45b03c664844f9c25bef828406c87938.webp"
+               width="347"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>E digitar os comandos ollama desejados</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/32_hu1091a32e5fb04b9d0741d0c89275c533_147595_60556a162d66a796a44bc4d0fc48da25.webp 400w,
+               /post/llmtermux/32_hu1091a32e5fb04b9d0741d0c89275c533_147595_4744769aed73a86c3558ad85c9b31fe2.webp 760w,
+               /post/llmtermux/32_hu1091a32e5fb04b9d0741d0c89275c533_147595_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/32_hu1091a32e5fb04b9d0741d0c89275c533_147595_60556a162d66a796a44bc4d0fc48da25.webp"
+               width="343"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Caso você queira obter dados de performance das respostas do prompt, você pode incluir &ndash;verbose da chamada do run:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama run qwen2.5:0.5b --verbose
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="modelos" srcset="
+               /post/llmtermux/33_hue0f122f108a63824d026b7d6ad161a58_186974_cab0199f3d32cb54f04255c0817cfea3.webp 400w,
+               /post/llmtermux/33_hue0f122f108a63824d026b7d6ad161a58_186974_0e241a2e1c9490f805d33cc6f0635d10.webp 760w,
+               /post/llmtermux/33_hue0f122f108a63824d026b7d6ad161a58_186974_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/llmtermux/33_hue0f122f108a63824d026b7d6ad161a58_186974_cab0199f3d32cb54f04255c0817cfea3.webp"
+               width="351"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Desta forma você pode realizar seus testes com o Ollama no seu Android e instalar outros modelos LLMs que não estão disponíveis no LM Playground.</p>
+<p>Referências:</p>
+<p>[<a href="https://gitlab.com/-/snippets/3682973" target="_blank" rel="noopener">1</a>] “Ollama on Termux ($3682973) · Snippets · GitLab”. GitLab, 17 de junho de 2024, <a href="https://gitlab.com/-/snippets/3682973" target="_blank" rel="noopener">https://gitlab.com/-/snippets/3682973</a>.</p>
+<p>[<a href="https://medium.com/@researchgraph/how-to-run-llama-3-2-on-android-phone-64be7783c89f" target="_blank" rel="noopener">2</a>] Graph, Research. “How to Run Llama 3.2 on Android Phone”. Medium, 30 de setembro de 2024, <a href="https://medium.com/@researchgraph/how-to-run-llama-3-2-on-android-phone-64be7783c89f" target="_blank" rel="noopener">https://medium.com/@researchgraph/how-to-run-llama-3-2-on-android-phone-64be7783c89f</a>.</p>
+<p>Sucesso a todos!</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/gpt/">GPT</a>
+  
+  <a class="badge badge-light" href="/tag/prompt/">prompt</a>
+  
+  <a class="badge badge-light" href="/tag/termux/">termux</a>
+  
+  <a class="badge badge-light" href="/tag/enginnering/">enginnering</a>
+  
+  <a class="badge badge-light" href="/tag/ia/">IA</a>
+  
+  <a class="badge badge-light" href="/tag/ai/">AI</a>
+  
+  <a class="badge badge-light" href="/tag/offline/">Offline</a>
+  
+  <a class="badge badge-light" href="/tag/android/">Android</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flgrando1.github.io%2Fpost%2Fllmtermux%2F&amp;text=Instala%C3%A7%C3%A3o&#43;e&#43;Uso&#43;de&#43;LLMs&#43;Offline&#43;no&#43;Android&#43;pt.2" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Flgrando1.github.io%2Fpost%2Fllmtermux%2F&amp;t=Instala%C3%A7%C3%A3o&#43;e&#43;Uso&#43;de&#43;LLMs&#43;Offline&#43;no&#43;Android&#43;pt.2" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Instala%C3%A7%C3%A3o%20e%20Uso%20de%20LLMs%20Offline%20no%20Android%20pt.2&amp;body=https%3A%2F%2Flgrando1.github.io%2Fpost%2Fllmtermux%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Flgrando1.github.io%2Fpost%2Fllmtermux%2F&amp;title=Instala%C3%A7%C3%A3o&#43;e&#43;Uso&#43;de&#43;LLMs&#43;Offline&#43;no&#43;Android&#43;pt.2" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Instala%C3%A7%C3%A3o&#43;e&#43;Uso&#43;de&#43;LLMs&#43;Offline&#43;no&#43;Android&#43;pt.2%20https%3A%2F%2Flgrando1.github.io%2Fpost%2Fllmtermux%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Flgrando1.github.io%2Fpost%2Fllmtermux%2F&amp;title=Instala%C3%A7%C3%A3o&#43;e&#43;Uso&#43;de&#43;LLMs&#43;Offline&#43;no&#43;Android&#43;pt.2" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://lgrando1.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu2eff65d577e70f5774d3fc177b8295d0_20417_270x270_fill_q75_lanczos_center.jpg" alt="Leonardo Grando"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://lgrando1.github.io/">Leonardo Grando</a></h5>
+      <h6 class="card-subtitle">Technology Ph.D. Candidate</h6>
+      <p class="card-text">My research interests include Agent-Based Simulation, Artificial Intelligence, Machine Learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/lgrando1" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/lgrando123" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=cXC9OsoAAAAJ&amp;hl" target="_blank" rel="noopener">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Leonardo-Grando" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0002-0448-209X" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://lgrando1.github.io/index.xml" target="_blank" rel="noopener">
+        <i class="fas fa-rss"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2024 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.e8ee06ba8371980ffde659871dd593b0.js"></script>
+
+
+
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
