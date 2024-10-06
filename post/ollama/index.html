@@ -869,14 +869,14 @@
 Sites como o <a href="https://huggingface.co/" target="_blank" rel="noopener">Hugging Face</a> permitem testar alguns usos destas ferramentas utilizando uma biblioteca com a linguagem Python, como eu já descrevi em <a href="https://lgrando1.github.io/post/hface/" target="_blank" rel="noopener">uma postagem anterior.</a></p>
 <p>Eu queria algo mais completo como um assistente virtual local e como sou usuário Linux (uso o Pop!_OS 20.04), encontrei este <a href="https://itsfoss.com/ollama-setup-linux/" target="_blank" rel="noopener">post muito bem explicado</a> de como rodar uma LLM de maneira off-line no Linux e então resolvi replicar, e conto esta experiência abaixo.</p>
 <p>O <a href="https://ollama.com/" target="_blank" rel="noopener">Ollama</a> é uma ferramenta que facilita o processo de baixar e rodar os modelos LLMs de código aberto. Ele pode ser instalado no Windows, MacOS e o Linux. Apenas seguir o <a href="https://ollama.com/download" target="_blank" rel="noopener">procedimento de instalação presente no site deles</a>.</p>
-<p>No meu caso utilizei o comando abaixo, mas recomendo que você siga o procedimento descrito pelo site pois o mesmo pode alterar conforme novas atualizações.</p>
-<p><strong>Repetindo: siga o procedimento de instalação conforme descrito no site deles, não este daqui</strong>.</p>
 <p>O vídeo abaixo mostra o desempenho destes modelos em meu computador para duas tarefas de geração de códigos em duas linguagens de programação.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/bcDNx7GaXSU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
+<p>No meu caso utilizei o comando abaixo, mas recomendo que você siga o procedimento descrito pelo site pois o mesmo pode alterar conforme novas atualizações.</p>
+<p><strong>Repetindo: siga o procedimento de instalação conforme descrito no site deles, não este daqui</strong>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -fsSL https://ollama.com/install.sh <span class="p">|</span> sh 
 </span></span></code></pre></div><p>O código acima irá baixar o Ollama em sua máquina e rodar o script de instalação. Você pode auditar o script de <a href="https://github.com/ollama/ollama/blob/main/scripts/install.sh" target="_blank" rel="noopener">instalação aqui</a></p>
 <p>A minha máquina é um notebook Acer Nitro que adquiri no final de 2020. Ele possui um Core i5 9300H, 16 GB de RAM e uma GPU Nvidia GeForce GTX 1650. O que fica interessante, pois o Ollama reconheceu a GPU.</p>
