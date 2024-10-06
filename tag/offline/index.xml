@@ -24,7 +24,7 @@
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollamawin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 2 - Instalando o Ollama no Windows&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmandroid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 3 - Instalando o Ollama no Android pt.1&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Importante: Nunca utilizar LLMs como oráculos ou como fonte de informações, já encontrei vários erros tanto em modelos online ou offline. Usar apenas como suporte para suas atividades.&lt;/p&gt;
-&lt;p&gt;Após o &lt;a href=&#34;https://lgrando1.github.io/post/llmandroid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;teste com o aplicativo&lt;/a&gt; &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.druk.lmplayground&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LM Playground&lt;/a&gt; descobri que é possivel rodar LLMs locais como descrito em &lt;a href=&#34;https://medium.com/@researchgraph/how-to-run-llama-3-2-on-android-phone-64be7783c89f&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;1&lt;/a&gt; e &lt;a href=&#34;https://gitlab.com/-/snippets/3682973&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2&lt;/a&gt; no Android utilizando o &lt;a href=&#34;https://termux.dev/en/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Termux&lt;/a&gt; que é um emulador de terminal Android e aplicativo de ambiente Linux que funciona diretamente sem necessidade de root ou configuração. Ao instalar ele vem com um sistema base mínimo, mas você pode instalar adicionais pelo gerenciador de pacotes APT. De forma resumida, você tem uma instalação Linux em seu celular.&lt;/p&gt;
+&lt;p&gt;Após o &lt;a href=&#34;https://lgrando1.github.io/post/llmandroid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;teste com o aplicativo&lt;/a&gt; &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.druk.lmplayground&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LM Playground&lt;/a&gt; descobri que é possível rodar LLMs locais como descrito em &lt;a href=&#34;https://medium.com/@researchgraph/how-to-run-llama-3-2-on-android-phone-64be7783c89f&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;1&lt;/a&gt; e &lt;a href=&#34;https://gitlab.com/-/snippets/3682973&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2&lt;/a&gt; no Android utilizando o &lt;a href=&#34;https://termux.dev/en/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Termux&lt;/a&gt; que é um emulador de terminal Android e aplicativo de ambiente Linux que funciona diretamente sem necessidade de root ou configuração. Ao instalar ele vem com um sistema base mínimo, mas você pode instalar adicionais pelo gerenciador de pacotes APT. De forma resumida, você tem uma instalação Linux em seu celular.&lt;/p&gt;
 &lt;p&gt;O Termux voltou a estar disponivel na &lt;a href=&#34;https://wiki.termux.com/wiki/Termux_Google_Play&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PlayStore&lt;/a&gt;, mas eu não tive sucesso ao tentar executar o Ollama na versão instalada por lá, como é uma versão experimental pode ser que futuramente funcione.&lt;/p&gt;
 &lt;p&gt;
 
@@ -54,8 +54,14 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Também é possível instalar o Termux via &lt;a href=&#34;https://github.com/termux/termux-app#f-droid&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;F-Droid&lt;/a&gt; ou pelo próprio repositório deles no &lt;a href=&#34;https://github.com/termux/termux-app#github&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;. Acabei escolhendo a instalar via GitHub. Não vou detalhar o processo de instalação, pois depende da execução de &lt;a href=&#34;https://en.wikipedia.org/wiki/Sideloading&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sideloading&lt;/a&gt; e cada marca/aparelho/versão tem seu procedimento. Lembrando que instalar aplicativos fora da Google Play não é um procedimento oficial, então faça por sua conta e risco e sugiro apenas fazer se souber o que você está fazendo.&lt;/p&gt;
+&lt;p&gt;Também é possível instalar o Termux via &lt;a href=&#34;https://github.com/termux/termux-app#f-droid&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;F-Droid&lt;/a&gt; ou pelo próprio repositório deles no &lt;a href=&#34;https://github.com/termux/termux-app#github&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;. Acabei escolhendo a instalar via GitHub. Não detalharei o processo de instalação, por depender da execução de &lt;a href=&#34;https://en.wikipedia.org/wiki/Sideloading&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sideloading&lt;/a&gt; e cada marca/aparelho/versão tem seu procedimento. Lembrando que instalar aplicativos fora da Google Play não é um procedimento oficial, então faça por sua conta e risco e sugiro apenas fazer se souber o que você está fazendo.&lt;/p&gt;
 &lt;p&gt;Para o meu caso, onde estou utilizando um dispositivo Samsung A15:&lt;/p&gt;
+&lt;p&gt;No vídeo eu mostro o funcionamento dele no meu dispositivo para dois modelos LLMs.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/FCpg9tCwtAI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 &lt;ol&gt;
 &lt;li&gt;Baixei a &lt;a href=&#34;https://github.com/termux/termux-app/releases/tag/v0.118.1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ultíma versão estável&lt;/a&gt; e fiz a instalação via sideload no meu dispositivo:&lt;/li&gt;
 &lt;/ol&gt;
@@ -324,7 +330,7 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Lembrando que é possível instalar vários aplicativos para o terminal, utilizando o pkg, como por exemplo o Neofetch:&lt;/p&gt;
+&lt;p&gt;Lembrando que é possível instalar vários aplicativos para o terminal, utilizando o pkg, como, por exemplo, o Neofetch:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pkg install neofetch
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 
@@ -384,7 +390,7 @@
 &lt;/p&gt;
 &lt;p&gt;Feito isto podemos seguir em frente e seguir o procedimento descrito em &lt;a href=&#34;https://gitlab.com/-/snippets/3682973&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2&lt;/a&gt;.&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;Iremos instalar o git, cmake e a linguagem go para poder instalar o ollama em nosso dispositivo:&lt;/li&gt;
+&lt;li&gt;Instalaremos o git, cmake e a linguagem go para poder instalar o Ollama em nosso dispositivo:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pkg install git cmake golang
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
@@ -444,7 +450,7 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Após efetuar a instalação ele responde as versões instaladas dos aplicativos:&lt;/p&gt;
+&lt;p&gt;Após efetuar a instalação ele responde às versões instaladas dos aplicativos:&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -474,7 +480,7 @@
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;ol start=&#34;6&#34;&gt;
-&lt;li&gt;Agora podemos clonar o repositório e será criada a pasta ollama:&lt;/li&gt;
+&lt;li&gt;Agora podemos clonar o repositório e será criada a pasta Ollama:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone --depth &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; https://github.com/ollama/ollama.git
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
@@ -533,7 +539,7 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Devemos entrar nesta pasta para poder construir o Ollama&lt;/p&gt;
+&lt;p&gt;Devemos entrar nesta pasta para poder construir o Ollama:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; ollama
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 
@@ -564,7 +570,7 @@
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;ol start=&#34;7&#34;&gt;
-&lt;li&gt;Agora iremos construir o Ollama da fonte, lembrando que este processo será demorado.&lt;/li&gt;
+&lt;li&gt;Agora construiremos o Ollama da fonte, lembrando que este processo será demorado.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;go generate ./...
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
@@ -624,9 +630,9 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Após a instalação do ollama, agora podemos instanciar o seu servidor&lt;/p&gt;
+&lt;p&gt;Após a instalação do Ollama, agora podemos instanciar o seu servidor.&lt;/p&gt;
 &lt;ol start=&#34;7&#34;&gt;
-&lt;li&gt;Instanciando o servidor do ollama:&lt;/li&gt;
+&lt;li&gt;Instanciando o servidor do Ollama:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./ollama serve &lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
@@ -657,7 +663,7 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Observe que agora tem um novo aplicativo chamado Ollama na pasta ollama&lt;/p&gt;
+&lt;p&gt;Observe que agora tem um novo aplicativo chamado Ollama na pasta ollama:&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -686,10 +692,10 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Agora você pode utilizar os comandos do ollama para rodar e gerenciar seus modelos de LLMs locais, como por exemplo listar os modelos instalados com o&lt;/p&gt;
+&lt;p&gt;Agora você pode utilizar os comandos do Ollama para rodar e gerenciar seus modelos de LLMs locais, como, por exemplo, listar os modelos instalados como:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./ollama ls
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;8&#34;&gt;
-&lt;li&gt;Agora vamos instalar o llama3.2:1b&lt;/li&gt;
+&lt;li&gt;Agora instalemos o &lt;a href=&#34;https://ollama.com/library/llama3.2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;llama3.2:1b&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./ollama run llama3.2:1b
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
@@ -720,7 +726,7 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Após instalação (vai baixar localmente o modelo, neste caso foram mais de 1 GB), o prompt vai estar disponível:&lt;/p&gt;
+&lt;p&gt;Após instalação (baixará localmente o modelo, neste caso foram mais de 1 GB), o prompt estará disponível:&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -836,7 +842,7 @@
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;ol start=&#34;9&#34;&gt;
-&lt;li&gt;Fora do Ollama, agora vou testar a instalação de outros modelos como o qwen2.5:0.5b, mais leve que o anterior.&lt;/li&gt;
+&lt;li&gt;Fora do Ollama, agora testarei a instalação de outros modelos como o &lt;a href=&#34;https://ollama.com/library/qwen2.5:0.5b&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;qwen2.5:0.5b&lt;/a&gt;, mais leve que o anterior.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./ollama run qwen2.5:0.5b
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
@@ -867,7 +873,7 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Já instalado, é possivel ver que agora temos 2 modelos LLM baixados:&lt;/p&gt;
+&lt;p&gt;Já instalado, é possível listar os 2 modelos LLMs baixados:&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -897,7 +903,7 @@
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;ol start=&#34;9&#34;&gt;
-&lt;li&gt;Agora vamos continuar o script, para remover a pasta de instalação do go e ganhar espaço:&lt;/li&gt;
+&lt;li&gt;Agora vamos continuar o script, para remover a pasta de instalação do Go e ganhar espaço:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chmod -R &lt;span class=&#34;m&#34;&gt;700&lt;/span&gt; ~go
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;rm -r ~/go
@@ -929,9 +935,9 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;E como o termux não possui o .local/bin em seu PATH (embora você possa adicioná-lo se preferir). Se você quiser mover o binário ollama para a pasta bin, você pode fazer o seguinte.&lt;/p&gt;
+&lt;p&gt;E como o Termux não possui o .local/bin em seu PATH (embora você possa adicioná-lo se preferir). Se você quiser mover o binário ollama para a pasta bin, você pode fazer o seguinte.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cp ollama/ollama /data/data/com.termux/files/usr/bin/
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;E agora posso rodar o ollama em qualquer local do termux:&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;E agora posso rodar o Ollama em qualquer local do Termux:&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -960,9 +966,9 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Para sair do termux você pode digitar exit.&lt;/p&gt;
+&lt;p&gt;Para sair do Termux você pode digitar exit.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;exit&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Para executar novamente após sair, você pode entrar novamente no aplicativo&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Para executar novamente após sair, você pode entrar novamente no aplicativo no seu celular:&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -991,7 +997,7 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;E digitar os comandos ollama desejados&lt;/p&gt;
+&lt;p&gt;E digitar os comandos desejados:&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -1020,7 +1026,9 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Caso você queira obter dados de performance das respostas do prompt, você pode incluir &amp;ndash;verbose da chamada do run:&lt;/p&gt;
+&lt;p&gt;Pode acontecer que seja necessário reiniciar o servidor Ollama e ai, sim, poder aplicar os comandos para utilizar o LLM novamente (O vídeo acima mostrou este caso):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./ollama serve &lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Caso você queira obter dados de desempenho das respostas do prompt, você pode incluir &amp;ndash;verbose da chamada do run:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama run qwen2.5:0.5b --verbose
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 
@@ -1050,9 +1058,6 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Importante, após fechar o aplicativo, pode ser necessario reiniciar o servidor ollama e ai sim poder aplicar os comandos para utilizar o LLM novamente.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./ollama serve &lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;No &lt;a href=&#34;https://youtu.be/FCpg9tCwtAI&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;vídeo&lt;/a&gt; eu mostro este caso e o funcionamento dele no meu dispositivo para dois modelos LLMs.&lt;/p&gt;
 &lt;p&gt;Desta forma você pode realizar seus testes com o Ollama no seu Android e instalar outros modelos LLMs que não estão disponíveis no LM Playground.&lt;/p&gt;
 &lt;p&gt;Referências:&lt;/p&gt;
 &lt;p&gt;[&lt;a href=&#34;https://gitlab.com/-/snippets/3682973&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;1&lt;/a&gt;] “Ollama on Termux ($3682973) · Snippets · GitLab”. GitLab, 17 de junho de 2024, &lt;a href=&#34;https://gitlab.com/-/snippets/3682973&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://gitlab.com/-/snippets/3682973&lt;/a&gt;.&lt;/p&gt;
@@ -1074,9 +1079,14 @@
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmtermux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 4 - Instalando LLMs Off-line no Android - pt.2&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Importante: Nunca utilizar LLMs como oráculos ou como fonte de informações, já encontrei vários erros tanto em modelos online ou offline. Usar apenas como suporte para suas atividades.&lt;/p&gt;
 &lt;p&gt;Depois de testar LLMs offlines no computador, resolvi procurar uma solução para meu celular. O dispositivo em questão é um celular Android da Marca Samsung &lt;a href=&#34;https://www.samsung.com/br/smartphones/galaxy-a/galaxy-a15-blue-black-256gb-sm-a155mzkizto/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;modelo A15 (SM-A155M/DSN)&lt;/a&gt;. O mesmo é um dispositivo que me custou um pouco menos de 1000 reais e o possui 8 gigas de RAM, em meus testes a quantidade de RAM influenciou no desempenho, com 8 GB tive sucesso em modelos de no máximo 4B de paramêtros, testei um de 7B e ele ficou muito lerdo para gerar a inferência. Sobre dispositivos com 4 gigas de RAM fiz um teste e descrevo no item 15.&lt;/p&gt;
-&lt;p&gt;Existem &lt;a href=&#34;https://www.reddit.com/r/LocalLLaMA/search/?q=smartphone&amp;amp;type=link&amp;amp;cId=cf9557fb-9775-4a60-8095-c8c0c62a65fa&amp;amp;iId=cc07fcca-916b-44b7-9e36-ddad34b28746&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bastante discussões sobre este tema, como por exemplo em&lt;/a&gt; onde conheci este aplicativo, o &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.druk.lmplayground&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LM Playground&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Lembrando que é uma solução experimental e encontrei vários problemas como demora de respostas e muitas vezes ele alucinava ou não finalizava a inferência. Dependendo o poder computacional do dispositivo onde está sendo realizado o teste, ele pode não conseguir inferir dependendo o modelo LLM. Testei um Modelo de 7B no meu celular e ele ficou muito lento.&lt;/p&gt;
-&lt;p&gt;Caso queira ver o aplicativo em ação, segue um &lt;a href=&#34;https://youtu.be/ibQVCXG6Ixk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;vídeo que gravei testando o aplicativo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Existe bastante discussões sobre este tema, como por &lt;a href=&#34;https://www.reddit.com/r/LocalLLaMA/search/?q=smartphone&amp;amp;type=link&amp;amp;cId=cf9557fb-9775-4a60-8095-c8c0c62a65fa&amp;amp;iId=cc07fcca-916b-44b7-9e36-ddad34b28746&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;exemplo em&lt;/a&gt; onde conheci este aplicativo, o &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.druk.lmplayground&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LM Playground&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Lembrando que é uma solução experimental e encontrei vários problemas como demora de respostas e muitas vezes ele alucinava ou não finalizava a inferência. Dependendo o poder computacional do dispositivo onde está sendo realizado o teste, ele pode não conseguir inferir dependendo o modelo LLMs. Testei um Modelo de 7B no meu celular e ele ficou muito lento.&lt;/p&gt;
+&lt;p&gt;Caso queira ver o aplicativo em ação, segue um vídeo que gravei testando o aplicativo:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ibQVCXG6Ixk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 &lt;p&gt;Para instalar:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Entrar na PlayStore:&lt;/li&gt;
@@ -1171,6 +1181,7 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
+&lt;p&gt;Para utilizar o Aplicativo:&lt;/p&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;Abrir o App e clicar em &amp;ldquo;Select Model&amp;rdquo;:&lt;/li&gt;
 &lt;/ol&gt;
@@ -1203,7 +1214,7 @@
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;Abrira os modelos disponíveis no APP (OBS: a versão Beta do aplicativo possui mais modelos disponiveis, ver item 13):&lt;/li&gt;
+&lt;li&gt;Abrira os modelos disponíveis no aplicativo, lembrando que a versão Beta do aplicativo possui mais modelos disponíveis, ver item 13:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
 
@@ -1296,7 +1307,7 @@
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;ol start=&#34;8&#34;&gt;
-&lt;li&gt;O Aplicativo baixa o modelo na sua pasta de Download, se você quiser apagar um modelo baixado, precisa deletar no seu gerenciador de dispositivos:&lt;/li&gt;
+&lt;li&gt;O Aplicativo baixa o modelo na pasta de Download, se você quiser apagar um modelo baixado, precisa deletar no seu gerenciador de dispositivos:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
 
@@ -1420,7 +1431,7 @@
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;ol start=&#34;12&#34;&gt;
-&lt;li&gt;Ao clicar no simbolo do aplicativo ou no sinal de exclamação, você pode avaliar a métrica de performance do modelo:&lt;/li&gt;
+&lt;li&gt;Ao clicar no símbolo do aplicativo ou no sinal de exclamação, você pode avaliar a métrica de performance do modelo:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
 
@@ -1625,7 +1636,7 @@
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;ol start=&#34;15&#34;&gt;
-&lt;li&gt;testei em um tablet da Samsung (Modelo X200 com 4 GB de RAM) e não tive sucesso com este modelo de Llama3.2 3B, mas aparentemente o Llama3.2 1B funcionou bem, o que reforça a questão empírica destes testes:&lt;/li&gt;
+&lt;li&gt;testei em um tablet da Samsung (Modelo X200 com 4 GB de RAM) e não tive sucesso com este modelo de Llama3.2 3B, mas aparentemente o Llama3.2 1B funcionou bem, reforçando a questão empírica destes testes:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;
 
@@ -1816,11 +1827,11 @@ As únicas modificações que realizei neste computador foi a inclusão de mais 
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Então solicitei para baixar e instalar o modelo &lt;a href=&#34;https://ollama.com/library/phi3.5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;phi3.5 da Microsoft&lt;/a&gt; utilizando o comando&lt;/p&gt;
+&lt;p&gt;Então solicitei para baixar e instalar o modelo &lt;a href=&#34;https://ollama.com/library/phi3.5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Phi3.5 da Microsoft&lt;/a&gt; utilizando o comando&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama run &amp;lt;Nome_da_LLM&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;No caso da Phi3&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama run phi3.5
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;O processo de instalação da LLM foi mais demorado devido a limitação da placa wifi deste computador, e aqui ele rodando, onde realizei a minha pergunta clássica para verificar os modelos LLMs:&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;O processo de instalação da LLM foi mais demorado devido à limitação da placa Wi-Fi deste computador, e aqui ele rodando, onde realizei a minha pergunta clássica para verificar os modelos LLMs:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Quantos premios Nobéis o Brasil já ganhou?
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 
@@ -1853,7 +1864,7 @@ As únicas modificações que realizei neste computador foi a inclusão de mais 
 &lt;p&gt;Para testar a diferença de desempenho, solicitei a ele:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Você poderia gerar um código python para ler um arquivo excel em um dataframe pandas?
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ps: Lembrando que estes modelos possuem uma grande aleatoriedade nas respostas, como poderemos ver abaixo:&lt;/p&gt;
-&lt;p&gt;No Notebook com Windows, sem GPU demorou: 284 segundos e na máquina com Linux e GPU demorou 138 segundos. É vísivel a diferença na formação das frases, mas é importante observar que o mesmo modelo respondeu de forma diferente em ambas as máquinas:&lt;/p&gt;
+&lt;p&gt;No Notebook com Windows, sem GPU demorou: 284 segundos e na máquina com Linux e GPU demorou 138 segundos. É visível a diferença na formação das frases, mas é importante observar que o mesmo modelo respondeu de forma diferente em ambas as máquinas:&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -1944,7 +1955,7 @@ As únicas modificações que realizei neste computador foi a inclusão de mais 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Lembre-se de que, para ficheiros &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;.xlsx&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;, &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;openpyxl&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; é necessário e tanto o pandas
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;quanto openpyxl devem estar instalados em seu ambiente Python.
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Resposta do Prompt no computador com Linux&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Resposta do Prompt no computador com Linux.&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -2012,7 +2023,7 @@ As únicas modificações que realizei neste computador foi a inclusão de mais 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Lembre-se que esta abordagem requer um arquivo Excel sem cabeçalho dinâmico, pois por padrão &lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;pd.read_excel&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt; usará a primeira 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;linha como nomes das colunas&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; se sua tabela &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; excel &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; estruturada de outra forma &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;por exemplo, cada uma dessas primeiras nove 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;células é um cabeçalho&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;, você precisará lidar com isso manualmente ou especificando explicitamente os rótulos nas linhas.
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Preciso validar/verificar ambos os códigos gerados, atualizarei o post com a verificação dos códigos, mas não deixa de ser interessante que é possivel rodar um LLM em uma computador com 11 anos.&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Preciso validar/verificar ambos os códigos gerados, atualizarei o post com a verificação dos códigos, mas é interessante que é possível rodar um LLM de forma offline em um computador com 11 anos de idade.&lt;/p&gt;
 &lt;p&gt;Sucesso a todos!&lt;/p&gt;
 </description>
     </item>
@@ -2028,7 +2039,7 @@ As únicas modificações que realizei neste computador foi a inclusão de mais 
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollamawin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 2 - Instalando o Ollama no Windows&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmandroid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 3 - Instalando LLMs Off-line no Android- pt.1&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmtermux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 4 - Instalando LLMs Off-line no Android - pt.2&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;O recém &lt;a href=&#34;https://www.nature.com/articles/d41586-024-02998-y&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;artigo da Nature&lt;/strong&gt;&lt;/a&gt; trouxe uma discussão sobre o uso de LLMs locais em vez daquelas que utilizamos de forma online como por exemplo o Chat-GPT, Gemini e o CoPilot. A preocupação com aspectos como privacidade e o uso de nossos dados quando utilizandos os LLMs de terceitos, sem contar que estas ferramentas nescessitam de acesso a internet.
+&lt;p&gt;O recém &lt;a href=&#34;https://www.nature.com/articles/d41586-024-02998-y&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;artigo da Nature&lt;/strong&gt;&lt;/a&gt; trouxe uma discussão sobre o uso de LLMs locais em vez daquelas que utilizamos de forma online como, por exemplo, o Chat-GPT, Gemini e o CoPilot. A preocupação com aspectos como privacidade e o uso de nossos dados quando utilizando os LLMs de terceiros, sem contar que estas ferramentas necessitam de acesso à internet.
 Sites como o &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugging Face&lt;/a&gt; permitem testar alguns usos destas ferramentas utilizando uma biblioteca com a linguagem Python, como eu já descrevi em &lt;a href=&#34;https://lgrando1.github.io/post/hface/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;uma postagem anterior.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Eu queria algo mais completo como um assistente virtual local e como sou usuário Linux (uso o Pop!_OS 20.04), encontrei este &lt;a href=&#34;https://itsfoss.com/ollama-setup-linux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;post muito bem explicado&lt;/a&gt; de como rodar uma LLM de maneira off-line no Linux e então resolvi replicar, e conto esta experiência abaixo.&lt;/p&gt;
 &lt;p&gt;O &lt;a href=&#34;https://ollama.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ollama&lt;/a&gt; é uma ferramenta que facilita o processo de baixar e rodar os modelos LLMs de código aberto. Ele pode ser instalado no Windows, MacOS e o Linux. Apenas seguir o &lt;a href=&#34;https://ollama.com/download&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;procedimento de instalação presente no site deles&lt;/a&gt;.&lt;/p&gt;
@@ -2036,7 +2047,7 @@ Sites como o &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34
 &lt;p&gt;&lt;strong&gt;Repetindo: siga o procedimento de instalação conforme descrito no site deles, não este daqui&lt;/strong&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -fsSL https://ollama.com/install.sh &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sh 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;O código acima irá baixar o Ollama em sua máquina e rodar o script de instalação. Você pode auditar o script de &lt;a href=&#34;https://github.com/ollama/ollama/blob/main/scripts/install.sh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;instalação aqui&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;A minha máquina é um notebook Acer Nitro que adquiri no final de 2020. Ele possui um Core i5 9300H, 16 GB de RAM e uma GPU Nvidia Geforce GTX 1650. O que fica interessante, pois o Ollama reconheceu a GPU.&lt;/p&gt;
+&lt;p&gt;A minha máquina é um notebook Acer Nitro que adquiri no final de 2020. Ele possui um Core i5 9300H, 16 GB de RAM e uma GPU Nvidia GeForce GTX 1650. O que fica interessante, pois o Ollama reconheceu a GPU.&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -2099,7 +2110,7 @@ Sites como o &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34
 &lt;p&gt;Agora é hora de baixar o modelo LLM. No &lt;a href=&#34;https://ollama.com/library&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;site&lt;/a&gt; existe vários modelos. Já testei o llama3.1. Este &lt;a href=&#34;https://ollama.com/library/llama3.1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;modelo desenvolvido pela Meta&lt;/a&gt; e que possui três níveis de parâmetros 8, 70 e 405 bilhões de parâmetros. Acabei escolhendo o modelo de 8B. São aproximadamente 4.7 GB utilizado de armazenamento. Mas ai fica o critério de cada um. Para este post vou apresentar o processo de instalação do modelo &lt;a href=&#34;https://ollama.com/library/phi3.5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;phi3.5 da Microsoft&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Para dar um &amp;ldquo;pull&amp;rdquo; em um modelo LLM desejado, utiliza-se o comando:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama pull &amp;lt;Nome_da_LLM&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Então para baixar e instalar o modelo &lt;a href=&#34;https://ollama.com/library/phi3.5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;phi3.5 da Microsoft&lt;/a&gt;.&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Então para baixar e instalar o modelo &lt;a href=&#34;https://ollama.com/library/phi3.5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Phi3.5 da Microsoft&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama pull phi3.5
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 
@@ -2163,7 +2174,7 @@ Sites como o &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama run &amp;lt;Nome_da_LLM&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;No caso da Phi3&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama run phi3.5
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Mas antes de tudo, para fins de demostração, vou garantir que não está ocorrendo comunicação com a internet:&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Mas antes de tudo, para fins de demostração, garantirei que não está ocorrendo comunicação com a internet:&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -2192,7 +2203,7 @@ Sites como o &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Aqui vou pedir para que ele me gere um código Python para connectar a uma base do MySQL:&lt;/p&gt;
+&lt;p&gt;Aqui vou pedir para que ele me gere um código Python para conectar a uma base do MySQL:&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -2221,8 +2232,8 @@ Sites como o &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Não vou me extender na utilização dele ou de outro modelo, mas é possível utilizar o próprio terminal para conversar com a LLM, e existem formas de conversar via interface gráfica, o que fica para um próximo post.&lt;/p&gt;
-&lt;p&gt;Agora para avaliar o uso computacional da minha máquina, vou utilizando o utilitário Nvidia-smi em que é possivel ver o quanto ele está utilizando os recursos da GPU&lt;/p&gt;
+&lt;p&gt;Não vou me estender na utilização dele ou de outro modelo, mas é possível utilizar o próprio terminal para conversar com a LLM, e existem formas de conversar via interface gráfica, o que fica para um próximo post.&lt;/p&gt;
+&lt;p&gt;Agora para avaliar o uso computacional da minha máquina, vou utilizando o utilitário Nvidia-smi em que é possível ver o quanto ele está utilizando os recursos da GPU&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -2251,7 +2262,7 @@ Sites como o &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;E em relação ao uso computacional da CPU e do consumo de memória RAM ele não ficou &amp;ldquo;tão pesado&amp;rdquo;, ,as lembrando que o Phi3.5 é um modelo particularmente pequeno. O print abaixo apresenta o consumo computacional durante uma inferencia:&lt;/p&gt;
+&lt;p&gt;E em relação ao uso computacional da CPU e do consumo de memória RAM ele não ficou utilizavel, lembrando que o Phi3.5 é um modelo particularmente pequeno. O print abaixo apresenta o consumo computacional durante uma inferência:&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -2270,7 +2281,7 @@ Sites como o &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Durante Inferencia&#34; srcset=&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Durante Inferência&#34; srcset=&#34;
                /post/ollama/inferencia_hu3b6af082a6dbe67da50599503b38f4b2_257880_8d493d241e88bed9925f02aac390d399.webp 400w,
                /post/ollama/inferencia_hu3b6af082a6dbe67da50599503b38f4b2_257880_70f92590570ac49bb4f09ae10b0d960f.webp 760w,
                /post/ollama/inferencia_hu3b6af082a6dbe67da50599503b38f4b2_257880_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
@@ -2310,8 +2321,8 @@ Sites como o &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;E para gerenciar e &lt;em&gt;deletar os modelos LLMs&lt;/em&gt;, é possivel listar e solicitar a remoção da imagem.
-PS: peço desculpas na imagem abaixo por que eu digitei um comando errado, por isto ocultei o mesmo, para evitar confusão.&lt;/p&gt;
+&lt;p&gt;E para gerenciar e &lt;em&gt;deletar os modelos LLMs&lt;/em&gt;, é possível listar e solicitar a remoção da imagem.
+PS: peço desculpas na imagem abaixo por que digitei um comando errado, por isto ocultei o mesmo, para evitar confusão.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama rm &amp;lt;nome_da_LLM&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 
@@ -2341,7 +2352,7 @@ PS: peço desculpas na imagem abaixo por que eu digitei um comando errado, por i
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Este tutorial aborda apenas alguns aspectos do uso do Ollama, o &lt;a href=&#34;https://itsfoss.com/ollama-setup-linux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tutorial que serviu como base&lt;/a&gt; para este experimento possui mais informações, como utilizar a interface gráfica com Docker e também como desinstalar o Ollama. Assim você tem um assistente local para lhe ajudar em tarefas simples. Ontem eu testei o uso do Llamma 3.1 para criar um banco de dados no MySQL e para implementar um código Python para interagir com este banco de dados e o código proposto funcionou. Mas é preciso testar mais.&lt;/p&gt;
+&lt;p&gt;Este tutorial aborda apenas alguns aspectos do uso do Ollama, o &lt;a href=&#34;https://itsfoss.com/ollama-setup-linux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tutorial que serviu como base&lt;/a&gt; para este experimento possui mais informações, como utilizar a interface gráfica com Docker e também como desinstalar o Ollama. Assim você tem um assistente local para lhe ajudar em tarefas simples. Ontem testei o uso do Llamma 3.1 para criar um banco de dados no MySQL e para implementar um código Python para interagir com este banco de dados e o código proposto funcionou. Mas é preciso testar mais.&lt;/p&gt;
 &lt;p&gt;Sucesso a todos!&lt;/p&gt;
 </description>
     </item>

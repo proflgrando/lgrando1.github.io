@@ -865,7 +865,7 @@
 <p><a href="https://lgrando1.github.io/post/ollamawin/" target="_blank" rel="noopener">Parte 2 - Instalando o Ollama no Windows</a></p>
 <p><a href="https://lgrando1.github.io/post/llmandroid/" target="_blank" rel="noopener">Parte 3 - Instalando LLMs Off-line no Android- pt.1</a></p>
 <p><a href="https://lgrando1.github.io/post/llmtermux/" target="_blank" rel="noopener">Parte 4 - Instalando LLMs Off-line no Android - pt.2</a></p>
-<p>O recém <a href="https://www.nature.com/articles/d41586-024-02998-y" target="_blank" rel="noopener"><strong>artigo da Nature</strong></a> trouxe uma discussão sobre o uso de LLMs locais em vez daquelas que utilizamos de forma online como por exemplo o Chat-GPT, Gemini e o CoPilot. A preocupação com aspectos como privacidade e o uso de nossos dados quando utilizandos os LLMs de terceitos, sem contar que estas ferramentas nescessitam de acesso a internet.
+<p>O recém <a href="https://www.nature.com/articles/d41586-024-02998-y" target="_blank" rel="noopener"><strong>artigo da Nature</strong></a> trouxe uma discussão sobre o uso de LLMs locais em vez daquelas que utilizamos de forma online como, por exemplo, o Chat-GPT, Gemini e o CoPilot. A preocupação com aspectos como privacidade e o uso de nossos dados quando utilizando os LLMs de terceiros, sem contar que estas ferramentas necessitam de acesso à internet.
 Sites como o <a href="https://huggingface.co/" target="_blank" rel="noopener">Hugging Face</a> permitem testar alguns usos destas ferramentas utilizando uma biblioteca com a linguagem Python, como eu já descrevi em <a href="https://lgrando1.github.io/post/hface/" target="_blank" rel="noopener">uma postagem anterior.</a></p>
 <p>Eu queria algo mais completo como um assistente virtual local e como sou usuário Linux (uso o Pop!_OS 20.04), encontrei este <a href="https://itsfoss.com/ollama-setup-linux/" target="_blank" rel="noopener">post muito bem explicado</a> de como rodar uma LLM de maneira off-line no Linux e então resolvi replicar, e conto esta experiência abaixo.</p>
 <p>O <a href="https://ollama.com/" target="_blank" rel="noopener">Ollama</a> é uma ferramenta que facilita o processo de baixar e rodar os modelos LLMs de código aberto. Ele pode ser instalado no Windows, MacOS e o Linux. Apenas seguir o <a href="https://ollama.com/download" target="_blank" rel="noopener">procedimento de instalação presente no site deles</a>.</p>
@@ -873,7 +873,7 @@ Sites como o <a href="https://huggingface.co/" target="_blank" rel="noopener">Hu
 <p><strong>Repetindo: siga o procedimento de instalação conforme descrito no site deles, não este daqui</strong>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -fsSL https://ollama.com/install.sh <span class="p">|</span> sh 
 </span></span></code></pre></div><p>O código acima irá baixar o Ollama em sua máquina e rodar o script de instalação. Você pode auditar o script de <a href="https://github.com/ollama/ollama/blob/main/scripts/install.sh" target="_blank" rel="noopener">instalação aqui</a></p>
-<p>A minha máquina é um notebook Acer Nitro que adquiri no final de 2020. Ele possui um Core i5 9300H, 16 GB de RAM e uma GPU Nvidia Geforce GTX 1650. O que fica interessante, pois o Ollama reconheceu a GPU.</p>
+<p>A minha máquina é um notebook Acer Nitro que adquiri no final de 2020. Ele possui um Core i5 9300H, 16 GB de RAM e uma GPU Nvidia GeForce GTX 1650. O que fica interessante, pois o Ollama reconheceu a GPU.</p>
 <p>
 
 
@@ -936,7 +936,7 @@ Sites como o <a href="https://huggingface.co/" target="_blank" rel="noopener">Hu
 <p>Agora é hora de baixar o modelo LLM. No <a href="https://ollama.com/library" target="_blank" rel="noopener">site</a> existe vários modelos. Já testei o llama3.1. Este <a href="https://ollama.com/library/llama3.1" target="_blank" rel="noopener">modelo desenvolvido pela Meta</a> e que possui três níveis de parâmetros 8, 70 e 405 bilhões de parâmetros. Acabei escolhendo o modelo de 8B. São aproximadamente 4.7 GB utilizado de armazenamento. Mas ai fica o critério de cada um. Para este post vou apresentar o processo de instalação do modelo <a href="https://ollama.com/library/phi3.5" target="_blank" rel="noopener">phi3.5 da Microsoft</a>.</p>
 <p>Para dar um &ldquo;pull&rdquo; em um modelo LLM desejado, utiliza-se o comando:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama pull &lt;Nome_da_LLM&gt;
-</span></span></code></pre></div><p>Então para baixar e instalar o modelo <a href="https://ollama.com/library/phi3.5" target="_blank" rel="noopener">phi3.5 da Microsoft</a>.</p>
+</span></span></code></pre></div><p>Então para baixar e instalar o modelo <a href="https://ollama.com/library/phi3.5" target="_blank" rel="noopener">Phi3.5 da Microsoft</a>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama pull phi3.5
 </span></span></code></pre></div><p>
 
@@ -1000,7 +1000,7 @@ Sites como o <a href="https://huggingface.co/" target="_blank" rel="noopener">Hu
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama run &lt;Nome_da_LLM&gt;
 </span></span></code></pre></div><p>No caso da Phi3</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama run phi3.5
-</span></span></code></pre></div><p>Mas antes de tudo, para fins de demostração, vou garantir que não está ocorrendo comunicação com a internet:</p>
+</span></span></code></pre></div><p>Mas antes de tudo, para fins de demostração, garantirei que não está ocorrendo comunicação com a internet:</p>
 <p>
 
 
@@ -1029,7 +1029,7 @@ Sites como o <a href="https://huggingface.co/" target="_blank" rel="noopener">Hu
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Aqui vou pedir para que ele me gere um código Python para connectar a uma base do MySQL:</p>
+<p>Aqui vou pedir para que ele me gere um código Python para conectar a uma base do MySQL:</p>
 <p>
 
 
@@ -1058,8 +1058,8 @@ Sites como o <a href="https://huggingface.co/" target="_blank" rel="noopener">Hu
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Não vou me extender na utilização dele ou de outro modelo, mas é possível utilizar o próprio terminal para conversar com a LLM, e existem formas de conversar via interface gráfica, o que fica para um próximo post.</p>
-<p>Agora para avaliar o uso computacional da minha máquina, vou utilizando o utilitário Nvidia-smi em que é possivel ver o quanto ele está utilizando os recursos da GPU</p>
+<p>Não vou me estender na utilização dele ou de outro modelo, mas é possível utilizar o próprio terminal para conversar com a LLM, e existem formas de conversar via interface gráfica, o que fica para um próximo post.</p>
+<p>Agora para avaliar o uso computacional da minha máquina, vou utilizando o utilitário Nvidia-smi em que é possível ver o quanto ele está utilizando os recursos da GPU</p>
 <p>
 
 
@@ -1088,7 +1088,7 @@ Sites como o <a href="https://huggingface.co/" target="_blank" rel="noopener">Hu
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>E em relação ao uso computacional da CPU e do consumo de memória RAM ele não ficou &ldquo;tão pesado&rdquo;, ,as lembrando que o Phi3.5 é um modelo particularmente pequeno. O print abaixo apresenta o consumo computacional durante uma inferencia:</p>
+<p>E em relação ao uso computacional da CPU e do consumo de memória RAM ele não ficou utilizavel, lembrando que o Phi3.5 é um modelo particularmente pequeno. O print abaixo apresenta o consumo computacional durante uma inferência:</p>
 <p>
 
 
@@ -1107,7 +1107,7 @@ Sites como o <a href="https://huggingface.co/" target="_blank" rel="noopener">Hu
 
 <figure  >
   <div class="d-flex justify-content-center">
-    <div class="w-100" ><img alt="Durante Inferencia" srcset="
+    <div class="w-100" ><img alt="Durante Inferência" srcset="
                /post/ollama/inferencia_hu3b6af082a6dbe67da50599503b38f4b2_257880_8d493d241e88bed9925f02aac390d399.webp 400w,
                /post/ollama/inferencia_hu3b6af082a6dbe67da50599503b38f4b2_257880_70f92590570ac49bb4f09ae10b0d960f.webp 760w,
                /post/ollama/inferencia_hu3b6af082a6dbe67da50599503b38f4b2_257880_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
@@ -1147,8 +1147,8 @@ Sites como o <a href="https://huggingface.co/" target="_blank" rel="noopener">Hu
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>E para gerenciar e <em>deletar os modelos LLMs</em>, é possivel listar e solicitar a remoção da imagem.
-PS: peço desculpas na imagem abaixo por que eu digitei um comando errado, por isto ocultei o mesmo, para evitar confusão.</p>
+<p>E para gerenciar e <em>deletar os modelos LLMs</em>, é possível listar e solicitar a remoção da imagem.
+PS: peço desculpas na imagem abaixo por que digitei um comando errado, por isto ocultei o mesmo, para evitar confusão.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama rm &lt;nome_da_LLM&gt;
 </span></span></code></pre></div><p>
 
@@ -1178,7 +1178,7 @@ PS: peço desculpas na imagem abaixo por que eu digitei um comando errado, por i
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Este tutorial aborda apenas alguns aspectos do uso do Ollama, o <a href="https://itsfoss.com/ollama-setup-linux/" target="_blank" rel="noopener">tutorial que serviu como base</a> para este experimento possui mais informações, como utilizar a interface gráfica com Docker e também como desinstalar o Ollama. Assim você tem um assistente local para lhe ajudar em tarefas simples. Ontem eu testei o uso do Llamma 3.1 para criar um banco de dados no MySQL e para implementar um código Python para interagir com este banco de dados e o código proposto funcionou. Mas é preciso testar mais.</p>
+<p>Este tutorial aborda apenas alguns aspectos do uso do Ollama, o <a href="https://itsfoss.com/ollama-setup-linux/" target="_blank" rel="noopener">tutorial que serviu como base</a> para este experimento possui mais informações, como utilizar a interface gráfica com Docker e também como desinstalar o Ollama. Assim você tem um assistente local para lhe ajudar em tarefas simples. Ontem testei o uso do Llamma 3.1 para criar um banco de dados no MySQL e para implementar um código Python para interagir com este banco de dados e o código proposto funcionou. Mas é preciso testar mais.</p>
 <p>Sucesso a todos!</p>
 
     </div>
@@ -1197,7 +1197,7 @@ PS: peço desculpas na imagem abaixo por que eu digitei um comando errado, por i
   
   <a class="badge badge-light" href="/tag/prompt/">prompt</a>
   
-  <a class="badge badge-light" href="/tag/enginnering/">enginnering</a>
+  <a class="badge badge-light" href="/tag/engineering/">engineering</a>
   
   <a class="badge badge-light" href="/tag/ia/">IA</a>
   

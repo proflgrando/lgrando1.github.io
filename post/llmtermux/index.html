@@ -831,7 +831,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    5 min read
+    4 min read
   </span>
   
 
@@ -866,7 +866,7 @@
 <p><a href="https://lgrando1.github.io/post/ollamawin/" target="_blank" rel="noopener">Parte 2 - Instalando o Ollama no Windows</a></p>
 <p><a href="https://lgrando1.github.io/post/llmandroid/" target="_blank" rel="noopener">Parte 3 - Instalando o Ollama no Android pt.1</a></p>
 <p>Importante: Nunca utilizar LLMs como oráculos ou como fonte de informações, já encontrei vários erros tanto em modelos online ou offline. Usar apenas como suporte para suas atividades.</p>
-<p>Após o <a href="https://lgrando1.github.io/post/llmandroid/" target="_blank" rel="noopener">teste com o aplicativo</a> <a href="https://play.google.com/store/apps/details?id=com.druk.lmplayground" target="_blank" rel="noopener">LM Playground</a> descobri que é possivel rodar LLMs locais como descrito em <a href="https://medium.com/@researchgraph/how-to-run-llama-3-2-on-android-phone-64be7783c89f" target="_blank" rel="noopener">1</a> e <a href="https://gitlab.com/-/snippets/3682973" target="_blank" rel="noopener">2</a> no Android utilizando o <a href="https://termux.dev/en/" target="_blank" rel="noopener">Termux</a> que é um emulador de terminal Android e aplicativo de ambiente Linux que funciona diretamente sem necessidade de root ou configuração. Ao instalar ele vem com um sistema base mínimo, mas você pode instalar adicionais pelo gerenciador de pacotes APT. De forma resumida, você tem uma instalação Linux em seu celular.</p>
+<p>Após o <a href="https://lgrando1.github.io/post/llmandroid/" target="_blank" rel="noopener">teste com o aplicativo</a> <a href="https://play.google.com/store/apps/details?id=com.druk.lmplayground" target="_blank" rel="noopener">LM Playground</a> descobri que é possível rodar LLMs locais como descrito em <a href="https://medium.com/@researchgraph/how-to-run-llama-3-2-on-android-phone-64be7783c89f" target="_blank" rel="noopener">1</a> e <a href="https://gitlab.com/-/snippets/3682973" target="_blank" rel="noopener">2</a> no Android utilizando o <a href="https://termux.dev/en/" target="_blank" rel="noopener">Termux</a> que é um emulador de terminal Android e aplicativo de ambiente Linux que funciona diretamente sem necessidade de root ou configuração. Ao instalar ele vem com um sistema base mínimo, mas você pode instalar adicionais pelo gerenciador de pacotes APT. De forma resumida, você tem uma instalação Linux em seu celular.</p>
 <p>O Termux voltou a estar disponivel na <a href="https://wiki.termux.com/wiki/Termux_Google_Play" target="_blank" rel="noopener">PlayStore</a>, mas eu não tive sucesso ao tentar executar o Ollama na versão instalada por lá, como é uma versão experimental pode ser que futuramente funcione.</p>
 <p>
 
@@ -896,8 +896,14 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Também é possível instalar o Termux via <a href="https://github.com/termux/termux-app#f-droid" target="_blank" rel="noopener">F-Droid</a> ou pelo próprio repositório deles no <a href="https://github.com/termux/termux-app#github" target="_blank" rel="noopener">GitHub</a>. Acabei escolhendo a instalar via GitHub. Não vou detalhar o processo de instalação, pois depende da execução de <a href="https://en.wikipedia.org/wiki/Sideloading" target="_blank" rel="noopener">sideloading</a> e cada marca/aparelho/versão tem seu procedimento. Lembrando que instalar aplicativos fora da Google Play não é um procedimento oficial, então faça por sua conta e risco e sugiro apenas fazer se souber o que você está fazendo.</p>
+<p>Também é possível instalar o Termux via <a href="https://github.com/termux/termux-app#f-droid" target="_blank" rel="noopener">F-Droid</a> ou pelo próprio repositório deles no <a href="https://github.com/termux/termux-app#github" target="_blank" rel="noopener">GitHub</a>. Acabei escolhendo a instalar via GitHub. Não detalharei o processo de instalação, por depender da execução de <a href="https://en.wikipedia.org/wiki/Sideloading" target="_blank" rel="noopener">sideloading</a> e cada marca/aparelho/versão tem seu procedimento. Lembrando que instalar aplicativos fora da Google Play não é um procedimento oficial, então faça por sua conta e risco e sugiro apenas fazer se souber o que você está fazendo.</p>
 <p>Para o meu caso, onde estou utilizando um dispositivo Samsung A15:</p>
+<p>No vídeo eu mostro o funcionamento dele no meu dispositivo para dois modelos LLMs.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/FCpg9tCwtAI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 <ol>
 <li>Baixei a <a href="https://github.com/termux/termux-app/releases/tag/v0.118.1" target="_blank" rel="noopener">ultíma versão estável</a> e fiz a instalação via sideload no meu dispositivo:</li>
 </ol>
@@ -1166,7 +1172,7 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Lembrando que é possível instalar vários aplicativos para o terminal, utilizando o pkg, como por exemplo o Neofetch:</p>
+<p>Lembrando que é possível instalar vários aplicativos para o terminal, utilizando o pkg, como, por exemplo, o Neofetch:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pkg install neofetch
 </span></span></code></pre></div><p>
 
@@ -1226,7 +1232,7 @@
 </p>
 <p>Feito isto podemos seguir em frente e seguir o procedimento descrito em <a href="https://gitlab.com/-/snippets/3682973" target="_blank" rel="noopener">2</a>.</p>
 <ol start="5">
-<li>Iremos instalar o git, cmake e a linguagem go para poder instalar o ollama em nosso dispositivo:</li>
+<li>Instalaremos o git, cmake e a linguagem go para poder instalar o Ollama em nosso dispositivo:</li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pkg install git cmake golang
 </span></span></code></pre></div><p>
@@ -1286,7 +1292,7 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Após efetuar a instalação ele responde as versões instaladas dos aplicativos:</p>
+<p>Após efetuar a instalação ele responde às versões instaladas dos aplicativos:</p>
 <p>
 
 
@@ -1316,7 +1322,7 @@
   </div></figure>
 </p>
 <ol start="6">
-<li>Agora podemos clonar o repositório e será criada a pasta ollama:</li>
+<li>Agora podemos clonar o repositório e será criada a pasta Ollama:</li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone --depth <span class="m">1</span> https://github.com/ollama/ollama.git
 </span></span></code></pre></div><p>
@@ -1375,7 +1381,7 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Devemos entrar nesta pasta para poder construir o Ollama</p>
+<p>Devemos entrar nesta pasta para poder construir o Ollama:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ollama
 </span></span></code></pre></div><p>
 
@@ -1406,7 +1412,7 @@
   </div></figure>
 </p>
 <ol start="7">
-<li>Agora iremos construir o Ollama da fonte, lembrando que este processo será demorado.</li>
+<li>Agora construiremos o Ollama da fonte, lembrando que este processo será demorado.</li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">go generate ./...
 </span></span></code></pre></div><p>
@@ -1466,9 +1472,9 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Após a instalação do ollama, agora podemos instanciar o seu servidor</p>
+<p>Após a instalação do Ollama, agora podemos instanciar o seu servidor.</p>
 <ol start="7">
-<li>Instanciando o servidor do ollama:</li>
+<li>Instanciando o servidor do Ollama:</li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./ollama serve <span class="p">&amp;</span>
 </span></span></code></pre></div><p>
@@ -1499,7 +1505,7 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Observe que agora tem um novo aplicativo chamado Ollama na pasta ollama</p>
+<p>Observe que agora tem um novo aplicativo chamado Ollama na pasta ollama:</p>
 <p>
 
 
@@ -1528,10 +1534,10 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Agora você pode utilizar os comandos do ollama para rodar e gerenciar seus modelos de LLMs locais, como por exemplo listar os modelos instalados com o</p>
+<p>Agora você pode utilizar os comandos do Ollama para rodar e gerenciar seus modelos de LLMs locais, como, por exemplo, listar os modelos instalados como:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./ollama ls
 </span></span></code></pre></div><ol start="8">
-<li>Agora vamos instalar o llama3.2:1b</li>
+<li>Agora instalemos o <a href="https://ollama.com/library/llama3.2" target="_blank" rel="noopener">llama3.2:1b</a></li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./ollama run llama3.2:1b
 </span></span></code></pre></div><p>
@@ -1562,7 +1568,7 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Após instalação (vai baixar localmente o modelo, neste caso foram mais de 1 GB), o prompt vai estar disponível:</p>
+<p>Após instalação (baixará localmente o modelo, neste caso foram mais de 1 GB), o prompt estará disponível:</p>
 <p>
 
 
@@ -1678,7 +1684,7 @@
   </div></figure>
 </p>
 <ol start="9">
-<li>Fora do Ollama, agora vou testar a instalação de outros modelos como o qwen2.5:0.5b, mais leve que o anterior.</li>
+<li>Fora do Ollama, agora testarei a instalação de outros modelos como o <a href="https://ollama.com/library/qwen2.5:0.5b" target="_blank" rel="noopener">qwen2.5:0.5b</a>, mais leve que o anterior.</li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./ollama run qwen2.5:0.5b
 </span></span></code></pre></div><p>
@@ -1709,7 +1715,7 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Já instalado, é possivel ver que agora temos 2 modelos LLM baixados:</p>
+<p>Já instalado, é possível listar os 2 modelos LLMs baixados:</p>
 <p>
 
 
@@ -1739,7 +1745,7 @@
   </div></figure>
 </p>
 <ol start="9">
-<li>Agora vamos continuar o script, para remover a pasta de instalação do go e ganhar espaço:</li>
+<li>Agora vamos continuar o script, para remover a pasta de instalação do Go e ganhar espaço:</li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod -R <span class="m">700</span> ~go
 </span></span><span class="line"><span class="cl">rm -r ~/go
@@ -1771,9 +1777,9 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>E como o termux não possui o .local/bin em seu PATH (embora você possa adicioná-lo se preferir). Se você quiser mover o binário ollama para a pasta bin, você pode fazer o seguinte.</p>
+<p>E como o Termux não possui o .local/bin em seu PATH (embora você possa adicioná-lo se preferir). Se você quiser mover o binário ollama para a pasta bin, você pode fazer o seguinte.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp ollama/ollama /data/data/com.termux/files/usr/bin/
-</span></span></code></pre></div><p>E agora posso rodar o ollama em qualquer local do termux:</p>
+</span></span></code></pre></div><p>E agora posso rodar o Ollama em qualquer local do Termux:</p>
 <p>
 
 
@@ -1802,9 +1808,9 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Para sair do termux você pode digitar exit.</p>
+<p>Para sair do Termux você pode digitar exit.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">exit</span>
-</span></span></code></pre></div><p>Para executar novamente após sair, você pode entrar novamente no aplicativo</p>
+</span></span></code></pre></div><p>Para executar novamente após sair, você pode entrar novamente no aplicativo no seu celular:</p>
 <p>
 
 
@@ -1833,7 +1839,7 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>E digitar os comandos ollama desejados</p>
+<p>E digitar os comandos desejados:</p>
 <p>
 
 
@@ -1862,7 +1868,9 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Caso você queira obter dados de performance das respostas do prompt, você pode incluir &ndash;verbose da chamada do run:</p>
+<p>Pode acontecer que seja necessário reiniciar o servidor Ollama e ai, sim, poder aplicar os comandos para utilizar o LLM novamente (O vídeo acima mostrou este caso):</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./ollama serve <span class="p">&amp;</span>
+</span></span></code></pre></div><p>Caso você queira obter dados de desempenho das respostas do prompt, você pode incluir &ndash;verbose da chamada do run:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama run qwen2.5:0.5b --verbose
 </span></span></code></pre></div><p>
 
@@ -1892,9 +1900,6 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Importante, após fechar o aplicativo, pode ser necessario reiniciar o servidor ollama e ai sim poder aplicar os comandos para utilizar o LLM novamente.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./ollama serve <span class="p">&amp;</span>
-</span></span></code></pre></div><p>No <a href="https://youtu.be/FCpg9tCwtAI" target="_blank" rel="noopener">vídeo</a> eu mostro este caso e o funcionamento dele no meu dispositivo para dois modelos LLMs.</p>
 <p>Desta forma você pode realizar seus testes com o Ollama no seu Android e instalar outros modelos LLMs que não estão disponíveis no LM Playground.</p>
 <p>Referências:</p>
 <p>[<a href="https://gitlab.com/-/snippets/3682973" target="_blank" rel="noopener">1</a>] “Ollama on Termux ($3682973) · Snippets · GitLab”. GitLab, 17 de junho de 2024, <a href="https://gitlab.com/-/snippets/3682973" target="_blank" rel="noopener">https://gitlab.com/-/snippets/3682973</a>.</p>
@@ -1917,7 +1922,7 @@
   
   <a class="badge badge-light" href="/tag/termux/">termux</a>
   
-  <a class="badge badge-light" href="/tag/enginnering/">enginnering</a>
+  <a class="badge badge-light" href="/tag/engineering/">engineering</a>
   
   <a class="badge badge-light" href="/tag/ia/">IA</a>
   
