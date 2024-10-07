@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: October 7, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.ee81bf7a110c56bd976b7e46cebf897e.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Leonardo Grando" />
+
+
+
+
+
+  
+
+<meta name="description" content="Hospedando uma WebPage Estática no GitHub Pages" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://lgrando1.github.io/post/gpages/" />
+<link rel="canonical" href="https://lgrando1.github.io/post/gpages/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#707070" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_512x512_fill_lanczos_center_3.png" />
+<meta property="og:site_name" content="Leonardo Grando" />
+<meta property="og:url" content="https://lgrando1.github.io/post/gpages/" />
+<meta property="og:title" content="Como hospedar uma Webpage Estática no GitHub Pages | Leonardo Grando" />
+<meta property="og:description" content="Hospedando uma WebPage Estática no GitHub Pages" /><meta property="og:image" content="https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2024-10-07T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2024-10-07T14:11:20-03:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lgrando1.github.io/post/gpages/"
+  },
+  "headline": "Como hospedar uma Webpage Estática no GitHub Pages",
+  
+  "datePublished": "2024-10-07T00:00:00Z",
+  "dateModified": "2024-10-07T14:11:20-03:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Leonardo Grando"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Leonardo Grando",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Hospedando uma WebPage Estática no GitHub Pages"
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Como hospedar uma Webpage Estática no GitHub Pages | Leonardo Grando</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="e07db94dffbe558c3924d11c0d9c6f6b" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.253edc45b3a8a047e59a8677cf8e2715.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Leonardo Grando</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Leonardo Grando</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/event"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication/"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/uploads/resumeEN.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://www.linkedin.com/in/lgrando123" data-toggle="tooltip" data-placement="bottom" title="Follow me on LinkedIn" target="_blank" rel="noopener" aria-label="Follow me on LinkedIn">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Como hospedar uma Webpage Estática no GitHub Pages</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Oct 7, 2024
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>Existem várias formas de ter sua presença na internet, como o uso de rede sociais, mas as redes sociais podem limitar o acesso de seu público, exigindo que ele se cadastre e logue nesta rede. Algumas redes e serviços até permitem a leitura de conteúdo, mas de forma limitada. Pensando nisto, nada melhor do que ter o seu próprio link para as pessoas poderem acessar de forma facilitada. As tecnologias utilizadas para o desenvolvimento Web se dividem entre sites estáticos e sites dinâmicos. Os sites estáticos são fáceis de serem implementados, pois toda a mudança ocorre no código-fonte, mas eles são menos flexíveis com uma abundância de dados, como, por exemplo, um site que oferece carros usados. Pensando nisto existem os sites dinâmicos que trazem os dados presentes em um banco de dados. Este site que você é um exemplo de site dinâmico e hoje demostrarei como você pode criar o seu próprio site e apresentar seus projetos armazenados no GitHub ou mesmo servir como seu currículo na internet.</p>
+<p>Utilizaremos o GitHub Pages para fazer a implementação deste site. Lembrando que este modelo é bem simplista e apenas como exemplo.</p>
+<p>Antes de mais nada, leia a <a href="https://docs.github.com/pt/pages/getting-started-with-github-pages/about-github-pages" target="_blank" rel="noopener">Documentação do serviço</a> para saber se a sua ideia pode ser ou não implementada no GitHub Pages. Lembrando que o GitHub Pages não suporta linguagens de servidor como PHP, Ruby ou Python.</p>
+<h2 id="criando-sua-página-no-github-pages">Criando sua página no GitHub Pages</h2>
+<p>Você deve <a href="https://docs.github.com/pt/get-started/start-your-journey/creating-an-account-on-github" target="_blank" rel="noopener">criar uma conta no GitHub</a>, caso já não tenha e entrar na página inicial do perfil. Criei <a href="https://github.com/proflgrando" target="_blank" rel="noopener">este perfil</a> para poder compartilhar códigos com meus alunos.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/1_hu97030708e60c74a1eb77487a19923ceb_222419_8ca8bad186e23da478a20666eace4485.webp 400w,
+               /post/gpages/1_hu97030708e60c74a1eb77487a19923ceb_222419_38bdf1d1e905f95e3753452a5a076592.webp 760w,
+               /post/gpages/1_hu97030708e60c74a1eb77487a19923ceb_222419_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/1_hu97030708e60c74a1eb77487a19923ceb_222419_8ca8bad186e23da478a20666eace4485.webp"
+               width="760"
+               height="324"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Agora você deve criar um novo repositório:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/2_hua7e5d21c70c105d53a8cbb023e2c144d_236582_199288849cb547677bdef996083f8e63.webp 400w,
+               /post/gpages/2_hua7e5d21c70c105d53a8cbb023e2c144d_236582_ceb93cea76abec0426edbe5c1b4bd257.webp 760w,
+               /post/gpages/2_hua7e5d21c70c105d53a8cbb023e2c144d_236582_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/2_hua7e5d21c70c105d53a8cbb023e2c144d_236582_199288849cb547677bdef996083f8e63.webp"
+               width="760"
+               height="313"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>E este repositório deve ser publico, pode conter um arquivo README.md, mas deve ter o seguinte nome:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/3_hu0c06d30256e9c13eb384f136e797f176_117871_0004c1f78fe1eecdfebce4415ff8b339.webp 400w,
+               /post/gpages/3_hu0c06d30256e9c13eb384f136e797f176_117871_c46572bd56ec32b87d5157b5bc317e26.webp 760w,
+               /post/gpages/3_hu0c06d30256e9c13eb384f136e797f176_117871_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/3_hu0c06d30256e9c13eb384f136e797f176_117871_0004c1f78fe1eecdfebce4415ff8b339.webp"
+               width="760"
+               height="562"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">&lt;seu_usuario_git&gt;.github.io
+</span></span></code></pre></div><p>No meu caso:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">proflgrando.github.io
+</span></span></code></pre></div><p>ou deste site:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">lgrando1.github.io
+</span></span></code></pre></div><p>Após criar o repositório, clicando no botão <strong>Create repository</strong>, você poderá acessá-lo:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/4_hubc2258289a8bd166c1eb711be491f11e_104491_65eb4f9853b17efb521029b05ef2d6f2.webp 400w,
+               /post/gpages/4_hubc2258289a8bd166c1eb711be491f11e_104491_d8fbeacd0b2a9b8c536e454ac6710b3c.webp 760w,
+               /post/gpages/4_hubc2258289a8bd166c1eb711be491f11e_104491_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/4_hubc2258289a8bd166c1eb711be491f11e_104491_65eb4f9853b17efb521029b05ef2d6f2.webp"
+               width="760"
+               height="410"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Se você tentar acessar o site no seu navegador &lt;seu_usuario_git&gt;.github.io você ainda verá que ele está Offline:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/5_hu59f9f4492e4df4340c8b52162c4a0fb0_35505_d1e8161eb0c6cb631a2fb01021c1eb25.webp 400w,
+               /post/gpages/5_hu59f9f4492e4df4340c8b52162c4a0fb0_35505_fa1bd24793dc573a2edf5f5f469740ef.webp 760w,
+               /post/gpages/5_hu59f9f4492e4df4340c8b52162c4a0fb0_35505_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/5_hu59f9f4492e4df4340c8b52162c4a0fb0_35505_d1e8161eb0c6cb631a2fb01021c1eb25.webp"
+               width="760"
+               height="260"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Então vamos realizar os ajustes finais, voltando na pagina do repositório do seu site, clique em <strong>settings</strong>:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/6_hu9d958a7075dadc443e4ecce709206f4e_104800_32f70f4481cfaeaac5cdc3cc74222250.webp 400w,
+               /post/gpages/6_hu9d958a7075dadc443e4ecce709206f4e_104800_c3054c367a63caabe26067aa3a539617.webp 760w,
+               /post/gpages/6_hu9d958a7075dadc443e4ecce709206f4e_104800_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/6_hu9d958a7075dadc443e4ecce709206f4e_104800_32f70f4481cfaeaac5cdc3cc74222250.webp"
+               width="760"
+               height="360"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Em código e automação em <strong>Pages</strong>:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/7_hue2e0155bbbf977aef1662a5dfeb82222_166348_aa9a977f1d4c391e0423d4572b1f9b32.webp 400w,
+               /post/gpages/7_hue2e0155bbbf977aef1662a5dfeb82222_166348_a4e00c8a3e0268761971b799bab9e594.webp 760w,
+               /post/gpages/7_hue2e0155bbbf977aef1662a5dfeb82222_166348_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/7_hue2e0155bbbf977aef1662a5dfeb82222_166348_aa9a977f1d4c391e0423d4572b1f9b32.webp"
+               width="760"
+               height="507"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>E agora <a href="https://docs.github.com/pt/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch" target="_blank" rel="noopener">fazer os ajustes</a>:</p>
+<p><strong>Fonte:</strong> Deploy from a Branch (Fazer implantação de um branch)</p>
+<p><strong>Compilação e implantação:</strong> No menu suspenso de branch, selecione a fonte de publicação, no meu caso &ldquo;main&rdquo;</p>
+<p><strong>Pasta:</strong> você pode escolher uma pasta para a finte de publicação, no meu caso &ldquo;/(root)&rdquo;</p>
+<p>Clique em Save</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/8_huaae5e385ae0738ac17cf40fabc69a9fe_163420_ca8759517590add6fcadc27b4881bc8c.webp 400w,
+               /post/gpages/8_huaae5e385ae0738ac17cf40fabc69a9fe_163420_8f568cc3d43927b039aab083527ec085.webp 760w,
+               /post/gpages/8_huaae5e385ae0738ac17cf40fabc69a9fe_163420_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/8_huaae5e385ae0738ac17cf40fabc69a9fe_163420_ca8759517590add6fcadc27b4881bc8c.webp"
+               width="760"
+               height="506"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p><a href="https://docs.github.com/pt/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site" target="_blank" rel="noopener">Lembrando que o GitHub Pages</a> ira procurar um arquivo <em>index.html</em>, <em>index.md</em> ou <em>README.md</em> como o arquivo de entrada do site</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/10_hu9ab20aee820edc9c01ef0f34235bdb7f_6172_3be18a5d755e32183a5011b0f7de338d.webp 400w,
+               /post/gpages/10_hu9ab20aee820edc9c01ef0f34235bdb7f_6172_9d4b3449b1f48100ac0b7b5bbda99b8c.webp 760w,
+               /post/gpages/10_hu9ab20aee820edc9c01ef0f34235bdb7f_6172_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/10_hu9ab20aee820edc9c01ef0f34235bdb7f_6172_3be18a5d755e32183a5011b0f7de338d.webp"
+               width="322"
+               height="122"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Agora você pode clicar em <strong>Visit site</strong> para ver o site disponível:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/11_hu7fa98d90acaafe17beda86d8121edf5c_160720_de83e3064603e7919624d70233d77edb.webp 400w,
+               /post/gpages/11_hu7fa98d90acaafe17beda86d8121edf5c_160720_cb55959e4a7d735f247c04f7e3b36e08.webp 760w,
+               /post/gpages/11_hu7fa98d90acaafe17beda86d8121edf5c_160720_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/11_hu7fa98d90acaafe17beda86d8121edf5c_160720_de83e3064603e7919624d70233d77edb.webp"
+               width="760"
+               height="489"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/12_hue091d2b2448416ec7b985f7053de1f3a_23826_6724d7e4d5dd76d523a0261ff68af997.webp 400w,
+               /post/gpages/12_hue091d2b2448416ec7b985f7053de1f3a_23826_f2350eb954903a0800047372cf74f232.webp 760w,
+               /post/gpages/12_hue091d2b2448416ec7b985f7053de1f3a_23826_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/12_hue091d2b2448416ec7b985f7053de1f3a_23826_6724d7e4d5dd76d523a0261ff68af997.webp"
+               width="760"
+               height="236"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="2-criando-seu-portifólio">2. Criando seu portifólio:</h2>
+<p>Digamos que você tenha um projeto Web e queira mostrar ao mundo, é possível você criar uma sub pagina no seu site e mostrar como ficaria ele implementado. O site dele será da forma:</p>
+<p>&lt;seu_usuario_git&gt;.github.io/&lt;nome_do_repositório&gt;</p>
+<p>Como, por exemplo, este <a href="https://github.com/proflgrando/jokenpo" target="_blank" rel="noopener">repositório</a>:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/13_hud98e4fb8833af25df4ae1bc1c485cc60_130949_f920bfb8bcd81296ca21ec9d3e96b5c9.webp 400w,
+               /post/gpages/13_hud98e4fb8833af25df4ae1bc1c485cc60_130949_114051a73d2d9a5537242adbde9adf79.webp 760w,
+               /post/gpages/13_hud98e4fb8833af25df4ae1bc1c485cc60_130949_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/13_hud98e4fb8833af25df4ae1bc1c485cc60_130949_f920bfb8bcd81296ca21ec9d3e96b5c9.webp"
+               width="760"
+               height="424"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Observe no arquivo <em>index.html</em> o conteudo que está nele estara no <a href="https://proflgrando.github.io/jokenpo" target="_blank" rel="noopener">link</a>.</p>
+<p>Para isto, na página do repositório, clique em 1. settings, 2. Pages:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/14_hu7e6b6e20cf904534904ca87426e8da82_172841_32a3e2063c199e81356166bd700b4d8f.webp 400w,
+               /post/gpages/14_hu7e6b6e20cf904534904ca87426e8da82_172841_be835788d427eefaa047db343beb58e6.webp 760w,
+               /post/gpages/14_hu7e6b6e20cf904534904ca87426e8da82_172841_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/14_hu7e6b6e20cf904534904ca87426e8da82_172841_32a3e2063c199e81356166bd700b4d8f.webp"
+               width="760"
+               height="459"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>E em <em>Build and deploymnent</em> escolha na fonte de da fonte <strong>GitHub Actions</strong>:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/15_hufe0945c3947da4eb3bf709b57fbc274b_25454_9c5de55ba71897a5a588436753dfc3f8.webp 400w,
+               /post/gpages/15_hufe0945c3947da4eb3bf709b57fbc274b_25454_1b9276d41aa71536764da0c9f5c62117.webp 760w,
+               /post/gpages/15_hufe0945c3947da4eb3bf709b57fbc274b_25454_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/15_hufe0945c3947da4eb3bf709b57fbc274b_25454_9c5de55ba71897a5a588436753dfc3f8.webp"
+               width="401"
+               height="263"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Agora você poderá acessar o site:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/16_huefa1bfdccc0195f60f2b5a4cbe0dece2_24579_26ae12272ae906f26411d675385306b3.webp 400w,
+               /post/gpages/16_huefa1bfdccc0195f60f2b5a4cbe0dece2_24579_9055a86e3b17f0aae7ee5a00c5774e7a.webp 760w,
+               /post/gpages/16_huefa1bfdccc0195f60f2b5a4cbe0dece2_24579_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/16_huefa1bfdccc0195f60f2b5a4cbe0dece2_24579_26ae12272ae906f26411d675385306b3.webp"
+               width="760"
+               height="177"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/17_hu00278d637e2b284a85fe55333506f0a9_56313_b0605be1e71f4239616faff2169017c6.webp 400w,
+               /post/gpages/17_hu00278d637e2b284a85fe55333506f0a9_56313_33404c2dcab72c05973d7bcb0675e48a.webp 760w,
+               /post/gpages/17_hu00278d637e2b284a85fe55333506f0a9_56313_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/17_hu00278d637e2b284a85fe55333506f0a9_56313_b0605be1e71f4239616faff2169017c6.webp"
+               width="760"
+               height="303"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Se você tiver um repositório com vários arquivos HTML, você pode mudar o arquivo que deseja apresentar no site, alterando o nome do mesmo, como os <a href="https://github.com/proflgrando/CursoWEB" target="_blank" rel="noopener">presentes neste repositório</a>:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/18_hufe664c0d1d1532be570ab66c8e058fa9_159793_2cde14e171d4712bb1a39b4836f7e4a3.webp 400w,
+               /post/gpages/18_hufe664c0d1d1532be570ab66c8e058fa9_159793_7970a8f7c08bb9966216ebc864623b6a.webp 760w,
+               /post/gpages/18_hufe664c0d1d1532be570ab66c8e058fa9_159793_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/18_hufe664c0d1d1532be570ab66c8e058fa9_159793_2cde14e171d4712bb1a39b4836f7e4a3.webp"
+               width="760"
+               height="475"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/19_hu9c3fbd6cdb1723a0a89ea30eee003fa3_168183_196dedcacfbbf76a1b644b25876b84bc.webp 400w,
+               /post/gpages/19_hu9c3fbd6cdb1723a0a89ea30eee003fa3_168183_9746b8364b9b0e0c05735b3180939c77.webp 760w,
+               /post/gpages/19_hu9c3fbd6cdb1723a0a89ea30eee003fa3_168183_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/19_hu9c3fbd6cdb1723a0a89ea30eee003fa3_168183_196dedcacfbbf76a1b644b25876b84bc.webp"
+               width="760"
+               height="397"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/20_hu830dadeda9f6861b43ae1aa7a13774d7_116701_76b81d74105c929d4af5e0a4d25fed11.webp 400w,
+               /post/gpages/20_hu830dadeda9f6861b43ae1aa7a13774d7_116701_ecc102fbef7d32bf0b1fdc9054507404.webp 760w,
+               /post/gpages/20_hu830dadeda9f6861b43ae1aa7a13774d7_116701_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/20_hu830dadeda9f6861b43ae1aa7a13774d7_116701_76b81d74105c929d4af5e0a4d25fed11.webp"
+               width="760"
+               height="347"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Realizando o mesmo procedimento:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/21_hu205519335f3a5d34a4b4c7e745b71c9b_173257_7acc869ad7b80c9cd5ea0f1de010e553.webp 400w,
+               /post/gpages/21_hu205519335f3a5d34a4b4c7e745b71c9b_173257_aa29860d7517ba6aeb5959ed2fac1c40.webp 760w,
+               /post/gpages/21_hu205519335f3a5d34a4b4c7e745b71c9b_173257_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/21_hu205519335f3a5d34a4b4c7e745b71c9b_173257_7acc869ad7b80c9cd5ea0f1de010e553.webp"
+               width="760"
+               height="476"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Pronto, o <a href="https://proflgrando.github.io/CursoWEB" target="_blank" rel="noopener">site</a> está acessível:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="perfil" srcset="
+               /post/gpages/22_hu966b415794a1fb6e2b9cfab8466406c8_1091445_386610548b58f2b71c6a26ff03705ceb.webp 400w,
+               /post/gpages/22_hu966b415794a1fb6e2b9cfab8466406c8_1091445_485a04d2f8334eca56194b53c4a0ac85.webp 760w,
+               /post/gpages/22_hu966b415794a1fb6e2b9cfab8466406c8_1091445_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/gpages/22_hu966b415794a1fb6e2b9cfab8466406c8_1091445_386610548b58f2b71c6a26ff03705ceb.webp"
+               width="760"
+               height="407"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h3 id="referências">Referências:</h3>
+<p><strong>Sobre o GitHub Pages.</strong> GitHub Docs. Disponível em: <a href="https://docs.github.com/pt/pages/getting-started-with-github-pages/about-github-pages" target="_blank" rel="noopener">https://docs.github.com/pt/pages/getting-started-with-github-pages/about-github-pages</a>. Acesso em: 7 out. 2024.</p>
+<p><strong>Criar um site do GitHub Pages.</strong> GitHub Docs. Disponível em: <a href="https://docs.github.com/pt/pages/getting-started-with-github-pages/creating-a-github-pages-site" target="_blank" rel="noopener">https://docs.github.com/pt/pages/getting-started-with-github-pages/creating-a-github-pages-site</a>. Acesso em: 7 out. 2024.</p>
+<p><strong>Configurar uma fonte de publicação para o site do GitHub Pages.</strong> GitHub Docs. Disponível em: <a href="https://docs.github.com/pt/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site" target="_blank" rel="noopener">https://docs.github.com/pt/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site</a>. Acesso em: 7 out. 2024.</p>
+<p>Sucesso a todos!</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/webpage/">webpage</a>
+  
+  <a class="badge badge-light" href="/tag/estatico/">estatico</a>
+  
+  <a class="badge badge-light" href="/tag/github/">GitHub</a>
+  
+  <a class="badge badge-light" href="/tag/gratuito/">gratuito</a>
+  
+  <a class="badge badge-light" href="/tag/tutorial/">tutorial</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flgrando1.github.io%2Fpost%2Fgpages%2F&amp;text=Como&#43;hospedar&#43;uma&#43;Webpage&#43;Est%C3%A1tica&#43;no&#43;GitHub&#43;Pages" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Flgrando1.github.io%2Fpost%2Fgpages%2F&amp;t=Como&#43;hospedar&#43;uma&#43;Webpage&#43;Est%C3%A1tica&#43;no&#43;GitHub&#43;Pages" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Como%20hospedar%20uma%20Webpage%20Est%C3%A1tica%20no%20GitHub%20Pages&amp;body=https%3A%2F%2Flgrando1.github.io%2Fpost%2Fgpages%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Flgrando1.github.io%2Fpost%2Fgpages%2F&amp;title=Como&#43;hospedar&#43;uma&#43;Webpage&#43;Est%C3%A1tica&#43;no&#43;GitHub&#43;Pages" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Como&#43;hospedar&#43;uma&#43;Webpage&#43;Est%C3%A1tica&#43;no&#43;GitHub&#43;Pages%20https%3A%2F%2Flgrando1.github.io%2Fpost%2Fgpages%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Flgrando1.github.io%2Fpost%2Fgpages%2F&amp;title=Como&#43;hospedar&#43;uma&#43;Webpage&#43;Est%C3%A1tica&#43;no&#43;GitHub&#43;Pages" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://lgrando1.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu2eff65d577e70f5774d3fc177b8295d0_20417_270x270_fill_q75_lanczos_center.jpg" alt="Leonardo Grando"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://lgrando1.github.io/">Leonardo Grando</a></h5>
+      <h6 class="card-subtitle">Technology Ph.D. Candidate</h6>
+      <p class="card-text">My research interests include Agent-Based Simulation, Artificial Intelligence, Machine Learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/lgrando1" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/lgrando123" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=cXC9OsoAAAAJ&amp;hl" target="_blank" rel="noopener">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Leonardo-Grando" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0002-0448-209X" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://lgrando1.github.io/index.xml" target="_blank" rel="noopener">
+        <i class="fas fa-rss"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2024 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.e8ee06ba8371980ffde659871dd593b0.js"></script>
+
+
+
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
