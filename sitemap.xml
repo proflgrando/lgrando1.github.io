@@ -2,8 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://lgrando1.github.io/post/crud/</loc>
+    <lastmod>2024-10-07T15:11:20-03:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://lgrando1.github.io/post/ghpages/</loc>
     <lastmod>2024-10-07T14:11:20-03:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lgrando1.github.io/tag/crud/</loc>
+    <lastmod>2024-10-07T15:11:20-03:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lgrando1.github.io/tag/database/</loc>
+    <lastmod>2024-10-07T15:11:20-03:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lgrando1.github.io/tag/estatico/</loc>
@@ -19,19 +31,23 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lgrando1.github.io/</loc>
-    <lastmod>2024-10-07T14:11:20-03:00</lastmod>
+    <lastmod>2024-10-07T15:11:20-03:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lgrando1.github.io/tag/mysql/</loc>
+    <lastmod>2024-10-07T15:11:20-03:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lgrando1.github.io/post/</loc>
-    <lastmod>2024-10-07T14:11:20-03:00</lastmod>
+    <lastmod>2024-10-07T15:11:20-03:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lgrando1.github.io/tags/</loc>
-    <lastmod>2024-10-07T14:11:20-03:00</lastmod>
+    <lastmod>2024-10-07T15:11:20-03:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lgrando1.github.io/tag/tutorial/</loc>
-    <lastmod>2024-10-07T14:11:20-03:00</lastmod>
+    <lastmod>2024-10-07T15:11:20-03:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lgrando1.github.io/tag/webpage/</loc>
