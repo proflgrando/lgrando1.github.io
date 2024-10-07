@@ -404,7 +404,7 @@ O termo é amplamente utilizado em desenvolvimento de software e bancos de dados
 &lt;p&gt;E agora &lt;a href=&#34;https://docs.github.com/pt/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fazer os ajustes&lt;/a&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Fonte:&lt;/strong&gt; Deploy from a Branch (Fazer implantação de um branch)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Compilação e implantação:&lt;/strong&gt; No menu suspenso de branch, selecione a fonte de publicação, no meu caso &amp;ldquo;main&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Pasta:&lt;/strong&gt; você pode escolher uma pasta para a finte de publicação, no meu caso &amp;ldquo;/(root)&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pasta:&lt;/strong&gt; você pode escolher uma pasta para a fonte de publicação, no meu caso &amp;ldquo;/(root)&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;Clique em Save&lt;/p&gt;
 &lt;p&gt;
 
