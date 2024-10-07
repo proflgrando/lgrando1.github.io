@@ -19,6 +19,12 @@
       <guid>https://lgrando1.github.io/post/crud/</guid>
       <description>&lt;h2 id=&#34;1-mysqlhttpswwwmysqlcom&#34;&gt;1. &lt;a href=&#34;https://www.mysql.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MySQL&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Sistema de gerenciamento de banco de dados relacional (RDBMS) amplamente utilizado. Ele permite que você armazene, gerencie e consulte dados de forma eficiente. Aqui estão alguns conceitos e comandos básicos sobre o MySQL:&lt;/p&gt;
+&lt;p&gt;No vídeo abaixo, segue uma demonstração destas operações no MySQL:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/9sjYF3NsdJY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 &lt;h3 id=&#34;conceitos-básicos&#34;&gt;Conceitos Básicos&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Banco de Dados:&lt;/strong&gt; Uma coleção organizada de dados.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tabela:&lt;/strong&gt; Estrutura dentro do banco de dados que armazena dados em linhas e colunas.&lt;/p&gt;
