@@ -2847,17 +2847,42 @@ As únicas modificações que realizei neste computador foi a inclusão de mais 
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;células é um cabeçalho&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;, você precisará lidar com isso manualmente ou especificando explicitamente os rótulos nas linhas.
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Preciso validar/verificar ambos os códigos gerados, atualizarei o post com a verificação dos códigos, mas é interessante que é possível rodar um LLM de forma offline em um computador com 11 anos de idade.&lt;/p&gt;
 &lt;h2 id=&#34;update-12102024&#34;&gt;UPDATE 12/10/2024&lt;/h2&gt;
-&lt;p&gt;Neste vídeo apresento uma forma de copiar os modelos Offline de um computador para outro. Ou no caso que você não queira baixar novamente os modelos em caso de internet limitada.&lt;/p&gt;
-&lt;p&gt;Segundo a &lt;a href=&#34;https://github.com/ollama/ollama/blob/main/docs/faq.md#where-are-models-stored&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documentação&lt;/a&gt; os modelos são armazenados na pasta:&lt;/p&gt;
-&lt;p&gt;&amp;lsquo;&amp;lsquo;&amp;lsquo;bash
-Windows: C:\Users%username%.ollama\models
-&amp;rsquo;&amp;rsquo;&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;Neste vídeo eu realizo o processo de copiar a pasta models para o meu desktop, desinstalo o Ollama e reinstalo e copio esta pasta novamente.&lt;/p&gt;
+&lt;p&gt;Neste vídeo apresento uma forma de copiar/transferir os modelos Offline de um computador para outro. Ou no caso que você não queira baixar novamente os modelos em caso de internet limitada.&lt;/p&gt;
+&lt;p&gt;Segundo a &lt;a href=&#34;https://github.com/ollama/ollama/blob/main/docs/faq.md#where-are-models-stored&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documentação&lt;/a&gt; no Windows os modelos são armazenados na pasta:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:&lt;span class=&#34;se&#34;&gt;\U&lt;/span&gt;sers&lt;span class=&#34;se&#34;&gt;\%&lt;/span&gt;username%&lt;span class=&#34;se&#34;&gt;\.&lt;/span&gt;ollama&lt;span class=&#34;se&#34;&gt;\m&lt;/span&gt;odels
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Neste vídeo:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Testo o Ollama no meu computador.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Copio a pasta &amp;ldquo;models&amp;rdquo; para o meu desktop.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Desinstalo o Ollama.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Demonstro que ele não está funcionando.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reinstalo o Ollama usando o instalador previamente baixado.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Verifico que não há nenhum modelo baixado.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Copio a pasta &amp;ldquo;models&amp;rdquo; para C:\Users%username%.ollama\models.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Testo o funcionamento dos modelos.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/XK3YcKShmYQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
+&lt;p&gt;ps: Não testei (ainda) em outro sistema operacional para verificar se o procedimento também funciona.&lt;/p&gt;
 &lt;p&gt;Sucesso a todos!&lt;/p&gt;
 </description>
     </item>
