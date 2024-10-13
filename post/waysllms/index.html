@@ -897,7 +897,16 @@
 <p><strong>Importante:</strong> Nunca use LLMs como oráculos ou fontes de informação definitiva; já encontrei vários erros em modelos, tanto online quanto offline. Utilize-os apenas como suporte para suas atividades.</p>
 <h2 id="1-no-terminal">1. No Terminal:</h2>
 <p>Acesse e utilize um LLM diretamente pelo terminal com o <a href="https://ollama.com/" target="_blank" rel="noopener">Ollama</a>, aproveitando sua flexibilidade e eficiência. Os links acima ensinam como instalá-lo no <a href="https://lgrando1.github.io/post/ollamawin/" target="_blank" rel="noopener">Windows</a>, <a href="https://lgrando1.github.io/post/ollama/" target="_blank" rel="noopener">Linux</a>, <a href="https://lgrando1.github.io/post/llmandroid/" target="_blank" rel="noopener">Android via aplicativo</a> e <a href="https://lgrando1.github.io/post/llmtermux" target="_blank" rel="noopener">via Termux</a>.</p>
-<p>
+<p>Alguns comandos úteis:</p>
+<ol>
+<li>Para listar os modelos baixados na sua máquina:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama list
+</span></span></code></pre></div><ol start="2">
+<li>Para rodar um modelo. Caso não tenha o modelo, ele será baixado e ativado localmente:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama run &lt;modelo&gt;
+</span></span></code></pre></div><p>
 
 
 
@@ -925,16 +934,7 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Alguns comandos úteis:</p>
-<ol>
-<li>Para listar os modelos baixados na sua máquina:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama list
-</span></span></code></pre></div><ol start="2">
-<li>Para rodar um modelo. Caso não tenha o modelo, ele será baixado e ativado localmente:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama run &lt;modelo&gt;
-</span></span></code></pre></div><p>Para obter informações sobre a performance do modelo, adicione <code>--verbose</code> ao final:</p>
+<p>Para obter informações sobre a performance do modelo, adicione <code>--verbose</code> ao final:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama run &lt;modelo&gt; --verbose
 </span></span></code></pre></div><p>
 
@@ -964,9 +964,69 @@
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Para sair do modelo, digite:</p>
+<p>Para saber qual modelo está rodando no server ollama e se ele está utilizando sua CPU ou GPU</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama ps
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Autocomplete" srcset="
+               /post/waysllms/16_hucb240043efc8f920ac402efe21df5f6a_21788_59cc00b912e75497022b4b222c6abbf3.webp 400w,
+               /post/waysllms/16_hucb240043efc8f920ac402efe21df5f6a_21788_20819ebbf9f8b4af18075cafc3a5b1bd.webp 760w,
+               /post/waysllms/16_hucb240043efc8f920ac402efe21df5f6a_21788_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/waysllms/16_hucb240043efc8f920ac402efe21df5f6a_21788_59cc00b912e75497022b4b222c6abbf3.webp"
+               width="760"
+               height="130"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Para remover um modelo específico</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ollama rm &lt;modelo&gt;
+</span></span></code></pre></div><p>Para sair do modelo, digite:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/bye
 </span></span></code></pre></div><p>ou use Control + D.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Autocomplete" srcset="
+               /post/waysllms/17_hu922c4ee3e346a5e7dcc7f6de16ace428_105350_5b37473213458103f1e7cb55919aa796.webp 400w,
+               /post/waysllms/17_hu922c4ee3e346a5e7dcc7f6de16ace428_105350_9da8b85500386e73f2fe08cdf0850e21.webp 760w,
+               /post/waysllms/17_hu922c4ee3e346a5e7dcc7f6de16ace428_105350_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/waysllms/17_hu922c4ee3e346a5e7dcc7f6de16ace428_105350_5b37473213458103f1e7cb55919aa796.webp"
+               width="752"
+               height="509"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
 <h2 id="2-em-uma-interface-gráfica-gui">2. Em uma Interface Gráfica (GUI):</h2>
 <p>Neste exemplo, utilizo a interface disponível em <a href="https://openwebui.com/" target="_blank" rel="noopener">OpenWebUI</a>, que instalei via <a href="https://docs.openwebui.com/getting-started/" target="_blank" rel="noopener">Docker</a> para uma experiência mais intuitiva, permitindo fácil alteração e teste de parâmetros do modelo.</p>
 <p>Após a instalação do OpenWebUI via <a href="https://docs.openwebui.com/getting-started/" target="_blank" rel="noopener">Docker</a>:</p>
