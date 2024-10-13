@@ -5,12 +5,520 @@
     <link>https://lgrando1.github.io/tag/offline/</link>
       <atom:link href="https://lgrando1.github.io/tag/offline/index.xml" rel="self" type="application/rss+xml" />
     <description>Offline</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 06 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 13 Oct 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_512x512_fill_lanczos_center_3.png</url>
       <title>Offline</title>
       <link>https://lgrando1.github.io/tag/offline/</link>
     </image>
+    
+    <item>
+      <title>Quatro Maneiras de Usar LLMs Offline no Seu Computador</title>
+      <link>https://lgrando1.github.io/post/waysllms/</link>
+      <pubDate>Sun, 13 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://lgrando1.github.io/post/waysllms/</guid>
+      <description>&lt;p&gt;Outros posts sobre o tema:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/hface/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Como Criar um Pipeline em Python para Testar Modelos no Hugging Face&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/prompt1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dicas de Engenharia de Prompt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 1 - Instalando o Ollama no Linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollamawin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 2 - Instalando o Ollama no Windows&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmandroid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 3 - Instalando o Ollama no Android pt.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmtermux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 4 - Instalando o Ollama no Android pt.2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Neste vídeo, apresento quatro formas de integrar uma LLM offline ao seu fluxo de trabalho:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ES_FWZnWwRM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Lembre-se de que, por rodarem offline, essas aplicações dependem do poder computacional do seu computador, da quantidade de memória RAM e da capacidade de processamento da sua GPU.&lt;/p&gt;
+&lt;p&gt;Neste vídeo, utilizei um notebook Acer Nitro com CPU Core i5 9300H, 16 GB de RAM e GPU Nvidia GeForce GTX 1650.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;infohw&#34; srcset=&#34;
+               /post/waysllms/neofetch_huc57dbd0c962ac1aad17efa80b580855c_61989_daf0f69daa090140162d0bb870490db6.webp 400w,
+               /post/waysllms/neofetch_huc57dbd0c962ac1aad17efa80b580855c_61989_e0e7a9606a7a95aaa22244ecc7136c1b.webp 760w,
+               /post/waysllms/neofetch_huc57dbd0c962ac1aad17efa80b580855c_61989_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/neofetch_huc57dbd0c962ac1aad17efa80b580855c_61989_daf0f69daa090140162d0bb870490db6.webp&#34;
+               width=&#34;626&#34;
+               height=&#34;532&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Importante:&lt;/strong&gt; Nunca use LLMs como oráculos ou fontes de informação definitiva; já encontrei vários erros em modelos, tanto online quanto offline. Utilize-os apenas como suporte para suas atividades.&lt;/p&gt;
+&lt;h2 id=&#34;1-no-terminal&#34;&gt;1. No Terminal:&lt;/h2&gt;
+&lt;p&gt;Acesse e utilize um LLM diretamente pelo terminal com o &lt;a href=&#34;https://ollama.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ollama&lt;/a&gt;, aproveitando sua flexibilidade e eficiência. Os links acima ensinam como instalá-lo no &lt;a href=&#34;https://lgrando1.github.io/post/ollamawin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Windows&lt;/a&gt;, &lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Linux&lt;/a&gt;, &lt;a href=&#34;https://lgrando1.github.io/post/llmandroid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Android via aplicativo&lt;/a&gt; e &lt;a href=&#34;https://lgrando1.github.io/post/llmtermux&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;via Termux&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/09_hucad454fa50e19aa69ebcf5699845b971_124656_fa0d3a4b7c993aeea812631d64ad35ea.webp 400w,
+               /post/waysllms/09_hucad454fa50e19aa69ebcf5699845b971_124656_37cd831464cec05b42e5694d53f51e40.webp 760w,
+               /post/waysllms/09_hucad454fa50e19aa69ebcf5699845b971_124656_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/09_hucad454fa50e19aa69ebcf5699845b971_124656_fa0d3a4b7c993aeea812631d64ad35ea.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;516&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Alguns comandos úteis:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Para listar os modelos baixados na sua máquina:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama list
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Para rodar um modelo. Caso não tenha o modelo, ele será baixado e ativado localmente:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama run &amp;lt;modelo&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Para obter informações sobre a performance do modelo, adicione &lt;code&gt;--verbose&lt;/code&gt; ao final:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama run &amp;lt;modelo&amp;gt; --verbose
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/10_hu42ccb3d05b2138a1a9188836c82fc9ce_37970_623946071dc6b34c76bd57c048b2c84e.webp 400w,
+               /post/waysllms/10_hu42ccb3d05b2138a1a9188836c82fc9ce_37970_0dfeea39503ab57598f89819ef5758c1.webp 760w,
+               /post/waysllms/10_hu42ccb3d05b2138a1a9188836c82fc9ce_37970_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/10_hu42ccb3d05b2138a1a9188836c82fc9ce_37970_623946071dc6b34c76bd57c048b2c84e.webp&#34;
+               width=&#34;419&#34;
+               height=&#34;268&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Para sair do modelo, digite:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/bye
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ou use Control + D.&lt;/p&gt;
+&lt;h2 id=&#34;2-em-uma-interface-gráfica-gui&#34;&gt;2. Em uma Interface Gráfica (GUI):&lt;/h2&gt;
+&lt;p&gt;Neste exemplo, utilizo a interface disponível em &lt;a href=&#34;https://openwebui.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OpenWebUI&lt;/a&gt;, que instalei via &lt;a href=&#34;https://docs.openwebui.com/getting-started/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Docker&lt;/a&gt; para uma experiência mais intuitiva, permitindo fácil alteração e teste de parâmetros do modelo.&lt;/p&gt;
+&lt;p&gt;Após a instalação do OpenWebUI via &lt;a href=&#34;https://docs.openwebui.com/getting-started/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Docker&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/11_huee21c7e3c8e380169f7760989157f5d3_85911_e7c210e12060712c1c28830d0a8c629f.webp 400w,
+               /post/waysllms/11_huee21c7e3c8e380169f7760989157f5d3_85911_70e009dfe7134b81c3f80469a98e6be5.webp 760w,
+               /post/waysllms/11_huee21c7e3c8e380169f7760989157f5d3_85911_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/11_huee21c7e3c8e380169f7760989157f5d3_85911_e7c210e12060712c1c28830d0a8c629f.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;284&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Acesse-o em seu navegador:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/12_hu8a9ab42a3e05ad9eab35f198fb07a9d6_25702_4c3030990116f1e1a6000e46eda33c0d.webp 400w,
+               /post/waysllms/12_hu8a9ab42a3e05ad9eab35f198fb07a9d6_25702_c19ac14c53e9eea8721e1190c7d5f15c.webp 760w,
+               /post/waysllms/12_hu8a9ab42a3e05ad9eab35f198fb07a9d6_25702_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/12_hu8a9ab42a3e05ad9eab35f198fb07a9d6_25702_4c3030990116f1e1a6000e46eda33c0d.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;422&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Ele solicitará a criação de uma conta para controle de acesso de usuários.&lt;/p&gt;
+&lt;p&gt;A interface é intuitiva, similar à de outros LLMs online. Basta escolher o modelo e começar a utilizar:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/13_huc06913500970b10fae88c5cef3c8580b_84154_de3ebbd9824cf7786a4ba05e0cc5faec.webp 400w,
+               /post/waysllms/13_huc06913500970b10fae88c5cef3c8580b_84154_b04b51553d2066b563f131f133a410e0.webp 760w,
+               /post/waysllms/13_huc06913500970b10fae88c5cef3c8580b_84154_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/13_huc06913500970b10fae88c5cef3c8580b_84154_de3ebbd9824cf7786a4ba05e0cc5faec.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;314&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/14_hu901e74250bb8980f167fa96cca830e1c_136377_75da43898a10b8c76db16d0776a517dd.webp 400w,
+               /post/waysllms/14_hu901e74250bb8980f167fa96cca830e1c_136377_13501e85a5593ad5cf2991d2070ac74c.webp 760w,
+               /post/waysllms/14_hu901e74250bb8980f167fa96cca830e1c_136377_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/14_hu901e74250bb8980f167fa96cca830e1c_136377_75da43898a10b8c76db16d0776a517dd.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;403&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Observe que há controles para modificar os parâmetros do modelo:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/15_huaa2c230dba75fa33fa98b0a00a29ad35_231095_4776ca60f8f3cad0dd14e6811c436f66.webp 400w,
+               /post/waysllms/15_huaa2c230dba75fa33fa98b0a00a29ad35_231095_a2ee36934a470c3471d0c6f2b79739c5.webp 760w,
+               /post/waysllms/15_huaa2c230dba75fa33fa98b0a00a29ad35_231095_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/15_huaa2c230dba75fa33fa98b0a00a29ad35_231095_4776ca60f8f3cad0dd14e6811c436f66.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;411&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;3-como-extensão-de-navegador&#34;&gt;3. Como Extensão de Navegador:&lt;/h2&gt;
+&lt;p&gt;Utilize o LLM através da &lt;a href=&#34;https://chromewebstore.google.com/detail/ollama-ui/cmgdpmlhgjhoadnonobjeekmfcehffco&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;extensão de navegador Chrome&lt;/a&gt;. Confira a &lt;a href=&#34;https://github.com/ollama-ui/ollama-ui&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ollama UI&lt;/a&gt; para fácil integração, permitindo escolher entre vários modelos LLM disponíveis no seu computador e salvar seus chats. Para ativá-la, basta clicar no ícone da extensão.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/08_huc5a2e18515287c95879d802cb8b4fc77_121611_603d92672004367903e40b855e3b780c.webp 400w,
+               /post/waysllms/08_huc5a2e18515287c95879d802cb8b4fc77_121611_7a8aabc30b882b7ec4b1570fa4da8ee9.webp 760w,
+               /post/waysllms/08_huc5a2e18515287c95879d802cb8b4fc77_121611_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/08_huc5a2e18515287c95879d802cb8b4fc77_121611_603d92672004367903e40b855e3b780c.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;416&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;4-em-aplicativos-como-o-vscode&#34;&gt;4. Em Aplicativos como o VSCode:&lt;/h2&gt;
+&lt;p&gt;Existem várias extensões disponíveis para &lt;a href=&#34;https://github.com/ollama/ollama#extensions--plugins&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;integrar LLMs a aplicativos como o VS Code, Obsidian, etc&lt;/a&gt;. Neste vídeo, utilizei o &lt;a href=&#34;https://codegpt.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CodeGPT&lt;/a&gt; no &lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=DanielSanMedium.dscodegpt&amp;amp;ssr=false#overview&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VS Code&lt;/a&gt;, que proporciona funcionalidades adicionais diretamente no ambiente de desenvolvimento, como auto-complete e um chat integrado com o seu código. Enfrentei algumas dificuldades para encontrar um modelo que funcionasse no meu computador; o único modelo que funcionou para auto-complete foi o Qwen2.5.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/01_hu0fc6db8b3708363384c0c8110ef5cd6d_51757_58f90fa3730ac6e6f635fde6dd34bca5.webp 400w,
+               /post/waysllms/01_hu0fc6db8b3708363384c0c8110ef5cd6d_51757_51e8767e6f0fd00e23bb1e2f02bf0d84.webp 760w,
+               /post/waysllms/01_hu0fc6db8b3708363384c0c8110ef5cd6d_51757_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/01_hu0fc6db8b3708363384c0c8110ef5cd6d_51757_58f90fa3730ac6e6f635fde6dd34bca5.webp&#34;
+               width=&#34;474&#34;
+               height=&#34;689&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Enquanto você escreve código, sugestões aparecem em cinza, e basta pressionar TAB para aceitá-las, como no exemplo de uma função para encontrar números de Fibonacci. No entanto, o processo foi lento na minha máquina:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/02_hu1ee411ca96a6f0d60884570838219b35_20932_d27fae0391926369a1054d226560df3a.webp 400w,
+               /post/waysllms/02_hu1ee411ca96a6f0d60884570838219b35_20932_ad0a2a6b2d9309020a8abb4a89c9ed25.webp 760w,
+               /post/waysllms/02_hu1ee411ca96a6f0d60884570838219b35_20932_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/02_hu1ee411ca96a6f0d60884570838219b35_20932_d27fae0391926369a1054d226560df3a.webp&#34;
+               width=&#34;480&#34;
+               height=&#34;203&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Você pode verificar o status dos modelos em execução com o comando:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama ps
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/03_hu99d04a7b6e870b1dce03b99b7927fb57_24844_22d3e6f6654c03891e9dbc3e8dc2fc6d.webp 400w,
+               /post/waysllms/03_hu99d04a7b6e870b1dce03b99b7927fb57_24844_48f949fe1a7dd616fa2d4159a22c4254.webp 760w,
+               /post/waysllms/03_hu99d04a7b6e870b1dce03b99b7927fb57_24844_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/03_hu99d04a7b6e870b1dce03b99b7927fb57_24844_22d3e6f6654c03891e9dbc3e8dc2fc6d.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;136&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Para o chat integrado, escolha entre vários provedores e modelos, podendo baixar novos modelos conforme necessário. No meu setup, funcionaram o Llama3.2:3B e o Granite-code:3B.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/04_hud97415a96c6dec09851bde0df18814b9_154298_d4ad1b46c04cd0b17cb6c2910ca2a037.webp 400w,
+               /post/waysllms/04_hud97415a96c6dec09851bde0df18814b9_154298_0339f10e1c935e2020335ebc10ae6ca8.webp 760w,
+               /post/waysllms/04_hud97415a96c6dec09851bde0df18814b9_154298_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/04_hud97415a96c6dec09851bde0df18814b9_154298_d4ad1b46c04cd0b17cb6c2910ca2a037.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;610&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;O modelo Granite se destacou, oferecendo comandos como /Fix (corrige seu código), /Explain (explica seu código), /Refactor (refatora seu código), /Document (documenta seu código) e /Unit Test (cria testes unitários para seu código).&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/05_hu1095c792aaa9671edfa6b6fc7ff97350_31986_7672df56624f94aad1c5070bc527adca.webp 400w,
+               /post/waysllms/05_hu1095c792aaa9671edfa6b6fc7ff97350_31986_1dbf1b2c9840b7c21ead9c8434c2fc93.webp 760w,
+               /post/waysllms/05_hu1095c792aaa9671edfa6b6fc7ff97350_31986_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/05_hu1095c792aaa9671edfa6b6fc7ff97350_31986_7672df56624f94aad1c5070bc527adca.webp&#34;
+               width=&#34;471&#34;
+               height=&#34;684&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Aqui está um exemplo de criação de uma unidade de teste para o código:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/06_hu70fb696e0aec3de835d66e295016950f_138350_9826f79cd13905752fdcfebcaea3620c.webp 400w,
+               /post/waysllms/06_hu70fb696e0aec3de835d66e295016950f_138350_43644b47edf51252ae1c78300be182ef.webp 760w,
+               /post/waysllms/06_hu70fb696e0aec3de835d66e295016950f_138350_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/06_hu70fb696e0aec3de835d66e295016950f_138350_9826f79cd13905752fdcfebcaea3620c.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;570&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Agora, note que estamos usando o modelo Granite:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/07_hu368054b34182ba7accf0aba860267a96_27985_a13c8d8804d17cfdee6734e46218c525.webp 400w,
+               /post/waysllms/07_hu368054b34182ba7accf0aba860267a96_27985_99b79765c966e2de212fe05b95a54124.webp 760w,
+               /post/waysllms/07_hu368054b34182ba7accf0aba860267a96_27985_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/07_hu368054b34182ba7accf0aba860267a96_27985_a13c8d8804d17cfdee6734e46218c525.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;147&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Lembre-se de que todas essas quatro aplicações ainda são experimentais e devem ser validadas antes de qualquer uso em produção.&lt;/p&gt;
+&lt;p&gt;Sucesso a todos!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Instalação e Uso de LLMs Offline no Android pt.2</title>
@@ -23,6 +531,7 @@
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 1 - Instalando o Ollama no Linux&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollamawin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 2 - Instalando o Ollama no Windows&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmandroid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 3 - Instalando o Ollama no Android pt.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/waysllms&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 5 - Quatro Maneiras de Usar LLMs Offline no Seu Computador&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Importante: Nunca utilizar LLMs como oráculos ou como fonte de informações, já encontrei vários erros tanto em modelos online ou offline. Usar apenas como suporte para suas atividades.&lt;/p&gt;
 &lt;p&gt;Após o &lt;a href=&#34;https://lgrando1.github.io/post/llmandroid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;teste com o aplicativo&lt;/a&gt; &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.druk.lmplayground&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LM Playground&lt;/a&gt; descobri que é possível rodar LLMs locais como descrito em &lt;a href=&#34;https://medium.com/@researchgraph/how-to-run-llama-3-2-on-android-phone-64be7783c89f&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;1&lt;/a&gt; e &lt;a href=&#34;https://gitlab.com/-/snippets/3682973&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2&lt;/a&gt; no Android utilizando o &lt;a href=&#34;https://termux.dev/en/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Termux&lt;/a&gt; que é um emulador de terminal Android e aplicativo de ambiente Linux que funciona diretamente sem necessidade de root ou configuração. Ao instalar ele vem com um sistema base mínimo, mas você pode instalar adicionais pelo gerenciador de pacotes APT. De forma resumida, você tem uma instalação Linux em seu celular.&lt;/p&gt;
 &lt;p&gt;O Termux voltou a estar disponivel na &lt;a href=&#34;https://wiki.termux.com/wiki/Termux_Google_Play&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PlayStore&lt;/a&gt;, mas eu não tive sucesso ao tentar executar o Ollama na versão instalada por lá, como é uma versão experimental pode ser que futuramente funcione.&lt;/p&gt;
@@ -1077,6 +1586,7 @@
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 1 - Instalando o Ollama no Linux&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollamawin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 2 - Instalando o Ollama no Windows&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmtermux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 4 - Instalando LLMs Off-line no Android - pt.2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/waysllms&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 5 - Quatro Maneiras de Usar LLMs Offline no Seu Computador&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Importante: Nunca utilizar LLMs como oráculos ou como fonte de informações, já encontrei vários erros tanto em modelos online ou offline. Usar apenas como suporte para suas atividades.&lt;/p&gt;
 &lt;p&gt;Depois de testar LLMs offlines no computador, resolvi procurar uma solução para meu celular. O dispositivo em questão é um celular Android da Marca Samsung &lt;a href=&#34;https://www.samsung.com/br/smartphones/galaxy-a/galaxy-a15-blue-black-256gb-sm-a155mzkizto/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;modelo A15 (SM-A155M/DSN)&lt;/a&gt;. O mesmo é um dispositivo que me custou um pouco menos de 1000 reais e o possui 8 gigas de RAM, em meus testes a quantidade de RAM influenciou no desempenho, com 8 GB tive sucesso em modelos de no máximo 4B de paramêtros, testei um de 7B e ele ficou muito lerdo para gerar a inferência. Sobre dispositivos com 4 gigas de RAM fiz um teste e descrevo no item 15.&lt;/p&gt;
 &lt;p&gt;Existe bastante discussões sobre este tema, como por &lt;a href=&#34;https://www.reddit.com/r/LocalLLaMA/search/?q=smartphone&amp;amp;type=link&amp;amp;cId=cf9557fb-9775-4a60-8095-c8c0c62a65fa&amp;amp;iId=cc07fcca-916b-44b7-9e36-ddad34b28746&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;exemplo em&lt;/a&gt; onde conheci este aplicativo, o &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.druk.lmplayground&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LM Playground&lt;/a&gt;.&lt;/p&gt;
@@ -1681,6 +2191,7 @@
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 1 - Instalando o Ollama no Linux&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmandroid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 3 - Instalando LLMs Off-line no Android - pt.1&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmtermux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 4 - Instalando LLMs Off-line no Android - pt.2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/waysllms&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 5 - Quatro Maneiras de Usar LLMs Offline no Seu Computador&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Após o &lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;último post&lt;/a&gt; onde relatei a experiencia de usar o Ollama em num computador com Linux, resolvi extender o teste em uma máquina com Windows 10.
 Fiquei interessado em saber como o Ollama iria se comportar em um computador de 2013, um Samsung NP500P4C-AD2BR, provido de um processador Core i7 de terceira geração e sem uma GPU discreta.
 As únicas modificações que realizei neste computador foi a inclusão de mais 2 GB de RAM (agora com 6 gigas) e a instalação de um SSD no lugar do HD original.&lt;/p&gt;
@@ -2076,6 +2587,7 @@ As únicas modificações que realizei neste computador foi a inclusão de mais 
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollamawin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 2 - Instalando o Ollama no Windows&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmandroid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 3 - Instalando LLMs Off-line no Android- pt.1&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmtermux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 4 - Instalando LLMs Off-line no Android - pt.2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/waysllms&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 5 - Quatro Maneiras de Usar LLMs Offline no Seu Computador&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;O recém &lt;a href=&#34;https://www.nature.com/articles/d41586-024-02998-y&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;artigo da Nature&lt;/strong&gt;&lt;/a&gt; trouxe uma discussão sobre o uso de LLMs locais em vez daquelas que utilizamos de forma online como, por exemplo, o Chat-GPT, Gemini e o CoPilot. A preocupação com aspectos como privacidade e o uso de nossos dados quando utilizando os LLMs de terceiros, sem contar que estas ferramentas necessitam de acesso à internet.
 Sites como o &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugging Face&lt;/a&gt; permitem testar alguns usos destas ferramentas utilizando uma biblioteca com a linguagem Python, como eu já descrevi em &lt;a href=&#34;https://lgrando1.github.io/post/hface/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;uma postagem anterior.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Eu queria algo mais completo como um assistente virtual local e como sou usuário Linux (uso o Pop!_OS 20.04), encontrei este &lt;a href=&#34;https://itsfoss.com/ollama-setup-linux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;post muito bem explicado&lt;/a&gt; de como rodar uma LLM de maneira off-line no Linux e então resolvi replicar, e conto esta experiência abaixo.&lt;/p&gt;
