@@ -69,7 +69,7 @@
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama list
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Para rodar um modelo. Caso não tenha o modelo, ele será baixado e ativado localmente:&lt;/li&gt;
+&lt;li&gt;Para rodar/baixar um modelo:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama run &amp;lt;modelo&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
@@ -100,7 +100,7 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Para obter informações sobre a performance do modelo, adicione &lt;code&gt;--verbose&lt;/code&gt; ao final:&lt;/p&gt;
+&lt;p&gt;Para obter informações sobre a performance do modelo em sua máquina, adicione a flag &lt;em&gt;&amp;ndash;verbose&lt;/em&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama run &amp;lt;modelo&amp;gt; --verbose
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 
@@ -130,7 +130,7 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Para saber qual modelo está rodando no server ollama e se ele está utilizando sua CPU ou GPU&lt;/p&gt;
+&lt;p&gt;Para saber qual modelo LLM está rodando no server ollama em determinado momento e se ele está utilizando a CPU ou GPU de seu computador:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama ps
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 
@@ -160,11 +160,11 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Para remover um modelo específico&lt;/p&gt;
+&lt;p&gt;Para remover um modelo específico:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama rm &amp;lt;modelo&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Para sair do modelo, digite:&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Para sair do prompt de um modelo, digite:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/bye
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ou use Control + D.&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ou Control + D.&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -341,7 +341,7 @@
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;3-como-extensão-de-navegador&#34;&gt;3. Como Extensão de Navegador:&lt;/h2&gt;
-&lt;p&gt;Utilize o LLM através da &lt;a href=&#34;https://chromewebstore.google.com/detail/ollama-ui/cmgdpmlhgjhoadnonobjeekmfcehffco&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;extensão de navegador Chrome&lt;/a&gt;. Confira a &lt;a href=&#34;https://github.com/ollama-ui/ollama-ui&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ollama UI&lt;/a&gt; para fácil integração, permitindo escolher entre vários modelos LLM disponíveis no seu computador e salvar seus chats. Para ativá-la, basta clicar no ícone da extensão.&lt;/p&gt;
+&lt;p&gt;Utilize o LLM através da &lt;a href=&#34;https://chromewebstore.google.com/detail/ollama-ui/cmgdpmlhgjhoadnonobjeekmfcehffco&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;extensão de navegador Chrome&lt;/a&gt;. Confira a &lt;a href=&#34;https://github.com/ollama-ui/ollama-ui&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ollama UI&lt;/a&gt; para fácil integração, permitindo escolher entre vários modelos LLM disponíveis no seu computador e salvar seus chats.Para ativá-la, basta clicar no ícone da extensão.&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -367,6 +367,121 @@
                src=&#34;https://lgrando1.github.io/post/waysllms/08_huc5a2e18515287c95879d802cb8b4fc77_121611_603d92672004367903e40b855e3b780c.webp&#34;
                width=&#34;760&#34;
                height=&#34;416&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Também testei a extensão &lt;a href=&#34;https://chromewebstore.google.com/detail/page-assist-a-web-ui-for/jfgfiigpkhlkbnfnbobbkinehhfdhndo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Page-Assist&lt;/a&gt; cujo código fonte pode ser &lt;a href=&#34;https://github.com/n4ze3m/page-assist&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;encontrado aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/18_hubb11bf1264f915cc6a3ab60075c4d62e_102772_fb382f8e738fcac4f648c966c00d3dd0.webp 400w,
+               /post/waysllms/18_hubb11bf1264f915cc6a3ab60075c4d62e_102772_f3f5d6850ea513c89061c1e9425d1482.webp 760w,
+               /post/waysllms/18_hubb11bf1264f915cc6a3ab60075c4d62e_102772_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/18_hubb11bf1264f915cc6a3ab60075c4d62e_102772_fb382f8e738fcac4f648c966c00d3dd0.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;331&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Ele também possui mais opções de configurações, inclusive para parametros do Chat:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/19_hu08323b5b5fce5ea8747a2284178eced1_84893_9b28fcad87a8378b94b4fa3a363c07e6.webp 400w,
+               /post/waysllms/19_hu08323b5b5fce5ea8747a2284178eced1_84893_e0d6d2a5b35ed5bf69c6a843e6cfda0c.webp 760w,
+               /post/waysllms/19_hu08323b5b5fce5ea8747a2284178eced1_84893_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/19_hu08323b5b5fce5ea8747a2284178eced1_84893_9b28fcad87a8378b94b4fa3a363c07e6.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;497&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/20_hu2d36d7ae90ea2175caf7c0b6c408423a_53168_b106846e7f607b60d3f300ec354a7a85.webp 400w,
+               /post/waysllms/20_hu2d36d7ae90ea2175caf7c0b6c408423a_53168_ca46369922cf961dc5a574fe5f23fd65.webp 760w,
+               /post/waysllms/20_hu2d36d7ae90ea2175caf7c0b6c408423a_53168_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/20_hu2d36d7ae90ea2175caf7c0b6c408423a_53168_b106846e7f607b60d3f300ec354a7a85.webp&#34;
+               width=&#34;376&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Você pode procurar mais extensões na própria loja de extensões do seu navegador:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/21_hue0a90f479b907c5a41b2191b6d68252f_103403_41764f1c096af37c3761cbb27c7dd91e.webp 400w,
+               /post/waysllms/21_hue0a90f479b907c5a41b2191b6d68252f_103403_843e3f3f40a4ca1a5e8d611064b83f3f.webp 760w,
+               /post/waysllms/21_hue0a90f479b907c5a41b2191b6d68252f_103403_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/21_hue0a90f479b907c5a41b2191b6d68252f_103403_41764f1c096af37c3761cbb27c7dd91e.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;441&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
