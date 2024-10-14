@@ -476,12 +476,41 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
-               /post/waysllms/22_huf803b79c9cf65a7ff79298b8f67dfa8a_349699_85ca5a1713fe84488814d39143124866.webp 400w,
-               /post/waysllms/22_huf803b79c9cf65a7ff79298b8f67dfa8a_349699_c2b931a9374f14c135bec31c5ef5f8c4.webp 760w,
+               /post/waysllms/22_huf803b79c9cf65a7ff79298b8f67dfa8a_349699_4476bd8a2fd2a05e58dab4f279f8fddd.webp 400w,
+               /post/waysllms/22_huf803b79c9cf65a7ff79298b8f67dfa8a_349699_296c18b1476e1f0d0d3531f0562cb8a7.webp 760w,
                /post/waysllms/22_huf803b79c9cf65a7ff79298b8f67dfa8a_349699_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://lgrando1.github.io/post/waysllms/22_huf803b79c9cf65a7ff79298b8f67dfa8a_349699_85ca5a1713fe84488814d39143124866.webp&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/22_huf803b79c9cf65a7ff79298b8f67dfa8a_349699_4476bd8a2fd2a05e58dab4f279f8fddd.webp&#34;
                width=&#34;760&#34;
                height=&#34;413&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Inclusive você pode utilizar recursos de visão com o modelo &lt;a href=&#34;https://ollama.com/library/minicpm-v&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MiniCPM-V&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Autocomplete&#34; srcset=&#34;
+               /post/waysllms/23_hufc3bb36543a6f2ef06197352645233f7_172828_1875e69e4533b41c99affa4f022f3266.webp 400w,
+               /post/waysllms/23_hufc3bb36543a6f2ef06197352645233f7_172828_4bf6596cc3441c267f84d44917007472.webp 760w,
+               /post/waysllms/23_hufc3bb36543a6f2ef06197352645233f7_172828_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/waysllms/23_hufc3bb36543a6f2ef06197352645233f7_172828_1875e69e4533b41c99affa4f022f3266.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;336&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
