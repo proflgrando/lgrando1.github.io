@@ -13,7 +13,7 @@
     </image>
     
     <item>
-      <title>4 Formas de Usar LLMs Offline no Seu Computador</title>
+      <title>Quatro Formas de Usar LLMs Offline no Seu Computador</title>
       <link>https://lgrando1.github.io/post/waysllms/</link>
       <pubDate>Sun, 13 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://lgrando1.github.io/post/waysllms/</guid>
@@ -24,6 +24,7 @@
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollamawin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 2 - Instalando o Ollama no Windows&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmandroid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 3 - Instalando o Ollama no Android pt.1&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmtermux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 4 - Instalando o Ollama no Android pt.2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/rag/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 6 - RAG Offline: Usando LM Studio e Ollama para Processar Documentos&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Neste vídeo, apresento quatro formas de integrar uma LLM offline ao seu fluxo de trabalho:&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;

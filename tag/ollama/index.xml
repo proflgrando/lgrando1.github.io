@@ -5,12 +5,737 @@
     <link>https://lgrando1.github.io/tag/ollama/</link>
       <atom:link href="https://lgrando1.github.io/tag/ollama/index.xml" rel="self" type="application/rss+xml" />
     <description>Ollama</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 19 Oct 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_512x512_fill_lanczos_center_3.png</url>
       <title>Ollama</title>
       <link>https://lgrando1.github.io/tag/ollama/</link>
     </image>
+    
+    <item>
+      <title>RAG Offline: Usando LM Studio e Ollama para Processar Documentos</title>
+      <link>https://lgrando1.github.io/post/rag/</link>
+      <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://lgrando1.github.io/post/rag/</guid>
+      <description>&lt;p&gt;Outros posts sobre o tema:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://lgrando1.github.io/post/hface/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Como Criar um Pipeline em Python para Testar Modelos no Hugging Face&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lgrando1.github.io/post/prompt1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dicas de Engenharia de Prompt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 1 - Instalando o Ollama no Linux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollamawin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 2 - Instalando o Ollama no Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmandroid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 3 - Instalando o Ollama no Android pt.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmtermux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 4 - Instalando o Ollama no Android pt.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lgrando1.github.io/post/waysllms/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 5 - 4 Formas de se Utilizar LLMs Offlines em seu Computador&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Nesta postagem, apresento duas formas de realizar RAG em documentos de forma offline, utilizando o &lt;a href=&#34;https://lmstudio.ai/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LM Studio&lt;/a&gt; e o &lt;a href=&#34;https://ollama.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ollama&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://cloud.google.com/use-cases/retrieval-augmented-generation?hl=pt-BR&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Geração Aumentada de Recuperação (RAG)&lt;/a&gt; é uma técnica que combina modelos de linguagem com sistemas de busca, recuperando informações relevantes de documentos para melhorar respostas em tarefas de geração de texto.&lt;/p&gt;
+&lt;p&gt;Neste vídeo, demonstro como executar o RAG no LM Studio:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/uO-c7f88x7g&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Quando gravei o vídeo acima, eu ainda não sabia como realizar o processo de RAG com o Ollama. Graças à excelente extensão &lt;a href=&#34;https://chromewebstore.google.com/detail/page-assist-a-web-ui-for/jfgfiigpkhlkbnfnbobbkinehhfdhndo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Page Assist&lt;/a&gt;, descobri que é possível fazê-lo também no Ollama.&lt;/p&gt;
+&lt;p&gt;Para este vídeo, utilizei um notebook Acer Nitro com CPU Core i5 9300H, 16 GB de RAM e GPU Nvidia GeForce GTX 1650.&lt;/p&gt;
+&lt;h3 id=&#34;antes-de-mais-nada-alguns-lembretes&#34;&gt;Antes de mais nada, alguns lembretes:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Lembre-se de que, por rodarem offline, essas aplicações dependem do poder computacional do seu computador, da quantidade de memória RAM e da capacidade de processamento da sua GPU.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Importante:&lt;/strong&gt; Nunca use LLMs como oráculos ou fontes de informação definitiva; já encontrei vários erros em modelos, tanto online quanto offline. Utilize-os apenas como suporte para suas atividades.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Para este post, utilizei um arquivo no formato CSV, importado do Zotero, que contém as publicações acadêmicas das quais sou autor ou coautor. O arquivo pode ser &lt;a href=&#34;https://lgrando1.github.io/uploads/rag.csv&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;encontrado aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Zotero&#34; srcset=&#34;
+               /post/rag/00_huc7f1fa9e7bc0d67d0a60773628de907a_70010_c8dd7f5fa8dee415761a72ee79e58fa9.webp 400w,
+               /post/rag/00_huc7f1fa9e7bc0d67d0a60773628de907a_70010_b77ae094ee52cd12923eec798f14aa24.webp 760w,
+               /post/rag/00_huc7f1fa9e7bc0d67d0a60773628de907a_70010_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/00_huc7f1fa9e7bc0d67d0a60773628de907a_70010_c8dd7f5fa8dee415761a72ee79e58fa9.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;167&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Lembrando que, em ambos os casos, você vai precisar de um &lt;a href=&#34;https://ollama.com/library?q=embe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;modelo de embedding&lt;/a&gt;,
+Embedding é uma técnica usada em aprendizado de máquina para converter palavras ou frases em vetores numéricos, permitindo que modelos de linguagem compreendam e processem o significado semântico das palavras em um espaço matemático.
+Para saber mais, clique &lt;a href=&#34;https://www.elastic.co/pt/what-is/word-embedding&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;1-lm-studio&#34;&gt;1. LM Studio&lt;/h2&gt;
+&lt;p&gt;Ainda não havia testado esta ferramenta, mas achei o &lt;a href=&#34;https://lmstudio.ai/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LM Studio&lt;/a&gt; muito prático. A grande vantagem é que não precisa de instalação no Linux (não testei em outros sistemas operacionais). Você pode conhecer os modelos disponíveis neste &lt;a href=&#34;https://lmstudio.ai/models&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Porém, seu uso se mostrou mais complicado do que o Ollama, e não tive sucesso em rodar modelos com mais de 3 bilhões de parâmetros na minha máquina.&lt;/p&gt;
+&lt;p&gt;O mais interessante é que ele tem uma interface bem intuitiva:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/01_hu564eec94203fad91b26d2efe172f4509_68404_5baee6e73ad95733c17f9f82f9045ad8.webp 400w,
+               /post/rag/01_hu564eec94203fad91b26d2efe172f4509_68404_e41f28eea30a47eb0ddaad7c14434141.webp 760w,
+               /post/rag/01_hu564eec94203fad91b26d2efe172f4509_68404_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/01_hu564eec94203fad91b26d2efe172f4509_68404_5baee6e73ad95733c17f9f82f9045ad8.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;418&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Ele facilita o processo de controle dos modelos LLMs baixados:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/02_hu1c659ce23c562a8617a229eb07a7ea3e_48454_c176a4a08b048212d370accd7f8d7c89.webp 400w,
+               /post/rag/02_hu1c659ce23c562a8617a229eb07a7ea3e_48454_7fbdec137466fe05cbae5263af7ebbf2.webp 760w,
+               /post/rag/02_hu1c659ce23c562a8617a229eb07a7ea3e_48454_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/02_hu1c659ce23c562a8617a229eb07a7ea3e_48454_c176a4a08b048212d370accd7f8d7c89.webp&#34;
+               width=&#34;723&#34;
+               height=&#34;333&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;11---adicionando-um-arquivo-para-rag&#34;&gt;1.1 - Adicionando um arquivo para RAG&lt;/h3&gt;
+&lt;p&gt;Para incluir um arquivo e realizar o processo de RAG, basta ir à página principal do LM Studio, clicar no ícone de anexo (1) e selecionar o arquivo:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/03_hu1a43ba14c4202302410f2b3a6fe2a728_103587_8230f1b655179b1b59e45eae185b2122.webp 400w,
+               /post/rag/03_hu1a43ba14c4202302410f2b3a6fe2a728_103587_7c52d375118e6da70e060a4660228cc1.webp 760w,
+               /post/rag/03_hu1a43ba14c4202302410f2b3a6fe2a728_103587_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/03_hu1a43ba14c4202302410f2b3a6fe2a728_103587_8230f1b655179b1b59e45eae185b2122.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;418&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/04_hu0f0b8d936285567395fc4dbe9d38062c_27857_4221254cfcdcd2933658b36d26711203.webp 400w,
+               /post/rag/04_hu0f0b8d936285567395fc4dbe9d38062c_27857_ad28e43779093e22649f22114cef8f32.webp 760w,
+               /post/rag/04_hu0f0b8d936285567395fc4dbe9d38062c_27857_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/04_hu0f0b8d936285567395fc4dbe9d38062c_27857_4221254cfcdcd2933658b36d26711203.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;167&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;12---começando-a-conversar-sobre-o-arquivo&#34;&gt;1.2 - Começando a &amp;ldquo;conversar&amp;rdquo; sobre o arquivo&lt;/h3&gt;
+&lt;p&gt;Depois, é só começar a interagir com o arquivo:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/05_hu10588a53c14e5f2e06449b4d08755926_123244_c69eff81209a66ca15b2c6edb9a73732.webp 400w,
+               /post/rag/05_hu10588a53c14e5f2e06449b4d08755926_123244_0f03ac7c2dabca341b6865b2a93f861d.webp 760w,
+               /post/rag/05_hu10588a53c14e5f2e06449b4d08755926_123244_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/05_hu10588a53c14e5f2e06449b4d08755926_123244_c69eff81209a66ca15b2c6edb9a73732.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;408&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;No LM Studio, estou utilizando o modelo Llama3.2:3B (não consegui rodar modelos maiores). Note que ele pode se perder ou gerar respostas alucinadas.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/06_hucd5b97ab87e39cc95d6e2329c5314b8f_105735_668cdfff4ec97b797dcedf0afeccef82.webp 400w,
+               /post/rag/06_hucd5b97ab87e39cc95d6e2329c5314b8f_105735_785eb96b5a0cd00669c9f854b52b741c.webp 760w,
+               /post/rag/06_hucd5b97ab87e39cc95d6e2329c5314b8f_105735_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/06_hucd5b97ab87e39cc95d6e2329c5314b8f_105735_668cdfff4ec97b797dcedf0afeccef82.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;468&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;2-ollama&#34;&gt;2. Ollama&lt;/h2&gt;
+&lt;p&gt;Para realizar RAG no Ollama, é possível utilizar a extensão Page Assist e, após alguns ajustes, começar a realizar inferências.&lt;/p&gt;
+&lt;h3 id=&#34;21---configurando-a-extensão-page-assist&#34;&gt;2.1 - Configurando a extensão Page Assist&lt;/h3&gt;
+&lt;p&gt;Com o servidor do Ollama rodando, basta abrir a extensão em seu navegador:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/07_hu16e36e91de1ec6639c32d7d61c837f79_50206_b937ece7038de9cee312a7d2c421d9d7.webp 400w,
+               /post/rag/07_hu16e36e91de1ec6639c32d7d61c837f79_50206_b99a727fe8d04525b3e9131f6c04479e.webp 760w,
+               /post/rag/07_hu16e36e91de1ec6639c32d7d61c837f79_50206_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/07_hu16e36e91de1ec6639c32d7d61c837f79_50206_b937ece7038de9cee312a7d2c421d9d7.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;417&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Clique no ícone de ajustes (1), vá até o campo &amp;ldquo;RAG Settings&amp;rdquo; (2) e escolha o modelo de embedding (3). Lembre-se de que você já deve ter baixado esse modelo; caso contrário, ele não aparecerá.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/08_hue94a2b13214655294b776e41682e7f28_92117_e3788f6ea4479a46b7f26f24facd9a07.webp 400w,
+               /post/rag/08_hue94a2b13214655294b776e41682e7f28_92117_14ac1a5896dc41c614e8246e4a41f01f.webp 760w,
+               /post/rag/08_hue94a2b13214655294b776e41682e7f28_92117_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/08_hue94a2b13214655294b776e41682e7f28_92117_e3788f6ea4479a46b7f26f24facd9a07.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;382&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Caso você ainda não tenha um modelo de embedding, é possível baixar, por exemplo, o modelo &lt;a href=&#34;https://ollama.com/library/nomic-embed-text&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nomic-Embed-text&lt;/a&gt; com o comando no terminal:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama pull nomic-embed-text
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ou diretamente pela extensão:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/21_hu1699c2a26d25fa5cf1b7a4e4f8860ace_129961_d81be1c14d7136b545df86e3e8dfef64.webp 400w,
+               /post/rag/21_hu1699c2a26d25fa5cf1b7a4e4f8860ace_129961_39a1b35472b0ecc39c82f3f95216aa0e.webp 760w,
+               /post/rag/21_hu1699c2a26d25fa5cf1b7a4e4f8860ace_129961_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/21_hu1699c2a26d25fa5cf1b7a4e4f8860ace_129961_d81be1c14d7136b545df86e3e8dfef64.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;395&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/22_hu026ecbdd3e83e3d260ab941f9b6ac285_12289_e5d711b7923b83335cd0333ebc75364b.webp 400w,
+               /post/rag/22_hu026ecbdd3e83e3d260ab941f9b6ac285_12289_7582307b2cf62ac402e659c2f942a683.webp 760w,
+               /post/rag/22_hu026ecbdd3e83e3d260ab941f9b6ac285_12289_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/22_hu026ecbdd3e83e3d260ab941f9b6ac285_12289_e5d711b7923b83335cd0333ebc75364b.webp&#34;
+               width=&#34;625&#34;
+               height=&#34;238&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;22---adicionando-um-arquivo-para-rag&#34;&gt;2.2 - Adicionando um arquivo para RAG&lt;/h3&gt;
+&lt;p&gt;Agora, podemos incluir o arquivo que desejamos analisar, clicando (1) em &amp;ldquo;Manage Knowledge&amp;rdquo; e adicionando um novo conhecimento no botão &amp;ldquo;Add New Knowledge&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/09_hu6b90390a44dd200cd521ab172b3f66bd_40594_dbaf9af443f27e91e877efb39fd3e62b.webp 400w,
+               /post/rag/09_hu6b90390a44dd200cd521ab172b3f66bd_40594_16c939a00536b239b16f7dd1e5e83a86.webp 760w,
+               /post/rag/09_hu6b90390a44dd200cd521ab172b3f66bd_40594_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/09_hu6b90390a44dd200cd521ab172b3f66bd_40594_dbaf9af443f27e91e877efb39fd3e62b.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;338&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;A extensão suporta alguns tipos de arquivos, e você deve nomear esta base de conhecimento:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/10_hu93b46ee30bb3ebee9ccbba945ac88258_17565_b8e51481415650dc9ad6dabf2185dac6.webp 400w,
+               /post/rag/10_hu93b46ee30bb3ebee9ccbba945ac88258_17565_c78139653084938b19e0f95eb61cb8c8.webp 760w,
+               /post/rag/10_hu93b46ee30bb3ebee9ccbba945ac88258_17565_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/10_hu93b46ee30bb3ebee9ccbba945ac88258_17565_b8e51481415650dc9ad6dabf2185dac6.webp&#34;
+               width=&#34;500&#34;
+               height=&#34;468&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/11_hu36522c1a2aa8afa170f75eef26d8aaf5_18574_f57c5ac2bb216e93400104d675f05c5e.webp 400w,
+               /post/rag/11_hu36522c1a2aa8afa170f75eef26d8aaf5_18574_147fd3ca465ab0e8a8525cdbf1abd3a1.webp 760w,
+               /post/rag/11_hu36522c1a2aa8afa170f75eef26d8aaf5_18574_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/11_hu36522c1a2aa8afa170f75eef26d8aaf5_18574_f57c5ac2bb216e93400104d675f05c5e.webp&#34;
+               width=&#34;506&#34;
+               height=&#34;479&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Aguarde enquanto ele processa o documento (embedding):&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/12_hu7bff6983ed3a367736080dfbefe571b1_21797_a3bb05760c3155354696d97edc274868.webp 400w,
+               /post/rag/12_hu7bff6983ed3a367736080dfbefe571b1_21797_327d8f2f0992f1b916b0caa52b4d8f71.webp 760w,
+               /post/rag/12_hu7bff6983ed3a367736080dfbefe571b1_21797_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/12_hu7bff6983ed3a367736080dfbefe571b1_21797_a3bb05760c3155354696d97edc274868.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;288&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Agora, a base de conhecimento está disponível:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/13_hu5d0de4c92ccc28f8520abd411403e206_21159_772837b25bec96991645d0e086b57211.webp 400w,
+               /post/rag/13_hu5d0de4c92ccc28f8520abd411403e206_21159_32fdd93ade2e3540501c7b48fdca1001.webp 760w,
+               /post/rag/13_hu5d0de4c92ccc28f8520abd411403e206_21159_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/13_hu5d0de4c92ccc28f8520abd411403e206_21159_772837b25bec96991645d0e086b57211.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;290&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;23---selecionando-a-base-de-conhecimento&#34;&gt;2.3 - Selecionando a base de conhecimento&lt;/h3&gt;
+&lt;p&gt;Voltando à tela inicial da extensão, você verá um novo ícone onde digita as mensagens (1). Clicando nele, abrirá as bases de conhecimento (2), e assim você poderá selecionar aquela que deseja utilizar para o RAG.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/13_hu5d0de4c92ccc28f8520abd411403e206_21159_772837b25bec96991645d0e086b57211.webp 400w,
+               /post/rag/13_hu5d0de4c92ccc28f8520abd411403e206_21159_32fdd93ade2e3540501c7b48fdca1001.webp 760w,
+               /post/rag/13_hu5d0de4c92ccc28f8520abd411403e206_21159_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/13_hu5d0de4c92ccc28f8520abd411403e206_21159_772837b25bec96991645d0e086b57211.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;290&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Após escolher, a base de conhecimento selecionada aparecerá na parte superior da interface:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/14_hu244b95cb7213a649c072987c79f74e50_27259_0810c62cf8018c40135cd3465bc739b1.webp 400w,
+               /post/rag/14_hu244b95cb7213a649c072987c79f74e50_27259_343589177583befee82f2076a389837e.webp 760w,
+               /post/rag/14_hu244b95cb7213a649c072987c79f74e50_27259_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/14_hu244b95cb7213a649c072987c79f74e50_27259_0810c62cf8018c40135cd3465bc739b1.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;521&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;24---interagindo-com-o-modelo-sobre-o-documento&#34;&gt;2.4 - Interagindo com o modelo sobre o documento&lt;/h3&gt;
+&lt;p&gt;Agora, é só começar a &amp;ldquo;conversar&amp;rdquo; com o modelo sobre o documento:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/15_hud78af8aaf6a1a0bccf582f00a2191616_32527_9bcccc2f5d85f1f45020719e96772cb3.webp 400w,
+               /post/rag/15_hud78af8aaf6a1a0bccf582f00a2191616_32527_7fe3abacec8c14bec90a6ec21cf2e9bb.webp 760w,
+               /post/rag/15_hud78af8aaf6a1a0bccf582f00a2191616_32527_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/15_hud78af8aaf6a1a0bccf582f00a2191616_32527_9bcccc2f5d85f1f45020719e96772cb3.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;544&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/16_hucfb258b2fb5f293282062c7dc7093412_19546_c15a975f218c5a178c9addb7a2368e83.webp 400w,
+               /post/rag/16_hucfb258b2fb5f293282062c7dc7093412_19546_7cd38c10afab48b348a1e9f8f0c43897.webp 760w,
+               /post/rag/16_hucfb258b2fb5f293282062c7dc7093412_19546_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/16_hucfb258b2fb5f293282062c7dc7093412_19546_c15a975f218c5a178c9addb7a2368e83.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;622&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/17_huc7f91a891e3d91604c4060956ce15bff_104892_eff0d89a8c45ced3f8a152be4d6dfb16.webp 400w,
+               /post/rag/17_huc7f91a891e3d91604c4060956ce15bff_104892_2b6b200a867834336660c5d675c105c1.webp 760w,
+               /post/rag/17_huc7f91a891e3d91604c4060956ce15bff_104892_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/17_huc7f91a891e3d91604c4060956ce15bff_104892_eff0d89a8c45ced3f8a152be4d6dfb16.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;495&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;observações&#34;&gt;Observações&lt;/h3&gt;
+&lt;p&gt;Devido à limitação do modelo e do hardware, podem ocorrer alucinações e incorreções:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Aqui, ele mostrou 4 artigos em vez de 5:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/18_hu2e54816ab697c2a460cece9fb2f504c7_103755_c047885cfbee8fdc85eaf191f3d6a46a.webp 400w,
+               /post/rag/18_hu2e54816ab697c2a460cece9fb2f504c7_103755_d539e52172d30bb2f8d3a3413d0929db.webp 760w,
+               /post/rag/18_hu2e54816ab697c2a460cece9fb2f504c7_103755_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/18_hu2e54816ab697c2a460cece9fb2f504c7_103755_c047885cfbee8fdc85eaf191f3d6a46a.webp&#34;
+               width=&#34;581&#34;
+               height=&#34;725&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;E aqui, ao utilizar um modelo maior (Llama3.1:8B), ele se perdeu:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Interface&#34; srcset=&#34;
+               /post/rag/20_hu72610c462cc9d8c276997d2374fad453_70894_654c08de1ec67eb57b617889ef70938e.webp 400w,
+               /post/rag/20_hu72610c462cc9d8c276997d2374fad453_70894_d5453693d317b2bfa9bfa1389f44da74.webp 760w,
+               /post/rag/20_hu72610c462cc9d8c276997d2374fad453_70894_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://lgrando1.github.io/post/rag/20_hu72610c462cc9d8c276997d2374fad453_70894_654c08de1ec67eb57b617889ef70938e.webp&#34;
+               width=&#34;556&#34;
+               height=&#34;740&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;conclusão&#34;&gt;Conclusão&lt;/h2&gt;
+&lt;p&gt;As ferramentas e os modelos utilizados ainda são experimentais e devem ser validados antes de qualquer uso em produção. Para analisar arquivos maiores, são necessários mais recursos computacionais, mas isso não diminui o valor do experimento, que pode ser útil em casos específicos, como a análise de currículos, documentos pequenos ou anotações.&lt;/p&gt;
+&lt;p&gt;Sucesso a todos!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Instalação e Uso de LLMs Offline no Windows</title>
@@ -24,6 +749,7 @@
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmandroid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 3 - Instalando LLMs Off-line no Android - pt.1&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmtermux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 4 - Instalando LLMs Off-line no Android - pt.2&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/waysllms&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 5 - Quatro Maneiras de Usar LLMs Offline no Seu Computador&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/rag/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 6 - RAG Offline: Usando LM Studio e Ollama para Processar Documentos&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Após o &lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;último post&lt;/a&gt; onde relatei a experiencia de usar o Ollama em num computador com Linux, resolvi extender o teste em uma máquina com Windows 10.
 Fiquei interessado em saber como o Ollama iria se comportar em um computador de 2013, um Samsung NP500P4C-AD2BR, provido de um processador Core i7 de terceira geração e sem uma GPU discreta.
 As únicas modificações que realizei neste computador foi a inclusão de mais 2 GB de RAM (agora com 6 gigas) e a instalação de um SSD no lugar do HD original.&lt;/p&gt;
@@ -420,6 +1146,7 @@ As únicas modificações que realizei neste computador foi a inclusão de mais 
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmandroid/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 3 - Instalando LLMs Off-line no Android- pt.1&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/llmtermux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 4 - Instalando LLMs Off-line no Android - pt.2&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/waysllms&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 5 - Quatro Maneiras de Usar LLMs Offline no Seu Computador&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/rag/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 6 - RAG Offline: Usando LM Studio e Ollama para Processar Documentos&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;O recém &lt;a href=&#34;https://www.nature.com/articles/d41586-024-02998-y&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;artigo da Nature&lt;/strong&gt;&lt;/a&gt; trouxe uma discussão sobre o uso de LLMs locais em vez daquelas que utilizamos de forma online como, por exemplo, o Chat-GPT, Gemini e o CoPilot. A preocupação com aspectos como privacidade e o uso de nossos dados quando utilizando os LLMs de terceiros, sem contar que estas ferramentas necessitam de acesso à internet.
 Sites como o &lt;a href=&#34;https://huggingface.co/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugging Face&lt;/a&gt; permitem testar alguns usos destas ferramentas utilizando uma biblioteca com a linguagem Python, como eu já descrevi em &lt;a href=&#34;https://lgrando1.github.io/post/hface/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;uma postagem anterior.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Eu queria algo mais completo como um assistente virtual local e como sou usuário Linux (uso o Pop!_OS 20.04), encontrei este &lt;a href=&#34;https://itsfoss.com/ollama-setup-linux/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;post muito bem explicado&lt;/a&gt; de como rodar uma LLM de maneira off-line no Linux e então resolvi replicar, e conto esta experiência abaixo.&lt;/p&gt;

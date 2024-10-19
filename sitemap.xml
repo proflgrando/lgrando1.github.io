@@ -2,43 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://lgrando1.github.io/post/waysllms/</loc>
-    <lastmod>2024-10-13T14:11:20-03:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://lgrando1.github.io/tag/ai/</loc>
-    <lastmod>2024-10-13T14:11:20-03:00</lastmod>
+    <lastmod>2024-10-19T14:11:20-03:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lgrando1.github.io/tag/engineering/</loc>
-    <lastmod>2024-10-13T14:11:20-03:00</lastmod>
+    <lastmod>2024-10-19T14:11:20-03:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lgrando1.github.io/tag/gpt/</loc>
-    <lastmod>2024-10-13T14:11:20-03:00</lastmod>
+    <lastmod>2024-10-19T14:11:20-03:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lgrando1.github.io/tag/ia/</loc>
-    <lastmod>2024-10-13T14:11:20-03:00</lastmod>
+    <lastmod>2024-10-19T14:11:20-03:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lgrando1.github.io/</loc>
-    <lastmod>2024-10-13T14:11:20-03:00</lastmod>
+    <lastmod>2024-10-19T14:11:20-03:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lgrando1.github.io/tag/lmstudio/</loc>
+    <lastmod>2024-10-19T14:11:20-03:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lgrando1.github.io/tag/offline/</loc>
-    <lastmod>2024-10-13T14:11:20-03:00</lastmod>
+    <lastmod>2024-10-19T14:11:20-03:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lgrando1.github.io/tag/ollama/</loc>
+    <lastmod>2024-10-19T14:11:20-03:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lgrando1.github.io/post/</loc>
-    <lastmod>2024-10-13T14:11:20-03:00</lastmod>
+    <lastmod>2024-10-19T14:11:20-03:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lgrando1.github.io/tag/prompt/</loc>
-    <lastmod>2024-10-13T14:11:20-03:00</lastmod>
+    <lastmod>2024-10-19T14:11:20-03:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lgrando1.github.io/tag/rag/</loc>
+    <lastmod>2024-10-19T14:11:20-03:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lgrando1.github.io/post/rag/</loc>
+    <lastmod>2024-10-19T14:11:20-03:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lgrando1.github.io/tags/</loc>
+    <lastmod>2024-10-19T14:11:20-03:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lgrando1.github.io/post/waysllms/</loc>
     <lastmod>2024-10-13T14:11:20-03:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -122,10 +138,6 @@
     <lastmod>2024-10-12T14:11:20-03:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://lgrando1.github.io/tag/ollama/</loc>
-    <lastmod>2024-10-12T14:11:20-03:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://lgrando1.github.io/tag/terminal/</loc>
     <lastmod>2024-10-12T14:11:20-03:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -136,6 +148,34 @@
   </url><url>
     <loc>https://lgrando1.github.io/post/ollama/</loc>
     <lastmod>2024-09-21T01:09:20-03:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lgrando1.github.io/tag/agent-based/</loc>
+    <lastmod>2024-09-11T13:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lgrando1.github.io/talk/analise-de-consumo-de-bateria-de-dispositivos-usados-em-iot-internet-das-coisas/</loc>
+    <lastmod>2024-09-11T13:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lgrando1.github.io/tag/drones/</loc>
+    <lastmod>2024-09-11T13:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lgrando1.github.io/tag/farm/</loc>
+    <lastmod>2024-09-11T13:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lgrando1.github.io/tag/presentation/</loc>
+    <lastmod>2024-09-11T13:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lgrando1.github.io/event/</loc>
+    <lastmod>2024-09-11T13:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lgrando1.github.io/tag/simulation/</loc>
+    <lastmod>2024-09-11T13:30:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lgrando1.github.io/tag/chat-gpt/</loc>
@@ -188,30 +228,6 @@
   </url><url>
     <loc>https://lgrando1.github.io/ideas/</loc>
     <lastmod>2024-02-26T12:09:20-03:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://lgrando1.github.io/tag/agent-based/</loc>
-    <lastmod>2023-12-12T13:30:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://lgrando1.github.io/tag/drones/</loc>
-    <lastmod>2023-12-12T13:30:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://lgrando1.github.io/tag/farm/</loc>
-    <lastmod>2023-12-12T13:30:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://lgrando1.github.io/tag/presentation/</loc>
-    <lastmod>2023-12-12T13:30:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://lgrando1.github.io/event/</loc>
-    <lastmod>2023-12-12T13:30:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://lgrando1.github.io/tag/simulation/</loc>
-    <lastmod>2023-12-12T13:30:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lgrando1.github.io/talk/wsc-2023/</loc>
