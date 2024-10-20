@@ -36,7 +36,12 @@
   &lt;iframe src=&#34;https://www.youtube.com/embed/uO-c7f88x7g&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Quando gravei o vídeo acima, eu ainda não sabia como realizar o processo de RAG com o Ollama. Graças à excelente extensão &lt;a href=&#34;https://chromewebstore.google.com/detail/page-assist-a-web-ui-for/jfgfiigpkhlkbnfnbobbkinehhfdhndo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Page Assist&lt;/a&gt;, descobri que é possível fazê-lo também no Ollama.&lt;/p&gt;
+&lt;p&gt;Quando gravei o vídeo acima, eu ainda não sabia como realizar o processo de RAG com o Ollama. Graças à excelente extensão &lt;a href=&#34;https://chromewebstore.google.com/detail/page-assist-a-web-ui-for/jfgfiigpkhlkbnfnbobbkinehhfdhndo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Page Assist&lt;/a&gt;, descobri que é possível fazê-lo também no Ollama, como apresentado aqui:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/RORi14qT0S8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 &lt;p&gt;Para este vídeo, utilizei um notebook Acer Nitro com CPU Core i5 9300H, 16 GB de RAM e GPU Nvidia GeForce GTX 1650.&lt;/p&gt;
 &lt;h3 id=&#34;antes-de-mais-nada-alguns-lembretes&#34;&gt;Antes de mais nada, alguns lembretes:&lt;/h3&gt;
 &lt;ol&gt;
