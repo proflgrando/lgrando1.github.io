@@ -3956,7 +3956,8 @@ PS: peço desculpas na imagem abaixo por que digitei um comando errado, por isto
       <link>https://lgrando1.github.io/post/hface/</link>
       <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://lgrando1.github.io/post/hface/</guid>
-      <description>&lt;p&gt;Outros posts sobre o tema em:&lt;/p&gt;
+      <description>&lt;meta name=&#34;fediverse:creator&#34; content=&#34;@lgrando@cwb.social&#34;&gt;
+&lt;p&gt;Outros posts sobre o tema em:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/prompt1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dicas de Engenharia de Prompt&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollama/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 1 - Instalando o Ollama no Linux&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://lgrando1.github.io/post/ollamawin/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parte 2 - Instalando o Ollama no Windows&lt;/a&gt;&lt;/p&gt;
