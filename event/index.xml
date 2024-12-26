@@ -5,7 +5,7 @@
     <link>https://lgrando1.github.io/event/</link>
       <atom:link href="https://lgrando1.github.io/event/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 11 Sep 2024 13:30:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 18 Dec 2024 13:30:00 +0000</lastBuildDate>
     <image>
       <url>https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_512x512_fill_lanczos_center_3.png</url>
       <title>Recent &amp; Upcoming Talks</title>
@@ -13,10 +13,18 @@
     </image>
     
     <item>
-      <title>Análise de consumo de bateria de dispositivos usados em IoT (Internet das Coisas)</title>
-      <link>https://lgrando1.github.io/talk/analise-de-consumo-de-bateria-de-dispositivos-usados-em-iot-internet-das-coisas/</link>
+      <title>WSC 2024</title>
+      <link>https://lgrando1.github.io/talk/wsc-2024/</link>
+      <pubDate>Wed, 18 Dec 2024 13:30:00 +0000</pubDate>
+      <guid>https://lgrando1.github.io/talk/wsc-2024/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>XV Workshop da Pós Graduação da Faculdade de Tecnologia - UNICAMP</title>
+      <link>https://lgrando1.github.io/talk/xv-workshop-da-pos-graduacao-da-faculdade-de-tecnologia-unicamp/</link>
       <pubDate>Wed, 11 Sep 2024 13:30:00 +0000</pubDate>
-      <guid>https://lgrando1.github.io/talk/analise-de-consumo-de-bateria-de-dispositivos-usados-em-iot-internet-das-coisas/</guid>
+      <guid>https://lgrando1.github.io/talk/xv-workshop-da-pos-graduacao-da-faculdade-de-tecnologia-unicamp/</guid>
       <description></description>
     </item>
     
