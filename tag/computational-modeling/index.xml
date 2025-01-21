@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computational modeling | Leonardo Grando</title>
+    <link>https://lgrando1.github.io/tag/computational-modeling/</link>
+      <atom:link href="https://lgrando1.github.io/tag/computational-modeling/index.xml" rel="self" type="application/rss+xml" />
+    <description>Computational modeling</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 15 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_512x512_fill_lanczos_center_3.png</url>
+      <title>Computational modeling</title>
+      <link>https://lgrando1.github.io/tag/computational-modeling/</link>
+    </image>
+    
+    <item>
+      <title>Modeling and Simulation of Battery Recharging for UAVs Applications: Smart Farming, Disaster Recovery, and Dengue Focus Detections</title>
+      <link>https://lgrando1.github.io/publication/grando-2024/</link>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://lgrando1.github.io/publication/grando-2024/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

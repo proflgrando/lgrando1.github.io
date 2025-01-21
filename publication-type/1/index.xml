@@ -5,12 +5,20 @@
     <link>https://lgrando1.github.io/publication-type/1/</link>
       <atom:link href="https://lgrando1.github.io/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 12 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 15 Dec 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://lgrando1.github.io/media/icon_hu833f70911ce8d7c0b3dbb80c9eadb7d3_197124_512x512_fill_lanczos_center_3.png</url>
       <title>1</title>
       <link>https://lgrando1.github.io/publication-type/1/</link>
     </image>
+    
+    <item>
+      <title>Modeling and Simulation of Battery Recharging for UAVs Applications: Smart Farming, Disaster Recovery, and Dengue Focus Detections</title>
+      <link>https://lgrando1.github.io/publication/grando-2024/</link>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://lgrando1.github.io/publication/grando-2024/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Agent-Based Model For Analysis of Cervical Cancer Detection</title>
